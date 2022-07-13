@@ -3,22 +3,22 @@
 ## Quy tắc đặt tên nhánh khi thi công chức năng:
 
 ```bash
-feature/[work items type]-[ID]-[Mô tả ngắn gọn về chức năng]
+feature/[Mô tả ngắn gọn về chức năng]
 ```
 
-Ví dụ: Thực hiện thi công Product Backlog Item với mã 123: Yêu cầu nhập mã captcha khi đăng nhập không thành công nhiều lần. 
+Ví dụ: Thực hiện thi công: Yêu cầu nhập mã captcha khi đăng nhập không thành công nhiều lần. 
 
-Tên nhánh sẽ là: *feature/pbi-123-login-captcha*
+Tên nhánh sẽ là: *feature/login-captcha*
 
 ## Quy tắc đặt tên nhánh khi fix bug:
 
 ```bash
-bugfix/[work items type]-[ID]-[Mô tả ngắng gọn về bug]
+bugfix/[Mô tả ngắng gọn về bug]
 ```
 
-Ví dụ: Thực hiện fix bug với mã 124: Lỗi không biển thị đủ thông tin trên file báo cáo thuế. 
+Ví dụ: Thực hiện fix bug: Lỗi không biển thị đủ thông tin trên file báo cáo thuế. 
 
-Tên nhánh sẽ là: *bugfix/bug-124-miss-data-report-tax*
+Tên nhánh sẽ là: *bugfix/miss-data-report-tax*
 
 ## Quy tắc đặt tên nhánh release:
 
@@ -38,7 +38,7 @@ Sử dụng [Mã phiên bản] để đánh tag.
 
 Ví dụ: *r1.2*
 
-## Quy tắc đặt tên nhánh khi hot fix:
+## Quy tắc đặt tên nhánh khi hotfix:
 
 ```bash
 hotfix/[Mã phiên bản hotfix]
