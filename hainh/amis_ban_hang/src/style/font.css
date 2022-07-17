@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Bold;
+    src: url("../assets/Resource/fonts/roboto-v20-vietnamese_latin-500.woff2");
+}
+
+@font-face {
+    font-family: Italic;
+    src: url("../assets/Resource/fonts/roboto-v20-vietnamese_latin-italic.woff2");
+}
+
+@font-face {
+    font-family: Regular;
+    src: url("../assets/Resource/fonts/roboto-v20-vietnamese_latin-regular.woff2");
+}
+
+::placeholder {
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    color: #99A1B2;
+    font-family: Regular;
+}

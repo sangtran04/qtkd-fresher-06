@@ -1,26 +1,58 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="grid-layout">
+    <TheMenu />
+    <TheFunction />
+    <TheSideBarLeft />
+    <TheContent />
+    <TheSideBarRight />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TheMenu from './components/layout/TheMenu'
+import TheFunction from './components/layout/TheFunction.vue'
+import TheSideBarLeft from './components/layout/TheSideBarLeft.vue'
+import TheContent from './components/layout/TheContent.vue'
+import TheSideBarRight from './components/layout/TheSideBarRight.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    TheMenu,
+    TheFunction,
+    TheSideBarLeft,
+    TheContent,
+    TheSideBarRight,
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('./style/icons.css');
+@import url('./style/font.css');
+/* reset css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+  color: #1f2229;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+html {
+  /* convert 1rem = 10px */
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: Regular;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 240px auto 320px;
+  grid-template-rows: 84px 64px auto;
+  height: 100vh;
+  width: 100vw;
 }
 </style>
