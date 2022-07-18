@@ -6,7 +6,10 @@
         <div class="m-top__icon-logo"></div>
         <p>Bán hàng</p>
       </div>
-      <BaseInputTextField placeholder="chi co placeholder" width="300px" />
+      <BaseTextField
+        placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
+        :hasIconSearch="true"
+      />
 
       <div class="m-top__icons">
         <div class="icon-facebook margin-right-20"></div>
@@ -23,32 +26,13 @@
 </template>
 
 <script>
-import BaseInputTextField from '../base/BaseInputTextField.vue'
+import BaseTextField from '../base/BaseTextField.vue'
 
 export default {
   components: {
-    BaseInputTextField,
+    BaseTextField,
   },
-  data() {
-    const propsInputText = {
-      placeholder: 'my placeholder',
-      labelContent: '',
-      leftLabel: true,
-      isIconSearch: false,
-      readOnly: false,
-    }
-    const propsInputText1 = {
-      placeholder: 'my placeholder',
-      labelContent: '',
-      leftLabel: true,
-      isIconSearch: false,
-      readOnly: true,
-    }
-    return {
-      propsInputText,
-      propsInputText1,
-    }
-  },
+  data() {},
 }
 </script>
 
