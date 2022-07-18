@@ -1,0 +1,109 @@
+<template>
+    <div class="toggleWrapper" :class="{switchDisable : isDisabled}">
+        <div class="toggleTitle">{{switchText}}</div>
+        <input type="checkbox" id="switchToggle"  class="switch-toggle"
+        :class="{SwitchCheckFunction : SwitchCheckFunction}"
+        />
+        <div class="toggleStatus" id="switchStatus">Off</div>
+    </div>
+</template>
+
+<script>
+    
+export default {
+    name: 'BaseToggle',
+    components: {
+
+    },
+    props: {
+        switchText: {
+            type: String,
+            default: () => 'Switch'
+        },
+        switchDisabled: {
+            type: Boolean,
+        }
+        
+    },
+    computed: {
+        /**
+         * Kiểm tra trạng của check box để đưa ra text on or off
+         * Author: DHTHINH (18/07/2022)
+         */
+        SwitchCheckFunction() {
+            var checkbox_toggle = document.getElementById("switchToggle");
+            console.log(checkbox_toggle);
+            if (checkbox_toggle != null) {
+                checkbox_toggle.addEventListener('change', function(){
+                if (document.getElementById("switchToggle").checked == true){
+                    document.getElementById("switchStatus").innerHTML = "On";
+                }
+                if (document.getElementById("switchToggle").checked == false){
+                    document.getElementById("switchStatus").innerHTML = "Off";
+                }
+            })
+            }
+            return checkbox_toggle;
+        },
+        isDisabled() {
+            return this.switchDisabled ? true : false
+        },
+    }
+}
+</script>
+
+<style>
+    :root {
+        --transition-effect: 0.25s cubic-bezier(.16,-1.09,.94,2.16) 0.2s;
+    }
+    .toggleWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .switch-toggle {
+        margin: 0;
+        cursor: pointer;
+        width: 28px;
+        height: 16px;
+        appearance: none;
+        background-color: #99A1B2;
+        border-radius: 12px;
+        position: relative;
+        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.3);
+        transition: var(--transition-effect);
+    }
+    .switch-toggle::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+        transition: var(--transition-effect);
+    }
+
+    .switch-toggle:checked {
+        background-color: #31B491;
+    }
+
+    .switch-toggle:checked::before {
+        left: 13px;
+    }
+
+    .switchDisable {
+        opacity: 30%;
+        cursor: default;
+    }
+    
+    .toggleStatus {
+        margin-left: 8px;
+    }
+
+    .toggleTitle {
+        margin-right: 10px;
+    }
+</style>
