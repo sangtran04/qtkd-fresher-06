@@ -1,0 +1,24 @@
+.abc{
+    position: relative;
+}
+
+.input{
+    width :240px;
+    height:32px;
+    border: 1px solid #D3D7DE;
+    border-radius: 4px;
+    padding-left :32px;   
+}
+.input__icon{
+	background: url('../../assets/img/icon_collection.svg') no-repeat -32px -1px;
+	width: 14px;
+	height: 14px;
+
+}
+.input::placeholder {
+    font-size: 11px;
+    color: #bbbbbb;
+}
+
+
+

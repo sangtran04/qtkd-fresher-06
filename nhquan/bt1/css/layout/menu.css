@@ -1,0 +1,56 @@
+.menu{
+    width:100%;
+    height:84px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 10px 0;
+}
+.menu__top{
+    width: 100%;
+    height:42px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__top__left{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+    .sibar{
+        background: url('../../assets/img/icon_collection.svg') no-repeat -371px -227px;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+    .logo{
+        background-image: url(../../assets/img/Logo_Ban_hang.svg);
+        height:32px;
+        width:129px;
+    }
+.menu__top__mid{
+
+}
+
+.menu__top__right{
+    display: flex;
+}
+
+.menu__bottom{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    margin-left: 10px;
+}
+.menu__bottom__item{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+.menu__text{
+    margin-left: 8px;
+}
+.menu__bottom__item:hover{
+    background-color: #7189F4;
+    border-bottom: 1px solid  #7189F4;
+}
