@@ -3,18 +3,18 @@
     class="base-input-text-field"
     :class="{ leftLabel: leftLabel, topLabel: topLabel }"
   >
-    <label :class="{ haveLabel: isHaveLabel }" :for="labelContent">{{
+    <label :class="{ hasLabel: hasLabel }" :for="labelContent">{{
       labelContent
     }}</label>
-    <div class="absoluted error">
-      <div v-if="isIconSearchFunction" class="icon-search"></div>
+    <div class="absoluted">
+      <div v-if="hasIconSearchFunction" class="icon-search"></div>
       <div class="icon-success"></div>
       <input
         :id="labelContent"
         type="text"
         :placeholder="placeholder"
         :readonly="readOnly"
-        :class="{ 'padding-left-32': isIconSearchFunction }"
+        :class="{ 'padding-left-32': hasIconSearchFunction }"
       />
       <span class="error-msg">Error message</span>
     </div>
@@ -47,12 +47,8 @@ export default {
       type: Boolean,
     },
     // thêm icon tìm kiếm vào thẻ input
-    isIconSearch: {
+    hasIconSearch: {
       type: Boolean,
-    },
-    width: {
-      type: String,
-      default: '240px',
     },
   },
   computed: {
@@ -60,15 +56,15 @@ export default {
      * Kiểm tra props truyền vào có label không ?
      * Author: hainh 17/07/2022
      */
-    isHaveLabel() {
+    hasLabel() {
       return this.labelContent ? true : false
     },
     /**
      * Kiểm trả props truyền vào có icon search không ?
      * Author: hainh 17/07/2022
      */
-    isIconSearchFunction() {
-      return this.isIconSearch ? true : false
+    hasIconSearchFunction() {
+      return this.hasIconSearch ? true : false
     },
   },
 }
@@ -90,7 +86,7 @@ export default {
   border-radius: 4px;
   border: 1px solid #d3d7de;
   outline: none;
-  min-width: v-bind(width);
+  width: 300px;
 }
 
 .base-input-text-field input:hover {
@@ -121,12 +117,12 @@ export default {
   display: none;
 }
 
-.leftLabel label.haveLabel {
+.leftLabel label.hasLabel {
   margin-right: 16px;
   display: initial;
 }
 
-.topLabel label.haveLabel {
+.topLabel label.hasLabel {
   margin-bottom: 8px;
   display: initial;
 }
