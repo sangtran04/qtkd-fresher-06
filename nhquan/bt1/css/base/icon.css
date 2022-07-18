@@ -1,0 +1,182 @@
+.icon--16 {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+}
+.icon--fb{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -288px -321px;
+	width: 16px;
+	height: 16px;
+    margin-right: 10px;
+}
+.icon--lapphuong{
+	background: url('../../assets/img/icon_collection.svg') no-repeat -128px -241px;
+	width: 14px;
+	height: 14px;
+    margin-right: 10px;
+}
+.icon--lich{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -97px -65px;
+	width: 14px;
+	height: 15px;
+    margin-right: 10px;
+}
+.icon--chuong{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -75px -339px;
+	width: 18px;
+	height: 20px;
+    margin-right: 10px;
+}
+.icon--thietlap{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -16px 1px;
+	width: 17px;
+	height: 17px;
+    margin-right: 10px;
+}
+.icon--hoi{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 76.316% 39.49%;
+	background-size: 200px 500px;
+	width: 10px;
+	height: 10px;
+    margin-right: 10px;
+}
+.icon--avt{
+    background: url('../../assets/img/icon_collection.svg') no-repeat 26.087% 58.264%;
+	background-size: 200px 500px;
+	width: 16px;
+	height: 16px;
+}
+
+
+.icon__banlamviec{
+    background: url('../../assets/img/icon_collection.svg') no-repeat 0px -271px;
+	width: 17px;
+	height: 17px;
+}
+.icon__tiemnang{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__chaohang{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__lienhe{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__khachhang{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__cohoi{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__baogia{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__donhang{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__hoadon{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__aocohoi{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__hoatdong{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__muctieu{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__chiendich{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__baocao{
+	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+.icon__khac{
+    background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
+	width: 16px;
+	height: 16px;
+}
+
+.function__left__item__icon1{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -336px -32px;
+	width: 16px;
+	height: 16px;
+}
+.function__left__item__icon2{
+	background: url('../../assets/img/icon_collection.svg') no-repeat -352px -32px;
+	width: 16px;
+	height: 16px;
+}
+
+
+.content__left__top__icon1{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -322px -37px;
+	width: 13px;
+	height: 7px;
+    margin-right: 16px;
+}
+.content__left__top__icon2{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -27px -340px;
+	width: 17px;
+	height: 18px;
+    margin-right: 16px;
+}
+
+.icon__call{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -177px -322px;
+	width: 15px;
+	height: 15px;
+    margin-left: 40px;
+}
+.icon__box{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -194px -321px;
+	width: 12px;
+	height: 16px;
+    margin-left: 40px;
+
+}
+.icon__sheet{
+    background: url('../../assets/img/icon_collection.svg') no-repeat -209px -321px;
+	width: 14px;
+	height: 16px;
+    margin-left: 40px;
+}
+.icon__mail{
+    background: url('../../assets/img/icon_collection.svg') no-repeat 0 -324px;
+	width: 16px;
+	height: 11px;
+    margin-left: 40px;
+
+}
