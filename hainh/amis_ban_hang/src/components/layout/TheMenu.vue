@@ -30,7 +30,7 @@
           :checked="tab.checked"
         >
           <div
-            class="icon-banLamViec m-tab__icon"
+            class="icon-dashboard m-tab__icon"
             :class="{ checked: tab.checked }"
           ></div>
         </BaseTab>

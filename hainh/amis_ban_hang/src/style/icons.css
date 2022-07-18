@@ -58,97 +58,99 @@
     height: 16px;
 }
 
-.icon-banLamViec {
+.icon-dashboard {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0 -272px;
     width: 16px;
     height: 16px;
 }
 
-.icon-banLamViec.checked {
+.icon-dashboard.checked {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0 -288px;
     width: 16px;
     height: 16px;
 }
-
-.icon-tiemnang {
+/* Tiềm năng */
+.icon-lead {
     background: url('../assets/Resource/img/icon_collection.svg')no-repeat -160px -289px;
     width: 16px;
     height: 16px;
 }
-
-.icon-chaohang {
+/* Chào hàng */
+.icon-offer {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -16px -272px;
     width: 16px;
     height: 16px;
 }
 
-.icon-lienhe {
+.icon-contact {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -129px -48px;
     width: 14px;
     height: 16px;
 }
-
-.icon-khachhang {
+/* Khách hàng */
+.icon-account {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -112px -48px;
     width: 16px;
     height: 16px;
 }
-
-.icon-cohoi {
+/* Cơ hội */
+.icon-oppotunity {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -80px -48px;
     width: 16px;
     height: 16px;
 }
-
-.icon-baogiac {
+/* Báo giá */
+.icon-quote {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -66px -48px;
     width: 12px;
     height: 16px;
 }
-
-.icon-donhang {
+/* đơn hàng */
+.icon-sale-order {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -144px -48px;
     width: 16px;
     height: 16px;
 }
 
-.icon-hoadon {
+/* hóa đơn */
+.icon-invoice-request {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -50px -48px;
     width: 12px;
     height: 16px;
 }
 
-.icon-aocohoi {
+/* ao cơ hội */
+.icon-oppotunity-pool {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -66px -305px;
     width: 12px;
     height: 15px;
 }
-
-.icon-hoatdong {
+/* Hoạt động */
+.icon-activity {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -129px -272px;
     width: 15px;
     height: 15px;
 }
-
-.icon-muctieu {
+/* mục tiêu */
+.icon-forecast {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -81px -273px;
     width: 15px;
     height: 15px;
 }
-
-.icon-chiendich {
+/* chiến dịch */
+.icon-campaign {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -208px -48px;
     width: 16px;
     height: 16px;
 }
 
-.icon-baocao {
+.icon-report {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -32px -272px;
     width: 16px;
     height: 16px;
 }
 
-.icon-khac {
+.icon-other {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -275px;
     width: 14px;
     height: 11px;
@@ -223,7 +225,7 @@
     height: 11px;
 }
 
-.icon-ghichu {
+.icon-note {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -273px -115px;
     width: 16px;
     height: 14px;
