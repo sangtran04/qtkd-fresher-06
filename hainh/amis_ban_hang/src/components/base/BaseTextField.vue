@@ -3,7 +3,7 @@
     class="base-input-text-field"
     :class="{ leftLabel: leftLabel, topLabel: topLabel }"
   >
-    <label :class="{ haveLabel: hasLabel }" :for="labelContent">{{
+    <label :class="{ hasLabel: hasLabel }" :for="labelContent">{{
       labelContent
     }}</label>
     <div class="absoluted">
@@ -117,12 +117,12 @@ export default {
   display: none;
 }
 
-.leftLabel label.haveLabel {
+.leftLabel label.hasLabel {
   margin-right: 16px;
   display: initial;
 }
 
-.topLabel label.haveLabel {
+.topLabel label.hasLabel {
   margin-bottom: 8px;
   display: initial;
 }
