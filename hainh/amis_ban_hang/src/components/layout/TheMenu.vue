@@ -21,22 +21,48 @@
         <div class="icon-avatar margin-right-20"></div>
       </div>
     </div>
-    <div class="m-bottom"></div>
+    <div class="m-bottom">
+      <div class="m-tabs">
+        <BaseTab
+          v-for="tab in tabs"
+          :key="tab.id"
+          :tabContent="tab.contentTab"
+          :checked="tab.checked"
+        >
+          <div
+            class="icon-dashboard m-tab__icon"
+            :class="{ checked: tab.checked }"
+          ></div>
+        </BaseTab>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import BaseTextField from '../base/BaseTextField.vue'
-
+import BaseTab from '../base/BaseTab.vue'
+import { ref } from 'vue'
+import tabsSlider from '../../constants/tabsSlider'
 export default {
   components: {
     BaseTextField,
+    BaseTab,
   },
-  data() {},
+
+  setup() {
+    const tabs = ref(tabsSlider)
+    return {
+      tabs,
+    }
+  },
 }
 </script>
 
 <style scoped>
+.m-tabs {
+  display: flex;
+}
 .margin-right-20 {
   margin-right: 2rem;
 }
@@ -45,14 +71,14 @@ export default {
   grid-column: 1 / 4;
   grid-row: 1;
   border: 1px solid red;
+  padding-left: 1rem;
 }
 
 .m-top {
   display: flex;
-  align-items: center;
-  height: 5rem;
+  align-items: end;
+  height: 4.4rem;
   justify-content: space-between;
-  padding-left: 1rem;
 }
 
 .m-top__logo {
