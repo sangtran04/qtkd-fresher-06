@@ -1,8 +1,10 @@
 <template>
-  <div class="content">content</div>
+  <div class="content">ád</div>
 </template>
 
-<script></script>
+<script>
+export default { components: {} }
+</script>
 
 <style scoped>
 .content {
