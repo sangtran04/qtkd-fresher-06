@@ -34,6 +34,7 @@ export default {
   align-items: center;
   justify-content: space-between;
   padding: 0 16px;
+  border-bottom: 1px solid rgb(214, 218, 224);
 }
 .function__left {
   display: flex;
