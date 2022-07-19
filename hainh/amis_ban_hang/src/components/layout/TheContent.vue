@@ -1,14 +1,18 @@
 <template>
-  <div class="content">ád</div>
+  <div class="content">
+    <BaseToastMessage toastMessage="message" type="success" />
+  </div>
 </template>
 
 <script>
-export default { components: {} }
+import BaseToastMessage from '../base/BaseToastMessage.vue'
+export default { components: { BaseToastMessage } }
 </script>
 
 <style scoped>
 .content {
   grid-row: 3 / 4;
   grid-column: auto;
+  background-color: #bbbb;
 }
 </style>
