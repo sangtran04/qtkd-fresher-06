@@ -56,91 +56,91 @@
     height: 24px;
 }
 
-.icon-banlamviec {
+.icon-dashboard {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0 -272px;
     width: 16px;
     height: 16px;
 }
 
-.icon-tiemnang {
+.icon-potential {
     background: url('../assets/Resource/img/icon_collection.svg')no-repeat -160px -289px;
     width: 16px;
     height: 16px;
 }
 
-.icon-chaohang {
+.icon-offer {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -16px -272px;
     width: 16px;
     height: 16px;
 }
 
-.icon-lienhe {
+.icon-contact {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -129px -48px;
     width: 14px;
     height: 16px;
 }
 
-.icon-khachhang {
+.icon-client {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -112px -48px;
     width: 16px;
     height: 16px;
 }
 
-.icon-cohoi {
+.icon-opportunity {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -80px -48px;
     width: 16px;
     height: 16px;
 }
 
-.icon-baogia {
+.icon-quote {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -66px -48px;
     width: 12px;
     height: 16px;
 }
 
-.icon-donhang {
+.icon-order {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -144px -48px;
     width: 16px;
     height: 16px;
 }
 
-.icon-hoadon {
+.icon-bill {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -50px -48px;
     width: 12px;
     height: 16px;
 }
 
-.icon-aocohoi {
+.icon-pond {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -66px -305px;
     width: 12px;
     height: 15px;
 }
 
-.icon-hoatdong {
+.icon-work {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -129px -272px;
     width: 15px;
     height: 15px;
 }
 
-.icon-muctieu {
+.icon-target {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -81px -273px;
     width: 15px;
     height: 15px;
 }
 
-.icon-chiendich {
+.icon-campaign {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -208px -48px;
     width: 16px;
     height: 16px;
 }
 
-.icon-baocao {
+.icon-report {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -32px -272px;
     width: 16px;
     height: 16px;
 }
 
-.icon-khac {
+.icon-other {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -275px;
     width: 16px;
     height: 16px;
@@ -253,14 +253,3 @@
     margin: 6px;
 }
 
-.boder-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-}
-
-.boder-icon:hover {
-    background-color: #f0f2f4;
-}

@@ -1,8 +1,8 @@
 <template>
-    <div class="menu__item">
-        <div class="icon-banlamviec"></div>
+    <div class="crm-tag" :class="{checked: isChecked}">
+        <slot></slot>
         <div class="context">
-            {{NameTag}}
+            {{tagContent}} 
         </div>
     </div>                 
 </template>
@@ -12,20 +12,28 @@
 export default {
     name: 'BaseTag',
     props: {
-        //ten cua tag
-        NameTag: {
+        //Thiết lập tên của tab
+        tagContent: {
             type: String,
             required: true,
         },
+        //Thiết lập hiệu ứng tab có được chọn hay không
+        checked: {
+            type: Boolean,
+            default: false,
+        },
     },
     computed: {
-        
+        isChecked() {
+            return this.checked
+        },
     },
 }
 </script>
 
 <style>
-    .menu__item {
+
+    .crm-tag {
         cursor: pointer;
         display: flex;
         margin-left: 16px;
@@ -40,7 +48,15 @@ export default {
         font-size: 13px;
     }
 
-    .menu__active {
+    .checked {
         border-bottom: solid 2px #4262F0;
+    }
+
+    .checked > .context {
+        color: #4262F0;
+    }
+
+    .checked > slot {
+        color: #4262F0;
     }
 </style>

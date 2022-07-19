@@ -33,7 +33,6 @@
 export default {
     name: 'TheSidebarRight',
     components: {
-
     }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <div class="base-checkbox">
-    <input type="checkbox" class="checkbox" id="checkboxId">
-    <span class="title-checkbox">{{CheckboxText}}</span>
+  <div class="crm-checkbox">
+    <input type="checkbox" class="checkbox">
+    <span class="title-checkbox">{{filterContent}}</span>
   </div>
 </template>
 
@@ -12,13 +12,15 @@ export default {
 
     },
     props: {
-        CheckboxText: {
+      //sửa lại cách đặt tên
+      
+        filterContent: {
             type : String,
             default: "CheckBox",
         },
-        Checked: {
-          type: String,
-          default: "false",
+        checked: {
+            type : Boolean,
+            default: false,
         },
     },
     computed: {
@@ -26,23 +28,13 @@ export default {
       * Thiết lập trang trạng thái checkbox
       * Author: DHTHINH (18/07/2022)
       */
-      // setChecked() {
-      //   var getCheckbox = document.getElementById('checkboxId');
-      //   console.log(getCheckbox);
-      //   if(this.Checked == 'true') {
-      //     document.getElementById("checkboxId").checked = true;
-      //   }
-      //   else {
-      //     document.getElementById("checkboxId").checked = false;
-      //   }
-      //   return getCheckbox;
-      // }
+    
     }
 }
 </script>
 
 <style>
-    .base-checkbox {
+    .crm-checkbox {
       display: flex;
       padding: 7px 0px;
     }

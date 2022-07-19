@@ -9,7 +9,7 @@
                     <BaseTextField class="input-center" 
                     placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng" 
                     :isIconSearch="true"
-                    width="275px"
+                    width="320px"
                     />
                 </div>
                 <div class="sidebar__right">
@@ -38,131 +38,35 @@
             </div>
                 
             <div class="menu">
-                <BaseTags NameTag="Bàn làm việc"/>
-                <div class="menu__item menu__active">
-                    <div class="icon-tiemnang">
-                            
-                    </div>
-                    <div class="context">
-                        Tiềm năng
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-chaohang">
-                            
-                    </div>
-                    <div class="context">
-                        Chào hàng
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-lienhe">
-                            
-                    </div>
-                    <div class="context">
-                        Liên hệ
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-khachhang">
-                            
-                    </div>
-                    <div class="context">
-                        Khách hàng
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-cohoi">
-                            
-                    </div>
-                    <div class="context">
-                        Cơ hội
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-baogia">
-                            
-                    </div>
-                    <div class="context">
-                        Báo giá
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-donhang">
-                            
-                    </div>
-                    <div class="context">
-                        Đơn hàng
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-hoadon">
-                            
-                    </div>
-                    <div class="context">
-                        Hóa đơn
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-aocohoi">
-                            
-                    </div>
-                    <div class="context">
-                        Ao cơ hội
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-hoatdong">
-                            
-                    </div>
-                    <div class="context">
-                        Hoạt động
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-muctieu">
-                            
-                    </div>
-                    <div class="context">
-                        Mục tiêu
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-chiendich">
-                            
-                    </div>
-                    <div class="context">
-                        Chiến dịch
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-baocao">
-                            
-                    </div>
-                    <div class="context">
-                        Báo cáo
-                    </div>
-                </div>
-                <div class="menu__item">
-                    <div class="icon-khac">
-                            
-                    </div>
-                    <div class="context">
-                        Khác
-                    </div>
-                </div>
+                <BaseTags
+                v-for="tab in tabs"
+                :key="tab.id"
+                :tagContent="tab.contentTab"
+                :checked="tab.checked"
+                >
+                    <div class="icon-dashboard"></div>
+                </BaseTags>
             </div>
         </div>
 </template>
 
 <script>
 import BaseTags from "../base/BaseTags.vue";
+import { ref } from 'vue'
+import ListTag from '../../constants/ListTab'
 import BaseTextField from '../base/BaseTextField.vue'
 export default {
     name: 'TheMenu',
     components: {
         BaseTextField, BaseTags
+    },
+
+    setup() {
+    const tabs = ref(ListTag)
+    return {
+      tabs,
     }
+  },
 }
 </script>
 
@@ -226,7 +130,17 @@ export default {
         font-size: 13px;
     }
 
-    .menu__active {
-        border-bottom: solid 2px #4262F0;
+    
+
+    .boder-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .boder-icon:hover {
+        background-color: #f0f2f4;
     }
 </style>

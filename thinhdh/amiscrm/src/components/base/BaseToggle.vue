@@ -1,8 +1,8 @@
 <template>
-    <div class="toggleWrapper" :class="{switchDisable : isDisabled}">
-        <div class="toggleTitle">{{switchText}}</div>
-        <input type="checkbox" id="switchToggle"  class="switch-toggle"
-        :class="{SwitchCheckFunction : SwitchCheckFunction}"
+    <div class="crm-toggleWrapper" :class="{switchDisable : isDisabled}">
+        <div class="crm-toggleTitle">{{switchText}}</div>
+        <input type="checkbox" id="switchToggle" class="crm-switch-toggle"
+        :class="{switchCheckFunction : switchCheckFunction}"
         />
         <div class="toggleStatus" id="switchStatus">Off</div>
     </div>
@@ -30,21 +30,21 @@ export default {
          * Kiểm tra trạng của check box để đưa ra text on or off
          * Author: DHTHINH (18/07/2022)
          */
-        SwitchCheckFunction() {
-            var checkbox_toggle = document.getElementById("switchToggle");
-            console.log(checkbox_toggle);
-            if (checkbox_toggle != null) {
-                checkbox_toggle.addEventListener('change', function(){
-                if (document.getElementById("switchToggle").checked == true){
-                    document.getElementById("switchStatus").innerHTML = "On";
-                }
-                if (document.getElementById("switchToggle").checked == false){
-                    document.getElementById("switchStatus").innerHTML = "Off";
-                }
-            })
-            }
-            return checkbox_toggle;
-        },
+        // switchCheckFunction() {
+        //     var checkbox_toggle = document.getElementsById("switchToggle");
+        //     console.log(checkbox_toggle);
+        //     if (checkbox_toggle != null) {
+        //         checkbox_toggle.addEventListener('change', function(){
+        //         if (document.getElementsById("switchToggle").checked == true){
+        //             document.getElementsById("switchStatus").innerHTML = "On";
+        //         }
+        //         if (document.getElementsById("switchToggle").checked == false){
+        //             document.getElementsById("switchStatus").innerHTML = "Off";
+        //         }
+        //     })
+        //     }
+        //     return checkbox_toggle;
+        // },
         isDisabled() {
             return this.switchDisabled ? true : false
         },
@@ -56,12 +56,12 @@ export default {
     :root {
         --transition-effect: 0.25s cubic-bezier(.16,-1.09,.94,2.16) 0.2s;
     }
-    .toggleWrapper {
+    .crm-toggleWrapper {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .switch-toggle {
+    .crm-switch-toggle {
         margin: 0;
         cursor: pointer;
         width: 28px;
@@ -103,7 +103,7 @@ export default {
         margin-left: 8px;
     }
 
-    .toggleTitle {
+    .crm-toggleTitle {
         margin-right: 10px;
     }
 </style>

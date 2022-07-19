@@ -19,37 +19,12 @@
             </div>
             <ul class="list-filter">
                 <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Thẻ"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Xưng hô"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Họ và tên"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Chức danh"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="ĐT di động"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Email"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Địa chỉ"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Tỉnh/Thành phố"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Quận/Huyện"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Phường/Xã"/>
-                </li>
-                <li class="filter-item">
-                    <BaseCheckbox CheckboxText="Lĩnh vực"/>
+                    <BaseCheckbox
+                    v-for = "filter in filters"
+                    :key="filter.id"
+                    :filterContent="filter.contentFilter"
+                    :checked="filter.checked"
+                    />
                 </li>
             </ul>
         </div>
@@ -57,10 +32,18 @@
 
 <script>
 import BaseCheckbox from "../base/BaseCheckbox.vue";
+import { ref } from "vue";
+import ListFilter from "../../constants/ListFilter"
 export default {
     name: 'TheSidebarLeft',
     components: {
         BaseCheckbox
+    },
+    setup() {
+        const filters = ref(ListFilter)
+        return {
+            filters,
+        }
     }
 }
 </script>
