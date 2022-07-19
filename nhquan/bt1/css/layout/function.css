@@ -1,0 +1,29 @@
+.function{
+    width: 100%;
+    height:64px;
+    background-color:#D3D7DE;
+    display: flex;
+}
+.function__left{
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.function__left__item{
+    display: flex;
+    margin-right: 10px;
+}
+.function__left__item__text1{
+    margin-right: 10px
+}
+.function__left__item__text2{
+    margin-right: 10px
+}
+.function__left__item__text1{
+    font-size: 14px;
+    color: rgb(1, 6, 19);
+    font-weight: 800;
+}
+.function__left__item__text2:hover{
+    color:rgb(43, 78, 238)
+}
