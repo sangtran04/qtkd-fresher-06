@@ -6,7 +6,7 @@
 
 <style scoped>
 .side-bar-right {
-  border: 1px solid #000;
   grid-row: 3 / 4;
+  border-left: 1px solid rgb(222, 225, 230);
 }
 </style>

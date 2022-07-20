@@ -1,13 +1,18 @@
 <template>
-  <div class="content">content</div>
+  <div class="content">
+    <BaseToastMessage toastMessage="message" type="success" />
+  </div>
 </template>
 
-<script></script>
+<script>
+import BaseToastMessage from '../base/BaseToastMessage.vue'
+export default { components: { BaseToastMessage } }
+</script>
 
 <style scoped>
 .content {
-  border: 1px solid yellow;
   grid-row: 3 / 4;
   grid-column: auto;
+  background-color: #bbbb;
 }
 </style>

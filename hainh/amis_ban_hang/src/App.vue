@@ -29,6 +29,7 @@ export default {
 <style>
 @import url('./style/icons.css');
 @import url('./style/font.css');
+@import url('./style/color.css');
 /* reset css */
 * {
   padding: 0;

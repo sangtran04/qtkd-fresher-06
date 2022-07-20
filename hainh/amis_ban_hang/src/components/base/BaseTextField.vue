@@ -84,9 +84,10 @@ export default {
   height: 32px;
   padding: 0 16px;
   border-radius: 4px;
-  border: 1px solid #d3d7de;
+  border: none;
   outline: none;
-  width: 300px;
+  width: 320px;
+  background-color: #f0f2f4;
 }
 
 .base-input-text-field input:hover {
@@ -95,6 +96,7 @@ export default {
 
 .base-input-text-field input:focus {
   border: 1px solid #4262f0;
+  background-color: #fff;
 }
 
 .base-input-text-field input[readonly] {
