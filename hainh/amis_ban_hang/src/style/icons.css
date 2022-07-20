@@ -301,3 +301,32 @@
 	width: 16px;
 	height: 16px;
 }
+
+.icon-information {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -368px -144px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-warning {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -368px -128px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-success {
+    background: url(http://localhost:8080/img/icon_collection.141e6dee.svg) no-repeat -384px -144px;
+	width: 16px;
+	height: 16px;
+}
+.icon-error {
+    background: url(http://localhost:8080/img/icon_collection.141e6dee.svg) no-repeat -384px -128px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-multip-white {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -320px -473px;
+	width: 16px;
+	height: 16px;
+}
