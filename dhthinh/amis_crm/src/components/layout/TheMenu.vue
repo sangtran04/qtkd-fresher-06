@@ -1,0 +1,146 @@
+<template>
+    <div class="header">
+            <div class="header__sidebar">
+                <div class="sidebar__left">
+                    <div class="icon-toggle"></div>
+                    <div class="logo-amis"></div>
+                </div>
+                <div class="sidebar__center">
+                    <BaseTextField class="input-center" 
+                    placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng" 
+                    :isIconSearch="true"
+                    width="320px"
+                    />
+                </div>
+                <div class="sidebar__right">
+                    <div class="boder-icon">
+                        <div class="icon icon-avatar"></div>
+                    </div>
+                    <div class="boder-icon">
+                        <div class="icon icon-help"></div>
+                    </div>
+                    <div class="boder-icon">
+                        <div class="icon icon-noti"></div>
+                    </div>
+                    <div class="boder-icon">
+                        <div class="icon icon-setting"></div>
+                    </div>
+                    <div class="boder-icon">
+                        <div class="icon icon-calender"></div>
+                    </div>
+                    <div class="boder-icon">
+                        <div class="icon icon-box"></div>
+                    </div>
+                    <div class="boder-icon">
+                        <div class="icon icon-facebook"></div>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="menu">
+                <BaseTags
+                v-for="tab in tabs"
+                :key="tab.id"
+                :tagContent="tab.contentTab"
+                :checked="tab.checked"
+                >
+                    <div class="icon-dashboard"></div>
+                </BaseTags>
+            </div>
+        </div>
+</template>
+
+<script>
+import BaseTags from "../base/BaseTags.vue";
+import { ref } from 'vue'
+import ListTag from '../../constants/ListTab'
+import BaseTextField from '../base/BaseTextField.vue'
+export default {
+    name: 'TheMenu',
+    components: {
+        BaseTextField, BaseTags
+    },
+
+    setup() {
+    const tabs = ref(ListTag)
+    return {
+      tabs,
+    }
+  },
+}
+</script>
+
+<style>
+    .header {
+    display: flex;
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    flex-direction: column;
+    height: 84px;
+    }
+    .logo-amis {
+        background-image: url('../../assets/Resource/img/Logo_Ban_hang.svg');
+        background-repeat: no-repeat;
+        height: 30px;
+        width: 100%;
+        margin-left: 16px;
+    }
+    .header__sidebar {
+        display: flex;
+        align-items: center;
+        height: 50%;
+    }
+
+    .sidebar__left {
+        display: flex;
+        width: 240px;
+    }
+
+    .sidebar__center {
+        flex: 1;
+        text-align: center;
+    }
+
+    .sidebar__right {
+        display: flex;
+        width: 320px;
+        align-items: center;
+        flex-direction: row-reverse;
+        padding-right: 16px;
+    }
+
+    .menu {
+        display: flex;
+        height: 50%;
+        align-items: center;
+    }
+
+    .menu__item {
+        cursor: pointer;
+        display: flex;
+        margin-left: 16px;
+        height: 42px;
+        align-items: center;
+    }
+
+    .context {
+        color: #1F2229;
+        margin-left: 4px;
+        font-size: 13px;
+    }
+
+    
+
+    .boder-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+    }
+
+    .boder-icon:hover {
+        background-color: #f0f2f4;
+    }
+</style>
