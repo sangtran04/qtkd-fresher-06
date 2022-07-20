@@ -29,6 +29,7 @@
           :key="tab.id"
           :tabContent="tab.contentTab"
           :checked="tab.checked"
+          @click="handleClickTab(tab.id)"
         >
           <div
             class="icon-dashboard m-tab__icon"
@@ -43,7 +44,6 @@
 <script>
 import BaseTextField from '../base/BaseTextField.vue'
 import BaseTab from '../base/BaseTab.vue'
-import { ref } from 'vue'
 import TAB_LIST from '../../constants/tab-list'
 export default {
   components: {
@@ -51,11 +51,18 @@ export default {
     BaseTab,
   },
 
-  setup() {
-    const tabs = ref(TAB_LIST)
+  data() {
+    const tabs = TAB_LIST
     return {
       tabs,
     }
+  },
+  methods: {
+    handleClickTab(tabId) {
+      for (let i = 0; i < this.tabs.length; i++) {
+        this.tabs[i].checked = tabId === this.tabs[i].id
+      }
+    },
   },
 }
 </script>
