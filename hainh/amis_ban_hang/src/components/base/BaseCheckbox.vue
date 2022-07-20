@@ -10,7 +10,7 @@ export default {
   props: {
     // id của button
     id: {
-      type: String,
+      type: Number,
       required: true,
     },
   },

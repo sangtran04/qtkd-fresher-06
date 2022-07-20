@@ -295,3 +295,9 @@
 	width: 16px;
 	height: 16px;
 }
+
+.icon-multip{
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -80px -16px;
+	width: 16px;
+	height: 16px;
+}
