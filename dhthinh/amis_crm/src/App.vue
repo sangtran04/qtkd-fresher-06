@@ -5,6 +5,9 @@
     <TheSidebarLeft />
     <TheContent />
     <TheSidebarRight />
+    <BaseToastMessage toastContent="Đăng nhập thành công" backgroundColor="#31B491" :isShow=true>
+    <div class='icon-accept'></div>
+    </BaseToastMessage>
   </div>
 </template>
 
@@ -14,6 +17,7 @@ import TheFunction from "./components/layout/TheFunction.vue";
 import TheSidebarLeft from "./components/layout/TheSidebarLeft.vue";
 import TheContent from "./components/layout/TheContent.vue";
 import TheSidebarRight from "./components/layout/TheSidebarRight.vue";
+import BaseToastMessage from "./components/base/BaseToastMessage.vue"
 
 export default {
   name: 'App',
@@ -22,7 +26,8 @@ export default {
     TheFunction,
     TheSidebarLeft,
     TheContent,
-    TheSidebarRight
+    TheSidebarRight,
+    BaseToastMessage
   }
 }
 </script>

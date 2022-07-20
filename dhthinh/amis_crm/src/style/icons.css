@@ -251,3 +251,32 @@
     margin: 6px;
 }
 
+.icon-close {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -84px -20px;
+	width: 8px;
+	height: 8px;
+}
+
+.icon-infomation {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -368px -144px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-warning {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -368px -128px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-accept {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -384px -144px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-error {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -384px -128px;
+	width: 16px;
+	height: 16px;
+}
