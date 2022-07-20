@@ -1,0 +1,255 @@
+.icon {
+	margin-left: 10px;
+}
+.icon-toggle {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0px -335px;
+	width: 24px;
+	height: 24px;
+    margin-left: 10px;
+}
+
+.icon-change {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0 -272px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-facebook {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -288px -319px;
+    width: 16px;
+    height: 18px;
+}
+
+.icon-box {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -243px -411px;
+    width: 19px;
+    height: 20px;
+}
+
+.icon-calender {
+	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -123px -339px;
+    width: 18px;
+    height: 20px;
+}
+
+.icon-noti {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -75px -339px;
+    width: 18px;
+    height: 20px;
+}
+
+.icon-setting {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -98px -339px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-help {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -218px -363px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-avatar {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -144px -385px;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-dashboard {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0 -272px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-potential {
+    background: url('../assets/Resource/img/icon_collection.svg')no-repeat -160px -289px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-offer {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -16px -272px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-contact {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -129px -48px;
+    width: 14px;
+    height: 16px;
+}
+
+.icon-client {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -112px -48px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-opportunity {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -80px -48px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-quote {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -66px -48px;
+    width: 12px;
+    height: 16px;
+}
+
+.icon-order {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -144px -48px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-bill {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -50px -48px;
+    width: 12px;
+    height: 16px;
+}
+
+.icon-pond {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -66px -305px;
+    width: 12px;
+    height: 15px;
+}
+
+.icon-work {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -129px -272px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon-target {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -81px -273px;
+    width: 15px;
+    height: 15px;
+}
+
+.icon-campaign {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -208px -48px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-report {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -32px -272px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-other {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -275px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-dropdown {
+	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -46px -31px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-refresh {
+	margin-left: 10px;
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -351px -32px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.icon-plus {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -242px -128px;
+    width: 16px;
+    height: 16px;
+	background-color: #405eec;
+	margin-top: 8px;
+	margin-left: 10px;
+}
+
+.icon-down {
+	background: url(../assets/Resource/img/icon_collection.svg) no-repeat -77px -160px;
+    width: 16px;
+    height: 16px;
+}
+
+.icon-future {
+	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -291px -371px;
+	width: 18px;
+	height: 4px;
+}
+
+.icon-threecol {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -270px -160px;
+    width: 15px;
+    height: 16px;
+}
+.icon-up {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -322px -37px;
+	width: 13px;
+	height: 7px;
+    margin-right: 4px;
+}
+
+.icon-search {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -32px 0;
+    width: 17px;
+    height: 17px;
+}
+.icon--pre1 {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -293px -34px;
+    width: 7px;
+    height: 13px;
+}
+
+.icon--pre2 {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -115px -226px;
+    width: 9px;
+    height: 13px;
+}
+
+.icon--next1 {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -308px -34px;
+    width: 7px;
+    height: 13px;
+}
+
+.icon--next2 {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -132px -226px;
+    width: 9px;
+    height: 13px;
+}
+
+.icon-call {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -177px -322px;
+	width: 15px;
+	height: 15px;
+}
+
+.icon-date {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -194px -321px;
+	width: 12px;
+	height: 16px;
+}
+
+.icon-birth {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -209px -321px;
+	width: 14px;
+	height: 16px;
+}
+
+.icon-email {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0 -324px;
+	width: 16px;
+	height: 11px;
+}
+
+.icon-notebook {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -272px -112px;
+    width: 16px;
+	height: 16px;
+    margin: 6px;
+}
+
