@@ -1,0 +1,26 @@
+.navigate {
+    width: 100%;
+    background-color: white;
+    height: 56px;
+    position: absolute;
+    top: calc(100% - 56px);
+    box-sizing: border-box;
+    border-top: 1px solid #D3D7DE;
+    border-bottom: 1px solid #D3D7DE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.navigate__left {
+    font-weight: 500;
+}
+
+.navigate__right {
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    justify-content: space-between;
+}
