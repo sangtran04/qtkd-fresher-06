@@ -79,7 +79,7 @@ export default {
 
 .m-top {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   height: 4.4rem;
   justify-content: space-between;
 }
