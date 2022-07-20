@@ -43,7 +43,7 @@
 import BaseTextField from '../base/BaseTextField.vue'
 import BaseTab from '../base/BaseTab.vue'
 import { ref } from 'vue'
-import tabsSlider from '../../constants/tabsSlider'
+import TAB_LIST from '../../constants/tab-list'
 export default {
   components: {
     BaseTextField,
@@ -51,7 +51,7 @@ export default {
   },
 
   setup() {
-    const tabs = ref(tabsSlider)
+    const tabs = ref(TAB_LIST)
     return {
       tabs,
     }
@@ -70,8 +70,9 @@ export default {
 .menu {
   grid-column: 1 / 4;
   grid-row: 1;
-  border: 1px solid red;
   padding-left: 1rem;
+  box-shadow: 0 2px 4px rgba(31, 34, 41, 0.16);
+  z-index: 1;
 }
 
 .m-top {

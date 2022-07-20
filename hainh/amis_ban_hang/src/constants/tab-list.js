@@ -1,4 +1,4 @@
-const tabsSlider = [
+const TAB_LIST = [
   {
     id: 1,
     contentTab: 'Bàn làm viec',
@@ -66,4 +66,4 @@ const tabsSlider = [
   //   },
 ]
 
-export default tabsSlider
+export default TAB_LIST
