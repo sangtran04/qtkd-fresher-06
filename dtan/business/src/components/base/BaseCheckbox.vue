@@ -11,7 +11,7 @@ export default {
     // id của checkbox
     id: {
       type: Number,
-      required: true,
+      // required: true,
     },
   },
 }
@@ -22,6 +22,7 @@ export default {
   display: none;
 }
 .base__checkbox > label {
+  box-sizing: border-box;
   display: block;
   width: 16px;
   height: 16px;
@@ -43,8 +44,7 @@ input[type='checkbox']:checked + label {
   width: 16px;
   height: 16px;
   cursor: pointer;
-  background: transparent url(../../assets/img/icon_collection.svg)
-    no-repeat -176px -16px;
+  background: transparent url(../../assets/img/icon_collection.svg) no-repeat -176px -16px;
   border: none;
 }
 </style>

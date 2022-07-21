@@ -2,102 +2,102 @@
 <div class="content">
     <div class="content__left">
         <div class="content__left__title">
-            <div class="icon--up icon__content--positon"></div>
+            <div class="icon--downblack--small icon__content--positon"></div>
             BỘ LỌC ĐÃ LƯU
         </div>
             <div class="content__left__title">
-                <div class="icon--search" style="position: absolute;top: 18px;left: calc(240px - 36px);"></div>
+                <div class="icon--search" style="position: absolute;top: 10px;left: calc(249px - 36px);"></div>
                 LỌC THEO TIỀM NĂNG
         </div>
             <div class="checkbox__list">
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Thẻ</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Xưng hô</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Họ và tên</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Chức danh</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>ĐT di động</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>ĐT cơ quan</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Email cơ quan</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Email cá nhân</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Tổ chức</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Địa chỉ</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Tỉnh/Thành phố</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Quận/Huyện</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Phường/Xã</label>
                 </div>
-                <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                <!-- <div class="checkbox__item">
+                    <BaseCheckbox/>
                     <label>Nguồn gốc</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Loại hình</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Lĩnh vực</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Mô tả</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Bố cục</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Chủ sở hữu</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Doanh thu</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Dùng chung</label>
                 </div>
                 <div class="checkbox__item">
-                    <input class="checkbox" type="checkbox" name="" id="">
+                    <BaseCheckbox/>
                     <label>Facebook</label>
-                </div>
+                </div> -->
         </div>
         <div class="slideleft">
                 <div class="icon--slideleft"></div>
@@ -108,69 +108,66 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th class="text-align-right" style="width: 50px">
-                            <input class="checkbox" type="checkbox" name="" id=""></th>
-                            <th style="width: 100px" class="text-align-left">Thẻ</th>
-                            <th class="text-align-left" style="width: 80px;">Xưng hô</th>
-                            <th class="text-align-left" style="width: 140px;">Họ và tên</th>
+                            <th style="width: 36px">
+                                <div class="parent__tdicon">
+                                    <div class="icon--tdtable"></div>
+                                </div>
+                            </th>
+                            <th style="width: 28px;" class="text-align-right">
+                            <BaseCheckbox  style="margin: 0 12px;"/></th>
+                            <th style="width: 150px" class="text-align-left">Thẻ</th>
+                            <th class="text-align-left" style="width: 100px;">Xưng hô</th>
+                            <th class="text-align-left" style="width: 180px;">Họ và tên</th>
                             <th class="text-align-left" style="width: 120px;">Chức danh</th>
-                            <th class="text-align-left" style="width: 100px;">ĐT di động</th>
-                            <th class="text-align-left" style="width: 100px;">ĐT cơ quan</th>
-                            <th class="text-align-left" style="width: 120px;">Email cơ quan</th>
-                            <th class="text-align-left" style="width: 120px;">Email cá nhân</th>
-                            <th class="text-align-left" style="width: 100px;">Tổ chức</th>
-                            <th class="text-align-left" style="width: 100px;">Địa chỉ</th>
-                            <th class="text-align-left" style="width: 100px;">Tỉnh/Thành phố</th>
-                            <th class="text-align-left" style="width: 100px;">Quận/Huyện</th>
-                            <th class="text-align-left" style="width: 100px;">Phường/Xã</th>
-                            <th class="text-align-left" style="width: 100px;">Nguồn gốc</th>
-                            <th class="text-align-left" style="width: 100px;">Loại hình</th>
-                            <th class="text-align-left" style="width: 100px;">Lĩnh vực</th>
-                            <th class="text-align-left" style="width: 100px;">Mô tả</th>
-                            <th class="text-align-left" style="width: 100px;">Bố cục</th>
-                            <th class="text-align-left" style="width: 100px;">Chủ sở hữu</th>
-                            <th class="text-align-left" style="width: 100px;">Doanh thu</th>
-                            <th class="text-align-left" style="width: 100px;">Dùng chung</th>
-                            <th class="text-align-left" style="width: 100px;">Facebook</th>
+                            <th class="text-align-left" style="width: 150px;">ĐT di động</th>
+                            <th class="text-align-left" style="width: 150px;">ĐT cơ quan</th>
+                            <th class="text-align-left" style="width: 180px;">Email cơ quan</th>
+                            <th class="text-align-left" style="width: 180px;">Email cá nhân</th>
+                            <th class="text-align-left" style="width: 300px;">Tổ chức</th>
+                            <th class="text-align-left" style="width: 200px;">Địa chỉ</th>
+                            <th class="text-align-left" style="width: 120px;">Tỉnh/Thành phố</th>
+                            <th class="text-align-left" style="width: 150px;">Quận/Huyện</th>
+                            <th class="text-align-left" style="width: 150px;">Phường/Xã</th>
+                            <th class="text-align-left" style="width: 200px;">Nguồn gốc</th>
+                            <th class="text-align-left" style="width: 180px;">Loại hình</th>
+                            <th class="text-align-left" style="width: 180px;">Lĩnh vực</th>
+                            <th class="text-align-left" style="width: 200px;">Mô tả</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="text-align-right" style="width: 50px">
-                            <input class="checkbox" type="checkbox" name="" id=""></td>
+                            <td style="width: 36px"></td>
+                            <th style="width: 28px;" class="text-align-right">
+                            <BaseCheckbox style="margin: 0 12px;"/></th>
                             <td style="width: 100px" class="text-align-left"></td>
-                            <td class="text-align-left" style="width: 80px;">Anh</td>
-                            <td class="text-align-left text--blue" style="width: 140px;">Đặng Thành An</td>
+                            <td class="text-align-left" style="width: 100px;">Anh</td>
+                            <td class="text-align-left text--blue" style="width: 180px;">Đặng Thành An</td>
                             <td class="text-align-left" style="width: 120px;">Trưởng phòng</td>
-                            <td class="text-align-left text--blue" style="width: 100px;">
+                            <td class="text-align-left text--blue" style="width: 150px;">
                                 <div class="text--icon">
                                     <div class="icon--tblcall"></div>
                                     <div>0339541266</div>
                                 </div>
                             </td>
-                            <td class="text-align-left text--blue" style="width: 100px;">
+                            <td class="text-align-left text--blue" style="width: 150px;">
                                 <div class="text--icon">
                                     <div class="icon--tblcall"></div>
                                     <div>0339541266</div>
                                 </div>
                             </td>
-                            <td class="text-align-left text--blue" style="width: 120px;">dangthanhan.c2ap@mail.com</td>
-                            <td class="text-align-left text--blue" style="width: 120px;">dangthanhan.c2ap@gmail.com</td>
-                            <td class="text-align-left" style="width: 100px;">Trùm mõm</td>
-                            <td class="text-align-left" style="width: 100px;">Xóm 13</td>
-                            <td class="text-align-left" style="width: 100px;">Nam Định</td>
-                            <td class="text-align-left" style="width: 100px;">Trực Ninh</td>
-                            <td class="text-align-left" style="width: 100px;">Xã Trực Thái</td>
-                            <td class="text-align-left" style="width: 100px;">Good boy</td>
-                            <td class="text-align-left" style="width: 100px;">Dịch vụ</td>
-                            <td class="text-align-left" style="width: 100px;">Kinh tế</td>
-                            <td class="text-align-left" style="width: 100px;">it so fking nice</td>
-                            <td class="text-align-left" style="width: 100px;">3 phần</td>
-                            <td class="text-align-left" style="width: 100px;">Đặng Thành An</td>
-                            <td class="text-align-left" style="width: 100px;">30000000000</td>
-                            <td class="text-align-left" style="width: 100px;">Không</td>
-                            <td class="text-align-left" style="width: 100px;">Đặng Thành An</td>
+                            <td class="text-align-left text--blue" style="width: 180px;">dangthanhan.c2ap@mail.com</td>
+                            <td class="text-align-left text--blue" style="width: 180px;">dangthanhan.c2ap@gmail.com</td>
+                            <td class="text-align-left" style="width: 300px;">Trùm mõm</td>
+                            <td class="text-align-left" style="width: 200px;">Xóm 13</td>
+                            <td class="text-align-left" style="width: 120px;">Nam Định</td>
+                            <td class="text-align-left" style="width: 150px;">Trực Ninh</td>
+                            <td class="text-align-left" style="width: 150px;">Xã Trực Thái</td>
+                            <td class="text-align-left" style="width: 200px;">Good boy</td>
+                            <td class="text-align-left" style="width: 180px;">Dịch vụ</td>
+                            <td class="text-align-left" style="width: 180px;">Kinh tế</td>
+                            <td class="text-align-left" style="width: 200px;">it so fking nice</td>
                         </tr>
+                        
                     </tbody>
                 </table>
                
@@ -223,13 +220,14 @@
             </div>
         </div>
 </div>
-<BaseTag style="margin-left: 100px" contentText="Chị" width="50px" hasIconClose/>
+<BaseTag style="display: none;" contentText="Chị" width="50px" hasIconClose/>
 </template>
 <script>
+import BaseCheckbox from '../../components/base/BaseCheckbox.vue'
 import BaseTag from '../../components/base/BaseTag.vue'
 export default {
     components: {
-        BaseTag
+        BaseTag,BaseCheckbox
     }
     
 }

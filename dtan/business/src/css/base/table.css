@@ -1,5 +1,5 @@
 .table {
-    width: 2600px;
+    width: 3040px;
     border-spacing: unset;
     border: unset;
     border-collapse: collapse;
@@ -28,15 +28,10 @@
 }
 
 .table tr {
+    box-sizing: border-box;
     height: 40px;
     border-bottom: 0.5px solid #D3D7DE;
     cursor: pointer;
-}
-
-.table td,
-th {
-    padding: 0 8px;
-    border: none;
 }
 
 .table__checkbox {
@@ -46,20 +41,6 @@ th {
 
 .table tbody tr:hover {
     background-color: #E7EBFD;
-}
-
-.th__120 {
-    width: 160px;
-    background-color: red;
-    height: 48px;
-}
-
-.th__80 {
-    width: 80px;
-}
-
-.th__60 {
-    width: 60px;
 }
 
 .text-align-left {
@@ -86,4 +67,16 @@ table tr.row--selected {
 
 .m-table thead {
     position: sticky;
+}
+
+.parent__tdicon {
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px #1f222929;
 }

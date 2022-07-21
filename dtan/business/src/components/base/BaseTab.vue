@@ -54,6 +54,7 @@ export default {
 }
 .item__text--selected{
     color:#4262F0;
+    font-weight: 500;
 }
 
 .list__item:hover {
@@ -67,10 +68,10 @@ export default {
 
 .item--selected {
     position: absolute;
-    top: 38px;
+    top: 37px;
     left: 18px;
     width: calc(100% - 32px);
-    border-bottom: 2px solid #4262F0;
+    border-bottom: 4px solid #4262F0;
     width: 82px;
 }
 </style>

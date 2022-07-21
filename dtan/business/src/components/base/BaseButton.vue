@@ -2,9 +2,11 @@
   <div class="baseButton" :class="{'disabled': isDisabled }">
     <button class="button" :class="
     [{'button__icon':hasIconFunc},
-    {'button__primary--blue':selected},
     {'btn--cboleft': hasBorderRightFunc},
-    {'btn--cboright': hasBorderLeftFunc}
+    {'btn--cboright': hasBorderLeftFunc},
+    {'button__primary--blue': hasHoverAndActivePrimaryBlue},
+    {'button__secondary--outlineblue': hasSecondaryOutLineFunc},
+    {'button__tertiary':hasTertiaryFunc}
     ]">
       <div class="buttonContent">{{ buttonText }}</div>
     </button>
@@ -12,11 +14,6 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      selected: true,
-    };
-  },
   props: {
     buttonText: {
       type: String,
@@ -44,6 +41,18 @@ export default {
       type: Boolean,
       default: false,
     },
+    hasSecondaryOutLine:{
+      type: Boolean,
+      default: false,
+    },
+    hasTertiary:{
+      type: Boolean,
+      default: false,
+    },
+    hasHoverAndActivePrimaryBlue:{
+      type: Boolean,
+      default: false,
+    }
   },
   
   computed: {
@@ -59,10 +68,20 @@ export default {
     hasBorderRightFunc(){
         return this.hasBorderRight;
     },
+    hasSecondaryOutLineFunc(){
+      return this.hasSecondaryOutLine;
+    },
+    hasTertiaryFunc(){
+      return this.hasTertiary;
+    },
+    hasHoverAndActivePrimaryBlueFunc(){
+      return this.hasHoverAndActivePrimaryBlue;
+    }
   },
 };
 </script>
 <style>
+
 .baseButton .disable {
   background-color: #4262f0;
 }
@@ -79,7 +98,19 @@ export default {
   border: none;
   background-color: v-bind(backgroundColor);
 }
-
+.button__tertiary{
+  color: #1F2229 !important;
+  border: 1px solid #D3D7DE !important;
+  font-weight: 550 !important;
+}
+.button__tertiary:hover{
+  border: 1px solid #D3D7DE;
+  background-color:#f0f2f4;
+}
+.button__tertiary:active{
+  border: 1px solid #D3D7DE;
+  background-color:#D3D7DE;
+}
 .button__primary--blue {
   background-color: #4262f0;
 }

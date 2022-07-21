@@ -1,28 +1,39 @@
 .menu {
+    width: 100%;
     box-sizing: border-box;
     height: 84px;
     box-shadow: 0 2px 4px #1f222929;
+    /* position: fixed; */
+    right: 0;
+    left: 0;
+    border-width: 0 0 1px;
+    background-color: white;
+    z-index: 10;
 }
 
 .menu__row1 {
-    height: 42px;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .menu__row__left {
+    margin-left: 10px;
     display: flex;
-    width: 240px;
+    align-items: center;
+    width: 190px;
 }
 
 .menu__row__mid {
     position: relative;
+    width: 320px;
 }
 
 .menu__row__right {
     margin-right: 10px;
-    width: 280px;
+    width: 342px;
     display: flex;
     align-items: center;
     justify-content: space-between;

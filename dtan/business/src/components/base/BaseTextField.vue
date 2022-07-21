@@ -19,7 +19,7 @@ export default {
     },
     placeholder: {
       type: String,
-      required: true,
+      // required: true,
     },
     // Chỉ định attribute chỉ đọc cho thẻ input
     readOnly: {
@@ -63,15 +63,14 @@ export default {
 </script>
 <style>
 .input {
+  box-sizing: border-box;
   min-width: v-bind(width);
   height: 32px;
   border-radius: 4px;
   border: 1px solid #ccc;
-  padding: 0 16px;
-  box-sizing: border-box;
-  margin-top: 8px;
+  padding: 8px 16px;
   outline: none;
-  margin-left: 16px;
+  
 }
 
 .input:hover {
@@ -108,6 +107,7 @@ export default {
   margin-top: 0px;
   width: 275px;
   border: none;
+  margin-left: 32px;
 }
 
 .input__icon--search:hover {

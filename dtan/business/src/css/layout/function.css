@@ -7,22 +7,29 @@
 }
 
 .function__left {
-    margin-left: 5px;
+    padding-left: 16px;
     display: flex;
+    align-items: center;
 }
 
 .function__right {
-    margin-right: 10px;
+    margin-right: 16px;
     display: flex;
 }
 
-#select {
-    width: 150px;
-    height: 32px;
-    background-color: rgb(226 228 233);
-    border: none;
-    font-size: 16px;
-    font-weight: 600;
+.function__left__title {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1f2229;
+    margin-right: 4px;
+}
+
+.icon__menu--16 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
 }
 
 .function__left__text {
@@ -39,7 +46,7 @@
     background-color: white;
     border-radius: 4px;
     border: 1px solid #D3D7DE;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .right__threedot--32:hover {

@@ -1,19 +1,15 @@
 .icon--24 {
-    position: relative;
-    top: 13px;
-    left: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 24px;
     height: 24px;
-    margin: 0 4px;
 }
 
 .icon--menu {
     background: url('../../assets/img/icon_collection.svg') no-repeat -3px -341px;
-    width: 24px;
-    height: 24px;
+    width: 18px;
+    height: 16px;
     cursor: pointer;
 }
 
@@ -44,9 +40,7 @@
     height: 32px;
     background-image: url('../../assets/img/Logo_Ban_hang.svg');
     background-repeat: no-repeat;
-    position: absolute;
-    top: 8px;
-    margin: 0 10px;
+    margin-left: 16px;
     cursor: pointer;
 }
 
@@ -97,7 +91,7 @@
 .icon--search {
     position: absolute;
     top: 8px;
-    left: 24px;
+    left: 40px;
     background: url('../../assets/img/icon_collection.svg') no-repeat -32px 0;
     width: 17px;
     height: 17px;
@@ -194,8 +188,6 @@
 }
 
 .icon--refresh {
-    position: relative;
-    top: 6px;
     background: url('../../assets/img/icon_collection.svg') no-repeat -351px -32px;
     width: 16px;
     height: 16px;
@@ -210,6 +202,12 @@
 
 .icon--down {
     background: url('../../assets/img/icon_collection.svg') no-repeat -84px -166px;
+    width: 9px;
+    height: 5px;
+}
+
+.icon--downblack--small {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -52px -38px;
     width: 9px;
     height: 5px;
 }
@@ -342,5 +340,12 @@
     background: url('../../assets/img/icon_collection.svg') no-repeat -323px -476px;
     width: 10px;
     height: 10px;
+    cursor: pointer;
+}
+
+.icon--tdtable {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -0px -0px;
+    width: 16px;
+    height: 16px;
     cursor: pointer;
 }
