@@ -122,13 +122,14 @@ export default {
   display: flex;
   height: 40px;
   align-items: center;
+  margin-top: 2px;
 }
 
 .menu__item {
   cursor: pointer;
   display: flex;
   margin-left: 16px;
-  height: 42px;
+  height: 40px;
   align-items: center;
 }
 

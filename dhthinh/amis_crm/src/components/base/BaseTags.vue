@@ -47,14 +47,19 @@ export default {
     .crm-tag {
         display: flex;
         align-items: center;
-        padding-bottom: 12px;
+        padding-bottom: 10px;
         justify-content: center;
+        box-sizing: border-box;
     }
 
     .tag__context {
         color: #1F2229;
         margin-left: 8px;
         font-size: 13px;
+    }
+    .crm-tags.tag__active {
+        pointer-events: none;
+        cursor: none;
     }
 
     .tag__active {
