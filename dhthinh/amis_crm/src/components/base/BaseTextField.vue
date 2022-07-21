@@ -81,13 +81,14 @@ export default {
   height: 32px;
   padding: 0 16px;
   border-radius: 4px;
-  border: 1px solid #d3d7de;
+  border: 0;
+  /* border: 1px solid #d3d7de; */
   outline: none;
   background-color: rgb(240, 242, 244);
   min-width: v-bind(width);
 }
 .textfield input::placeholder {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .textfield input:hover {

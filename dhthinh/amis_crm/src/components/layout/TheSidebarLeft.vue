@@ -7,9 +7,9 @@
                 <div class="layout__center"></div>
                 <div class="icon-up"></div>
             </div>
-            <div class="count-heading">
+            <!-- <div class="count-heading">
 
-            </div>
+            </div> -->
             <div class="sidebarleft__heading filter-search">
                 <div class="heading">
                     LỌC TIỀM NĂNG THEO
@@ -53,9 +53,9 @@ export default {
         border-right: solid 1px #ccc;
     }
 
-    .count-heading {
+    /* .count-heading {
         height: 32px;
-    }
+    } */
 
     .sidebarleft__heading {
         display: flex;
@@ -63,10 +63,12 @@ export default {
         justify-content: center;
         height: 40px;
         padding: 0 16px;
+        margin: 8px 0px 0px;
+        color: #586074;
     }
 
     .filter-down {
-        margin: 8px 0px 0px;
+       
     }
 
     .filter-search {
@@ -84,6 +86,7 @@ export default {
         list-style: none;
         margin: 0px 0px 0px 0px;
         padding: 0 16px;
+        color: #586074  ;
     }
     .filter-item {
         

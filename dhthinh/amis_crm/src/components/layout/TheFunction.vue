@@ -57,8 +57,11 @@ export default {
 
 .function__title {
     margin-left: 16px;
-    font-weight: bold;
     font-size: 20px;
+    font-weight: 500;
+    font-family: Regular;
+    line-height: 1.428571429;
+    color: #1f2229;
 }
 
 .function__edit {
