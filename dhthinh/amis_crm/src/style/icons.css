@@ -1,6 +1,4 @@
-.icon {
-	margin-left: 10px;
-}
+
 .icon-toggle {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0px -335px;
 	width: 24px;
@@ -198,25 +196,25 @@
     width: 17px;
     height: 17px;
 }
-.icon--pre1 {
+.icon-pre1 {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -293px -34px;
     width: 7px;
     height: 13px;
 }
 
-.icon--pre2 {
+.icon-pre2 {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -115px -226px;
     width: 9px;
     height: 13px;
 }
 
-.icon--next1 {
+.icon-next1 {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -308px -34px;
     width: 7px;
     height: 13px;
 }
 
-.icon--next2 {
+.icon-next2 {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -132px -226px;
     width: 9px;
     height: 13px;
@@ -253,3 +251,32 @@
     margin: 6px;
 }
 
+.icon-close {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -84px -20px;
+	width: 8px;
+	height: 8px;
+}
+
+.icon-infomation {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -368px -144px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-warning {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -368px -128px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-accept {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -384px -144px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-error {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -384px -128px;
+	width: 16px;
+	height: 16px;
+}
