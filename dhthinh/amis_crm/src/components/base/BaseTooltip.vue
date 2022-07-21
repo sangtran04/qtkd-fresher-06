@@ -10,26 +10,26 @@ export default {
       type: String,
       default: "tool tip",
     },
-    isLeft: {
-        type: Boolean,
-        default: "false",
-    },
-    isRight: {
-        type: Boolean,
-        default: "false",
-    },
-    isTop: {
-        type: Boolean,
-        default: "false",
-    },
-    isBottom: {
-        type: Boolean,
-        default: "false",
-    },
+    // isLeft: {
+    //     type: Boolean,
+    //     default: "false",
+    // },
+    // isRight: {
+    //     type: Boolean,
+    //     default: "false",
+    // },
+    // isTop: {
+    //     type: Boolean,
+    //     default: "false",
+    // },
+    // isBottom: {
+    //     type: Boolean,
+    //     default: "false",
+    // },
   },
 
   computed: {
-    
+
   }
 };
 </script>
