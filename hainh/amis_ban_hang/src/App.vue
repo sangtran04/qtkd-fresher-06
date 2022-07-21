@@ -52,7 +52,7 @@ html {
 .grid-layout {
   display: grid;
   grid-template-columns: 240px auto 320px;
-  grid-template-rows: 84px 64px auto;
+  grid-template-rows: 84px 56px auto;
   height: 100vh;
   width: 100vw;
 }

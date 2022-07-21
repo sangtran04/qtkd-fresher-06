@@ -58,6 +58,7 @@ export default {
     }
   },
   methods: {
+    // Đặt sự kiện click cho các tab
     handleClickTab(tabId) {
       for (let i = 0; i < this.tabs.length; i++) {
         this.tabs[i].checked = tabId === this.tabs[i].id
