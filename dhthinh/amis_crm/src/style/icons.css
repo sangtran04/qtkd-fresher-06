@@ -280,3 +280,8 @@
 	width: 16px;
 	height: 16px;
 }
+.icon-close {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -323px -476px;
+    width: 10px;
+    height: 10px;
+}
