@@ -1,185 +1,126 @@
 <template>
-
-        <button class="button-basic">
-            {{buttonContent}}
-        </button>
-
+  <div class="crm-button" :class="{ disabled: isDisabled }">
+    <button type="button" :class="{ 'button-icon': hasIconFunction }">
+      <div v-if="hasIconFunction" class="icon-plus"></div>
+      <div class="button__content">{{ buttonContent }}</div>
+    </button>
+    <div class="menu-trigger"></div>
+  </div>
 </template>
 
+
 <script>
-
- export default {
-    name: 'BaseButton',
-    components: {
-        
+export default {
+  props: {
+    // thiết lập nội dung button
+    buttonContent: {
+      type: String,
+      required: true,
     },
-    props: {
-        //Thiết lập nội dung cho button
-        buttonContent: {
-            type: String,
-            default: "Button"
-        },
-        //Thiết lập chiều rộng cho button
-        width: {
-            type: String,
-            default: "80px",
-        },
-
-        // thiết lập chiều cao
-        height: {
-            type: String,
-            default: "32px",
-        },
-
-        //Thiết lập màu chữ
-        color: {
-            type: String,
-            default: "#fff",
-        },
-
-        //Thiết lập màu nền cho button
-        backgroundColor: {
-            type: String,
-            default: "#4262F0",
-        },
-
-        //Biết button ở dang outline hay dạng thường
-        isOutline: {
-            type: Boolean,
-            default: false,
-        }
-    }
- }
+    // thiết lập màu nền
+    backgroundColor: {
+      type: String,
+      default: '#4262F0',
+    },
+    // button có icon không
+    isIcon: {
+      type: Boolean,
+      default: false,
+    },
+    // button có thuộc tính disabled không
+    disabled: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    isIconFunction() {
+      return this.isIcon
+    },
+    isDisabled() {
+      return this.disabled
+    },
+  },
+}
 </script>
 
-<style>
-    .button-basic {
-        min-width: v-bind(width);
-        height: v-bind(height);
-        color: v-bind(color);
-        background-color: v-bind(backgroundColor);
-        padding: 0 16px;
-        border-radius: 4px;
-        border: 0;
-    }
+<style scoped>
+.crm-button {
+  position: relative;
+  cursor: pointer;
+  background-color: v-bind(bgColor);
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
 
+.crm-button > button {
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0 16px;
+  height: 100%;
+  align-items: center;
+}
 
-    /*Thuộc tính dưới không cần dùng đến chuyển sang dạng props*/
-    .button__primary--blue {
-        background-color: #4262F0;
-    }
+.crm-button > .button-icon {
+  padding-left: 0;
+  border-right: 1px solid #fff;
+}
 
-    .button__primary--green {
-        background-color: #31B491;
-    }
+.button__content {
+  color: #fff;
+}
 
-    .button__primary--red {
-        background-color: #EC4141;
-    }
+.crm-button .disable {
+  background-color: #4262f0;
+}
 
-    .button__primary--blue:hover {
-        background-color: #2B4EEE;
-    }
+.icon-plus {
+  margin: 0 8px;
+}
 
-    .button__primary--green:hover {
-        background-color: #2EA888;
-    }
+.menu-trigger {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  display: none;
+}
 
-    .button__primary--red:hover {
-        background-color: #EA2E2E;
-    }
+.button-icon ~ .menu-trigger {
+  display: block;
+}
 
-    .button__primary--blue:active {
-        background-color: #133BEC;
-    }
+.menu-trigger::before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: transparent url(../../assets/Resource/img/icon_collection.svg)
+    no-repeat -80px -160px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
-    .button__primary--green:active {
-        background-color: #268C71;
-    }
+.menu-trigger:hover {
+  background-color: #2b4eee;
+  border-radius: 4px;
+}
 
-    .button__primary--red:active {
-        background-color: #E81717;
-    }
+button:hover {
+  background-color: #2b4eee;
+  border-radius: 4px;
+}
 
-    .button__secondary--blue {
-        background-color: #E7EBFD;
-        color: #4262F0;
-    }
-
-    .button__secondary--green {
-        background-color: #D7F4EC;
-        color: #31B491;
-    }
-
-    .button__secondary--red {
-        background-color: #FAD1D1;
-        color: #EC4141;
-    }
-
-    .button__secondary--blue:hover {
-        background-color: #D0D8FB;
-    }
-
-    .button__secondary--green:hover {
-        background-color: #C3EFE3;
-    }
-
-    .button__secondary--red:hover {
-        background-color: #FAD1D1;
-    }
-
-    .button__secondary--blue:active {
-        background-color: #B8C4F9;
-    }
-
-    .button__secondary--green:active {
-        background-color: #AFE9DA;
-    }
-
-    .button__secondary--red:active {
-        background-color: #F8B9B9;
-    }
-
-    .button__secondary--outlinered {
-        background-color: #FFFFFF;
-        border: 1px solid #EC4141;
-        color: #EC4141;
-    }
-
-    .button__secondary--outlinegreen {
-        background-color: #FFFFFF;
-        border: 1px solid #31B491;
-        color: #31B491;
-    }
-
-    .button__secondary--outlineblue {
-        background-color: #FFFFFF;
-        border: 1px solid #4262F0;
-        color: #4262F0;
-    }
-
-    .button__secondary--outlinered:hover {
-        background-color: #FDE8E8;
-    }
-
-    .button__secondary--outlinegreen:hover {
-        background-color: #D7F4EC;
-    }
-
-    .button__secondary--outlineblue:hover {
-        background-color: #E7EBFD;
-    }
-
-    .button__secondary--outlinered:active {
-        background-color: #FAD1D1;
-    }
-
-    .button__secondary--outlinegreen:active {
-        background-color: #C3EFE3;
-    }
-
-    .button__secondary--outlineblue:active {
-        background-color: #D0D8FB;
-    }
-
+.crm-button.disabled {
+  background-color: rgba(66, 98, 240, 0.6);
+  pointer-events: none;
+}
 </style>
