@@ -87,9 +87,10 @@ export default {
 
 .m-top {
   display: flex;
-  align-items: flex-end;
-  height: 4.4rem;
+  height: 3.2rem;
   justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 3px;
 }
 
 .m-top__logo {
@@ -111,7 +112,7 @@ export default {
 .m-top__icon-logo {
   background: url('../../assets/Resource/img/Logo_CRM_App.svg') no-repeat;
   width: 150px;
-  height: 30px;
+  height: 32px;
   margin-left: 2rem;
   margin-right: 1rem;
 }
