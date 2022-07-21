@@ -1,0 +1,33 @@
+.navigate {
+    width: 100%;
+    background-color: white;
+    height: 56px;
+    position: absolute;
+    top: calc(100% - 56px);
+    box-sizing: border-box;
+    border: 1px solid #D3D7DE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.navigate__left {
+    font-weight: 500;
+}
+
+.navigate__right {
+    padding-right: 16px;
+    display: flex;
+    align-items: center;
+    width: 340px;
+    justify-content: space-between;
+}
+
+.navigate__select{
+    min-height: 32px;
+    padding-left: 16px;
+    padding-right: 8px;
+    border-radius: 4px;
+    border: 1px solid #d3d7de;
+}
