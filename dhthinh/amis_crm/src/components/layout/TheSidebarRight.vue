@@ -23,7 +23,7 @@
             </div>
             <div class="context-note">
                 <div class="font-bold">Ghi chú</div>
-                <div>Nguyễn Văn Hà(A006) - 12/08/2022</div>
+                <div>Nguyễn Văn Hà (A006) - 12/08/2022</div>
             </div>
         </div>
   </div>
