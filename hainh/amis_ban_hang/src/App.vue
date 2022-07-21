@@ -55,5 +55,6 @@ html {
   grid-template-rows: 84px 56px auto;
   height: 100vh;
   width: 100vw;
+  /* overflow: hidden; */
 }
 </style>
