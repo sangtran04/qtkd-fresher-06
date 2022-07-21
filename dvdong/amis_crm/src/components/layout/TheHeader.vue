@@ -20,7 +20,7 @@
       <div class="header__right">
         <div class="icon icon--facebook"></div>
         <div class="icon icon--3d"></div>
-        <div class="icon icon--calender"></div>
+        <div class="icon icon--calendar"></div>
         <div class="icon icon--noti"></div>
         <div class="icon icon--setting"></div>
         <div class="icon icon--help"></div>
@@ -114,5 +114,5 @@ export default {
 </script>
 
 <style>
-@import url("./../../css/main.css");
+
 </style>

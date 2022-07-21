@@ -37,6 +37,7 @@ export default {
     // Chỉ định nội dung thẻ label
     labelContent: {
       type: String,
+      default: "label"
     },
     // Label nằm ngang hàng với thẻ input
     leftLabel: {
@@ -56,17 +57,9 @@ export default {
     },
   },
   computed: {
-    /**
-     * Kiểm tra props truyền vào có label không ?
-     * Author: hainh 17/07/2022
-     */
     isHaveLabel() {
       return this.labelContent ? true : false;
     },
-    /**
-     * Kiểm trả props truyền vào có icon search không ?
-     * Author: hainh 17/07/2022
-     */
     isIconSearchFunction() {
       return this.isIconSearch ? true : false;
     },

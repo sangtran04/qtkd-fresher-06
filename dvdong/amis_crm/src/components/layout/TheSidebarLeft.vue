@@ -1,38 +1,43 @@
 <template>
   <div class="sidebar__left">
-    <div class="fillter-save">
+    <div class="filter-save">
       BỘ LỌC ĐÃ LƯU
       <div class="icon icon--up"></div>
     </div>
-    <div class="fillter-by">
+    <div class="filter-by">
       LỌC TIỀM NĂNG THEO
       <div class="icon icon--search"></div>
     </div>
-    <div class="fillter-select">
-      <div class="fillter-select__item">
-        <input type="checkbox" id="label-check" /><label for="label-check"
-          >Thẻ</label
-        >
+    <div class="filter-select">
+      <div class="filter-select__item">
+      <BaseCheckbox  checkboxId="1" checkboxLabel="Thẻ" checked/>
       </div>
-      <div class="fillter-select__item"><input type="checkbox" />Xưng hô</div>
-      <div class="fillter-select__item"><input type="checkbox" />Họ và tên</div>
-      <div class="fillter-select__item"><input type="checkbox" />Chức danh</div>
-      <div class="fillter-select__item">
-        <input type="checkbox" />ĐT di động
+      <div class="filter-select__item">
+      <BaseCheckbox  checkboxId="2" checkboxLabel="Xưng hô"/>
       </div>
-      <div class="fillter-select__item">
-        <input type="checkbox" />ĐT cơ quan
+      <div class="filter-select__item">
+      <BaseCheckbox  checkboxId="3" checkboxLabel="Họ và tên"/>
       </div>
-      <div class="fillter-select__item">
-        <input type="checkbox" />Email cơ quan
+      <div class="filter-select__item">
+      <BaseCheckbox  checkboxId="4" checkboxLabel="Chức danh"/>
       </div>
-      <div class="fillter-select__item">
-        <input type="checkbox" />Email cá nhân
+      <div class="filter-select__item">
+      <BaseCheckbox  checkboxId="5" checkboxLabel="ĐT di động"/>
       </div>
-      <BaseCheckbox />sfsfs
-      <BaseButton />
+      <div class="filter-select__item">
+        <BaseCheckbox  checkboxId="6" checkboxLabel="ĐT cơ quan"/>
+      </div>
+      <div class="filter-select__item">
+        <BaseCheckbox  checkboxId="7" checkboxLabel="Email cơ quan"/>
+      </div>
+      <div class="filter-select__item">
+        <BaseCheckbox  checkboxId="8" checkboxLabel="Email cá nhân"/>
+      </div>
+      <BaseButton :dark="true"/>
+      <BaseButton :green="true" buttonText="sua"/>
       <BaseTag/>
       <base-toast-message></base-toast-message>
+      <BaseTextField labelContent="true" />
     </div>
   </div>
 </template>
@@ -42,17 +47,19 @@ import BaseCheckbox from "./../base/BaseCheckbox.vue";
 import BaseButton from "./../base/BaseButton.vue";
 import BaseTag from './../base/BaseTag.vue'
 import BaseToastMessage from './../base/BaseToastMessage.vue'
+import BaseTextField from './../base/BaseTextField.vue'
 export default {
   components: {
     BaseCheckbox,
     BaseButton,
     BaseTag,
     BaseToastMessage,
+    BaseTextField,
   },
   data() {},
 };
 </script>
 
 <style>
-@import url("./../../css/main.css");
+
 </style>
