@@ -61,8 +61,8 @@
                             <td class="text-align-left" style="width: 100px;">Xã Gia Tân</td>
                             <td class="text-align-left" style="width: 100px;">Good boy</td>
                             <td class="text-align-left" style="width: 100px;">Dịch vụ</td>
-                            <td class="text-align-left" style="width: 100px;">Kinh tế</td>
-                            <td class="text-align-left" style="width: 100px;">it so fking nice</td>
+                            <td class="text-align-left" style="width: 100px;">QTKD</td>
+                            <td class="text-align-left" style="width: 100px;">Code phần mềm</td>
                             <td class="text-align-left" style="width: 100px;">3 phần</td>
                             <td class="text-align-left" style="width: 100px;">Đặng Hữu Thịnh</td>
                             <td class="text-align-left" style="width: 100px;">280000000</td>
@@ -80,11 +80,11 @@
                         <option value="">50 bản ghi trên trang</option>
                         <option value="">50 bản ghi trên trang</option>
                     </select>
-                    <div class="icon--pre2"></div>
-                    <div class="icon--pre1"></div>
+                    <div class="icon-pre2"></div>
+                    <div class="icon-pre1"></div>
                     <div class="navigate__text" style="font-weight: 500;">1 đến 50</div>
-                    <div class="icon--next1"></div>
-                    <div class="icon--next2"></div>
+                    <div class="icon-next1"></div>
+                    <div class="icon-next2"></div>
                 </div>
             </div>    
     </div>

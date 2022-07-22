@@ -138,6 +138,7 @@ export default {
         border-radius: 50%;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .boder-icon:hover {
