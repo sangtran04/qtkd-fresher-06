@@ -42,7 +42,7 @@ export default {
 @import url("./style/button.css");
 .container {
   display: grid;
-  grid-template-columns: 240px calc(100% - 560px) 320px;
+  grid-template-columns: 249px calc(100% - 560px) 320px;
   grid-template-rows: 84px 56px calc(100vh - 140px);
 }
 * {

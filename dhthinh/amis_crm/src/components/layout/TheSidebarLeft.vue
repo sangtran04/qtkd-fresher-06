@@ -27,6 +27,9 @@
                     />
                 </li>
             </ul>
+            <div class="collapse-left">
+                <div class="icon-collapse-left"></div>
+            </div>
         </div>
 </template>
 
@@ -51,12 +54,8 @@ export default {
 <style>
     .sidebarleft {
         border-right: solid 1px #ccc;
+        position: relative;
     }
-
-    /* .count-heading {
-        height: 32px;
-    } */
-
     .sidebarleft__heading {
         display: flex;
         align-items: center;
@@ -66,15 +65,6 @@ export default {
         margin: 8px 0px 0px;
         color: #586074;
     }
-
-    .filter-down {
-       
-    }
-
-    .filter-search {
-
-    }
-
     .sidebarleft__heading .heading {
         font-size: 13px;
     }
@@ -88,7 +78,24 @@ export default {
         padding: 0 16px;
         color: #586074  ;
     }
-    .filter-item {
-        
+    .collapse-left {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 1px 0 4px #00000029;
+        border-radius: 0 6px 6px 0;
+        background-color: #fff;
+        z-index: 20;
+        position: absolute;
+        left: 249px;
+        top: calc(50% - 20px);
+        width: 12px!important;
+        height: 40px!important;
+        padding: 12px 0!important;
+    }
+
+    .collapse-left:hover {
+        width: 20px!important;
     }
 </style>

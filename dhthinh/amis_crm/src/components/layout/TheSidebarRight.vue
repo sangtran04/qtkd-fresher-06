@@ -26,6 +26,9 @@
                 <div>Nguyễn Văn Hà (A006) - 12/08/2022</div>
             </div>
         </div>
+        <div class="collapse-right">
+            <div class="icon-collapse-right"></div>
+        </div>
   </div>
 </template>
 
@@ -41,7 +44,28 @@ export default {
 <style>
     .sidebarright {
         border-left: solid 1px #ccc;
+        position: relative;
     }
+    .collapse-right {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: -2px 0 4px #00000029;
+        border-radius: 6px 0 0 6px;
+        background-color: #fff;
+        z-index: 20;
+        position: absolute;
+        right: 320px;
+        top: calc(50% - 20px);
+        width: 12px!important;
+        height: 40px!important;
+        padding: 12px 0!important;
+    }
+
+    .collapse-right:hover {
+        width: 20px!important;
+    }
+
     .sidebarright-quick {
         border-bottom: solid 1px #ccc;
         height: 40px;

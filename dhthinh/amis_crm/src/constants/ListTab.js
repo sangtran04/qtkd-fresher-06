@@ -2,7 +2,7 @@ const ListTab = [
     {
       id: 1,
       iconTab: 'icon-dashboard',
-      contentTab: 'Bàn làm viec',
+      contentTab: 'Bàn làm việc',
       checked: false,
     },
     {

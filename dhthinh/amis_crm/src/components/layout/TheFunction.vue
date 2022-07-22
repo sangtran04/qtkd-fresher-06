@@ -1,7 +1,7 @@
 <template>
     <div class="function">
             <div class="function__left">
-                <div class="function__title">Tất cả tiềm năng</div>
+                <h1 class="function__title">Tiềm năng của tôi</h1>
                 <div class="icon icon-dropdown"></div>
                 <div class="function__edit">Sửa</div>
                 <div class="icon-refresh"></div>
