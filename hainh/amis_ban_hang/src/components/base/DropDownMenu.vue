@@ -49,20 +49,22 @@ export default {
     },
   },
   methods: {
+    // Hàm thực hiện việc đóng DropDown
     callToClose() {
       this.isOpen = false
     },
-    checkClickOn(event) {
+    // Nếu click ra ngoài, drop down menu tắt
+    checkOnClick(event) {
       if (!document.getElementById(this.id).contains(event.target)) {
         this.isOpen = false
       }
     },
   },
   created() {
-    window.addEventListener('click', this.checkClickOn)
+    window.addEventListener('click', this.checkOnClick)
   },
   beforeUnmount() {
-    window.removeEventListener('click', this.checkClickOn)
+    window.removeEventListener('click', this.checkOnClick)
   },
 }
 </script>

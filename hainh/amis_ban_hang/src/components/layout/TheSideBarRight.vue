@@ -1,20 +1,30 @@
 <template>
   <div class="side-bar-right">
-    <div class="r-quick-action">
-      <button class="mat-tooltip-trigger item-ation btn-add-grid-layout">
-        <span class="icon-phone-gray-16-sidebar"></span></button
+    <div class="side-bar-right-quick-action">
+      <button
+        class="mat-tooltip-trigger item-ation btn-add-grid-layout show-tooltip"
+      >
+        <span class="icon-phone-gray-16-sidebar"></span>
+        <TooltipComp contentTooltip="Thêm cuộc gọi" /></button
       ><!---->
-      <button class="mat-tooltip-trigger item-ation btn-add-grid-layout">
-        <span class="ic-task-16-sidebar"></span></button
+      <button
+        class="mat-tooltip-trigger item-ation btn-add-grid-layout show-tooltip"
+      >
+        <span class="icon-task-16-sidebar"></span>
+        <TooltipComp contentTooltip="Thêm nhiệm vụ" /></button
       ><!---->
-      <button class="mat-tooltip-trigger item-ation btn-add-grid-layout">
-        <span class="ic-demo-16-sidebar"></span></button
+      <button
+        class="mat-tooltip-trigger item-ation btn-add-grid-layout show-tooltip"
+      >
+        <span class="icon-demo-16-sidebar"></span>
+        <TooltipComp contentTooltip="Thêm lịch hẹn" /></button
       ><!---->
       <button
         haspermission="SendEmail"
-        class="mat-tooltip-trigger item-ation btn-add-grid-layout ng-star-inserted"
+        class="mat-tooltip-trigger item-ation btn-add-grid-layout ng-star-inserted show-tooltip"
       >
-        <span class="ic-send-mail-16"></span></button
+        <span class="icon-send-mail-16"></span>
+        <TooltipComp contentTooltip="Gửi Email" /></button
       ><!----><!----><!----><!---->
     </div>
     <div class="group-history-deal">
@@ -30,8 +40,9 @@
 </template>
 
 <script>
+import TooltipComp from '../base/TooltipComp.vue'
 export default {
-  components: {},
+  components: { TooltipComp },
   data() {
     return {
       arrays: [
@@ -107,10 +118,10 @@ export default {
     no-repeat -176px -321px;
   cursor: pointer;
 }
-.ic-task-16-sidebar {
+.icon-task-16-sidebar {
   margin-top: 4px;
 }
-.ic-task-16-sidebar::before {
+.icon-task-16-sidebar::before {
   content: '';
   width: 16px;
   height: 16px;
@@ -120,11 +131,11 @@ export default {
     no-repeat -192px -321px;
   cursor: pointer;
 }
-.ic-demo-16-sidebar {
+.icon-demo-16-sidebar {
   margin-top: 4px;
 }
 
-.ic-demo-16-sidebar::before {
+.icon-demo-16-sidebar::before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -133,10 +144,10 @@ export default {
     url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
     no-repeat -208px -321px;
 }
-.ic-send-mail-16 {
+.icon-send-mail-16 {
   margin-top: 3px;
 }
-.ic-send-mail-16::before {
+.icon-send-mail-16::before {
   content: '';
   display: inline-block;
   width: 16px;
@@ -151,14 +162,14 @@ export default {
   position: relative;
 }
 
-.r-quick-action {
+.side-bar-right-quick-action {
   display: flex;
   flex-direction: row;
   border-bottom: 1px solid #d3d7de;
   height: 41px;
 }
 
-.r-quick-action button {
+.side-bar-right-quick-action button {
   padding: 0;
   display: flex;
   justify-content: center;
@@ -171,7 +182,7 @@ export default {
   cursor: pointer;
 }
 
-.r-quick-action button:hover {
+.side-bar-right-quick-action button:hover {
   background-color: #f0f2f4;
 }
 </style>
