@@ -4,34 +4,12 @@
  * @Author Hainh 21/07/2022
  *
  */
-const ARRAY = [
-  1,
-  2,
-  3,
-  4,
-  5,
-  6,
-  7,
-  8,
-  9,
-  'A',
-  'B',
-  'C',
-  'D',
-  'E',
-  'F',
-  '#',
-  '@',
-  '!',
-]
-const SIZE_ARRAY = ARRAY.length
-const uuid = () => {
-  let uuid = ''
-  for (let i = 0; i < 6; i++) {
-    let random_index = Math.floor(SIZE_ARRAY * Math.random())
-    uuid += ARRAY[random_index]
-  }
-  return uuid
+function uuidv4() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    var r = (Math.random() * 16) | 0,
+      v = c == 'x' ? r : (r & 0x3) | 0x8
+    return v.toString(16)
+  })
 }
 
-export default uuid
+export default uuidv4
