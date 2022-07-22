@@ -5,12 +5,12 @@
       class="crm-textarea"
       :readonly="readOnly"
       :class="{ error: isErrorTextArea }"
-      :cols="textareaCols"
-      :rows="textareaRows"
+      :cols="columns"
+      :rows="rows"
       :placeholder="placeholder"
     ></textarea>
     <span class="error-msg" :class="{ error: isErrorTextArea }"
-      >Error message</span
+      >{{mesageError}}</span
     >
   </div>
 </template>
@@ -20,7 +20,7 @@ export default {
   name: "BaseTextArea",
   props: {
     //Chỉ định nội dung cho text area
-    txtContent: {
+    textContent: {
       type: String,
     },
     //Chỉ định nội dung gợi ý
@@ -30,33 +30,39 @@ export default {
     },
 
     //Chỉ định độ rộng của text area
-    textareaWidth: {
+    width: {
       type: String,
       default: "240px",
     },
 
     //Chỉ định chiều cao cho text ara
-    textareaHeight: {
+    height: {
       type: String,
       default: "76px",
     },
 
     //Xác định chiều rộng của text area
-    textareaCols: {
+    columns: {
       type: String,
       default: "30",
     },
 
     //Xác định số hàng của text area
-    textareaRows: {
+    rows: {
       type: String,
       default: "10",
     },
 
-    //Trạng thái báo lỗi
-    textareaError: {
+    //Trạng thái báo lỗi có lỗi hay không
+    hasError: {
       type: Boolean,
       default: false,
+    },
+
+    // Chỉ định nội dung báo lỗi
+    mesageError: {
+      type: String,
+      default: "Message Error",
     },
 
     // Chỉ định attribute chỉ đọc cho thẻ textarea
@@ -67,7 +73,7 @@ export default {
   },
   computed: {
     isErrorTextArea() {
-      return this.textareaError ? true : false;
+      return this.hasError ? true : false;
     },
   },
 };

@@ -42,7 +42,7 @@ export default {
   position: absolute;
 }
 div[data-tooltip] {
-  border-bottom: 1px dotted #333;
+  
   position: relative;
 }
 div[data-tooltip]::before {
