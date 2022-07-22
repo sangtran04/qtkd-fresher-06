@@ -9,7 +9,18 @@
       <div class="icon icon--search"></div>
     </div>
     <div class="filter-select">
-      <div class="filter-select__item">
+      <div
+        v-for="(item, index) in listItem"
+        :key="index"
+        class="filter-select__item"
+      >
+        <BaseCheckbox
+          :checkboxId="item['checkboxId']"
+          :checkboxLabel="item['checkboxLabel']"
+          :checked="index == 4"
+        />
+      </div>
+      <!-- <div class="filter-select__item">
       <BaseCheckbox  checkboxId="1" checkboxLabel="Thẻ" checked/>
       </div>
       <div class="filter-select__item">
@@ -32,12 +43,13 @@
       </div>
       <div class="filter-select__item">
         <BaseCheckbox  checkboxId="8" checkboxLabel="Email cá nhân"/>
-      </div>
-      <BaseButton :dark="true"/>
-      <BaseButton :green="true" buttonText="sua"/>
-      <BaseTag/>
+      </div> -->
+      <BaseButton :dark="true" />
+      <BaseButton :green="true" buttonText="sua" />
+      <BaseTag />
       <base-toast-message></base-toast-message>
       <BaseTextField labelContent="true" />
+      <BaseDropdown options=""/>
     </div>
   </div>
 </template>
@@ -45,9 +57,11 @@
 <script>
 import BaseCheckbox from "./../base/BaseCheckbox.vue";
 import BaseButton from "./../base/BaseButton.vue";
-import BaseTag from './../base/BaseTag.vue'
-import BaseToastMessage from './../base/BaseToastMessage.vue'
-import BaseTextField from './../base/BaseTextField.vue'
+import BaseTag from "./../base/BaseTag.vue";
+import BaseToastMessage from "./../base/BaseToastMessage.vue";
+import BaseTextField from "./../base/BaseTextField.vue";
+import BaseDropdown from "./../base/BaseDropdown.vue";
+
 export default {
   components: {
     BaseCheckbox,
@@ -55,11 +69,23 @@ export default {
     BaseTag,
     BaseToastMessage,
     BaseTextField,
+    BaseDropdown,
   },
-  data() {},
+  data() {
+    return {
+      listItem: [
+        { checkboxId: 1, checkboxLabel: "Thẻ" },
+        { checkboxId: 2, checkboxLabel: "Thẻ2" },
+        { checkboxId: 3, checkboxLabel: "Thẻ3" },
+        { checkboxId: 4, checkboxLabel: "Thẻ4" },
+        { checkboxId: 5, checkboxLabel: "Thẻ5" },
+        { checkboxId: 6, checkboxLabel: "Thẻ6" },
+        { checkboxId: 7, checkboxLabel: "Thẻ7" },
+      ],
+    };
+  },
 };
 </script>
 
 <style>
-
 </style>

@@ -1,6 +1,6 @@
 <template>
-    <input type="checkbox" :id="checkboxId" :checked="checked"/>
-    <label :for="checkboxId"> {{ checkboxLabel }} </label>
+  <input type="checkbox" :id="checkboxId" :checked="checked" />
+  <label :for="checkboxId"> {{ checkboxLabel }} </label>
 </template>
 
 <script>
@@ -20,12 +20,10 @@ export default {
       default: false,
     },
   },
-  
 };
 </script>
 
 <style scoped>
-
 input {
   width: 16px;
   height: 16px;

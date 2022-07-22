@@ -1,13 +1,18 @@
 <template>
-  <div class="tag-input" >
+  <div class="tag-input" :style="{background}">
     <div 
     v-for="(tag, index) in tags" 
     :key="tag" 
-    class="tag" :style="{background}">
-      {{ tagContent }}
+    class="tag">
+      {{ tag }}
       <span @click="removeTag(index)"><div class="icon icon--plus"></div></span>
     </div>
-    
+    <input
+      type="text"
+      placeholder="EnteraTag"
+      class="tag-input_text"
+      @keydown="addTag"
+    />
   </div>
 </template>
 
@@ -19,6 +24,16 @@ export default {
     };
   },
   methods: {
+    addTag(event) {
+      if (event.code == "Comma" || event.code == "Enter") {
+        event.preventDefault();
+        var val = event.target.value.trim();
+        if (val.length > 0) {
+          this.tags.push(val);
+          event.target.value = "";
+        }
+      }
+    },
     removeTag(index) {
       this.tags.splice(index, 1);
     },
@@ -27,11 +42,7 @@ export default {
     background: {
       type: String,
       default: "#F6A2A2",
-    },
-    tagContent: {
-      type: String,
-      default: 'asd'
-    },
+    }
   }
 };
 </script>
@@ -64,5 +75,15 @@ export default {
 .tag > span {
   cursor: pointer;
   opacity: 0.75;
+}
+
+
+
+.tag-input_text {
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 0.9em;
+  line-height: 50px;
+  background: none;
 }
 </style>
