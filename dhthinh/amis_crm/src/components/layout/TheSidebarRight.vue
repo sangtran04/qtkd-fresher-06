@@ -63,7 +63,7 @@ export default {
     }
 
     .collapse-right:hover {
-        width: 20px!important;
+       width: 20px !important;
     }
 
     .sidebarright-quick {
