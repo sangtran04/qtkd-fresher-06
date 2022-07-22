@@ -1,5 +1,5 @@
 <template>
-  <div class="base-check-box">
+  <div class="base__checkbox">
     <input type="checkbox" :id="`checkbox--${id}`" />
     <label :for="`checkbox--${id}`"></label>
   </div>
@@ -8,7 +8,7 @@
 <script>
 export default {
   props: {
-    // id của button
+    // id của checkbox
     id: {
       type: Number,
       required: true,
@@ -18,11 +18,10 @@ export default {
 </script>
 
 <style scoped>
-.base-check-box > input {
+.base__checkbox > input {
   display: none;
 }
-
-.base-check-box > label {
+.base__checkbox > label {
   display: block;
   width: 16px;
   height: 16px;
@@ -30,15 +29,13 @@ export default {
   cursor: pointer;
   border-radius: 4px;
 }
-.base-check-box > label:hover {
+.base__checkbox > label:hover {
   border-color: #2b4eee;
 }
-.base-check-box > label::before {
+.base__checkbox > label::before {
   content: '';
-
   display: none;
 }
-
 input[type='checkbox']:checked + label {
   display: flex;
   justify-content: center;
@@ -46,7 +43,7 @@ input[type='checkbox']:checked + label {
   width: 16px;
   height: 16px;
   cursor: pointer;
-  background: transparent url(../../assets/Resource/img/icon_collection.svg)
+  background: transparent url(../../assets/img/icon_collection.svg)
     no-repeat -176px -16px;
   border: none;
 }
