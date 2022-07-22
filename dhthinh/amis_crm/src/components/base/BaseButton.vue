@@ -22,6 +22,23 @@ export default {
       type: String,
       default: '#4262F0',
     },
+    // thiết lập màu khi hover vào
+    backgroundColorHover: {
+      type: String,
+      default: '#4262F0',
+    },
+
+    //Thiết lập màu chữ
+    color: {
+      type: String,
+      default: "#000"
+    },
+    //Thiết lập màu khi hover
+    colorHover : {
+      type: String,
+      default: "#000"
+    },
+
     // button có icon không
     isIcon: {
       type: Boolean,
@@ -48,7 +65,8 @@ export default {
 .crm-button {
   position: relative;
   cursor: pointer;
-  background-color: v-bind(bgColor);
+  background-color: v-bind(backgroundColor);
+  color: v-bind(color);
   outline: none;
   border: none;
   border-radius: 4px;
@@ -111,12 +129,11 @@ export default {
 
 .menu-trigger:hover {
   background-color: #2b4eee;
-  border-radius: 4px;
 }
 
 button:hover {
-  background-color: #2b4eee;
-  border-radius: 4px;
+  color: v-bind(colorHover);
+  background-color: v-bind(backgroundColorHover);
 }
 
 .crm-button.disabled {

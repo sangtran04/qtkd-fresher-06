@@ -12,6 +12,7 @@
     >
       <div class="icon-accept"></div>
     </BaseToastMessage>
+    <BasePopup :hasShowPopup="false" popupContent="Lỗi rồi"/>
   </div>
 </template>
 
@@ -22,6 +23,7 @@ import TheSidebarLeft from "./components/layout/TheSidebarLeft.vue";
 import TheContent from "./components/layout/TheContent.vue";
 import TheSidebarRight from "./components/layout/TheSidebarRight.vue";
 import BaseToastMessage from "./components/base/BaseToastMessage.vue";
+import BasePopup from "./components/base/BasePopup.vue"
 
 export default {
   name: "App",
@@ -32,6 +34,7 @@ export default {
     TheContent,
     TheSidebarRight,
     BaseToastMessage,
+    BasePopup,
   },
 };
 </script>
