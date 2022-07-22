@@ -54,17 +54,17 @@ export default {
       this.isOpen = false
     },
     // Nếu click ra ngoài, drop down menu tắt
-    checkOnClick(event) {
+    onClick(event) {
       if (!document.getElementById(this.id).contains(event.target)) {
         this.isOpen = false
       }
     },
   },
   created() {
-    window.addEventListener('click', this.checkOnClick)
+    window.addEventListener('click', this.onClick)
   },
   beforeUnmount() {
-    window.removeEventListener('click', this.checkOnClick)
+    window.removeEventListener('click', this.onClick)
   },
 }
 </script>
