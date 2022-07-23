@@ -1,15 +1,15 @@
 <template>
   <div class="sidebar__right">
     <div class="sidebar-right__icon">
-      <div class="icon icon--call"></div>
-      <div class="icon icon--complete"></div>
-      <div class="icon icon--calu"></div>
+      <div class="icon icon--phone"></div>
+      <div class="icon icon--task"></div>
+      <div class="icon icon--demo"></div>
       <div class="icon icon--email"></div>
     </div>
     <div class="sidebar-right__history">Lịch sử giao dịch</div>
     <div class="sidebar-right__note">
       <div class="note-icon">
-        <div class="icon icon--ghichu"></div>
+        <div class="icon icon--note"></div>
       </div>
       <div class="note-detail">
         <div>ghi chú</div>

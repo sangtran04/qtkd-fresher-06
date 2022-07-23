@@ -9,10 +9,10 @@
     <div class="function__right">
       <BaseButton buttonText="Thêm mới" :hasDropdown="true" :hasIcon="true" />
       <div class="function__btn">
-        <div class="icon icon--threedot"></div>
+        <div class="icon icon--more"></div>
       </div>
       <div class="function__btn">
-        <div class="icon icon--threecol ml-8"></div>
+        <div class="icon icon--dropdown ml-8"></div>
         <div class="icon icon--down mr-8"></div>
       </div>
     </div>
