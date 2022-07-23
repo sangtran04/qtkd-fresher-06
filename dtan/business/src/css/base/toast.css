@@ -1,0 +1,39 @@
+.toastmessage {
+    display: flex;
+    align-items: center;
+    max-width: 160px;
+    height: 40px;
+    border-radius: 4px;
+    color: #fff;
+    min-width: v-bind(width);
+}
+
+.toastmessage--success {
+    background-color: #31B491;
+}
+
+.toastmessage--warning {
+    background-color: #F07D42;
+}
+
+.toastmessage--info {
+    background-color: #4262F0;
+}
+
+.toastmessage--error {
+    background-color: #EC4141;
+}
+
+.toast__left {
+    padding: 0 16px;
+    font-size: 16px;
+}
+
+.toast__mid {
+    flex: 1;
+}
+
+.toast__right {
+    padding: 0 12px 0 16px;
+    font-size: 16px;
+}
