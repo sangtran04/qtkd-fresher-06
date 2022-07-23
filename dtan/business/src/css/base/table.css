@@ -69,7 +69,7 @@ table tr.row--selected {
     position: sticky;
 }
 
-.parent__tdicon {
+.parent__td--icon {
     margin-left: 12px;
     width: 24px;
     height: 24px;

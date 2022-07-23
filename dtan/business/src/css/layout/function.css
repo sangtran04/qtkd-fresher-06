@@ -1,9 +1,12 @@
 .function {
+    width: 100%;
     height: 56px;
     background-color: rgb(226 228 233);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 84px;
 }
 
 .function__left {

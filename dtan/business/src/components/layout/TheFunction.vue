@@ -1,5 +1,4 @@
 <template>
-<router-view></router-view>
     <div class="function">
         <div class="function__left">
             <div class="function__left__title">Tất cả tiềm năng</div>
@@ -16,7 +15,7 @@
                         <div class="icon--plus"></div>
                     </div>
                     <router-link to="/add">
-                    <Button buttonText="Thêm" hasHoverAndActivePrimaryBlue hasIcon hasBorderRight/>
+                        <Button buttonText="Thêm" hasHoverAndActivePrimaryBlue hasIcon hasBorderRight/>
                     </router-link>
                   
                 </div>

@@ -54,7 +54,7 @@
           :tabContent="tab.contentTab"
           :checked="tab.checked"
         >
-          <div class="icon--dashboard"></div>
+          <div :class="tab.iconTab"></div>
         </BaseTab>
       </div>
     </div>

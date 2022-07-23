@@ -13,10 +13,12 @@
 <script>
 export default {
   props: {
+    // Thiết lập chiều ngang cho text field
     width: {
         type: String,
         default: '240px'
     },
+    // Gợi ý cho text filed
     placeholder: {
       type: String,
       // required: true,

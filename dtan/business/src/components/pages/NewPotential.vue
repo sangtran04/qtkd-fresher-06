@@ -66,15 +66,15 @@
                         <label for="">Điểm HSK</label>
                         <TextField width="510px"/>
                     </div>
-                    <div class="form__item">
+                    <div isTextArea class="form__item">
                         <label for="">Chia sẻ cá nhân</label>
-                        <TextField  width="510px"/>
+                        <BaseTextArea  width="510px"/>
                     </div> 
                 </div>
                 <div class="form__col2">
                     <div class="form__item">
                         <label for="">Họ và tên</label>
-                        <TextField  width="510px"/>
+                        <TextField readonly  width="510px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Họ và đệm</label>
@@ -116,9 +116,9 @@
                         <label for="">Hình thức học mong muốn</label>
                         <TextField  width="510px"/>
                     </div> 
-                    <div class="form__item">
+                    <div isTextArea class="form__item">
                         <label for="">Hồ sơ</label>
-                        <TextField  width="510px"/>
+                        <BaseTextArea  width="510px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Thời gian dự định du học</label>
@@ -184,14 +184,14 @@
                         <label for="">Tài khoản ngân hàng</label>
                         <TextField width="510px"/>
                     </div>
-                    <div class="form__item">
-                        <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                    <div isTextArea class="form__item">
+                        <label for="">Địa chỉ</label>
+                         <BaseTextArea width="510px"/>
                     </div>
                 </div>
                 <div class="form__col2">
                     <div class="form__item">
-                        <label for="">Tài khoản ngân hàng</label>
+                        <label for="">Địa chỉ</label>
                         <TextField width="510px"/>
                     </div>
                     <div class="form__item">
@@ -211,9 +211,9 @@
             <div class="title__image" style="margin-top:48px">Thông tin mô tả</div>
             <div class="form__row">
                 <div class="form__col1">
-                    <div class="form__item">
+                    <div isTextArea class="form__item">
                         <label for="">Mô tả</label>
-                        <TextField placeholder="Mã tự sinh" width="510px"/>
+                        <BaseTextArea  width="1260px"/>
                     </div>
                 </div>
             </div>
@@ -234,6 +234,17 @@
     </div>
 </template>
 <style scoped>
+div[isTextArea]{
+    height: 76px;
+    display: flex;
+    align-items: start;
+    margin: 6px 0;
+}
+div[isTextArea] > label {
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
 .function__left__titlebonus{
     font-size: 16px;
     font-weight: 500;
@@ -285,10 +296,11 @@
 import TextField from '../../components/base/BaseTextField'
 import BaseButton from '../../components/base/BaseButton.vue'
 import BaseCheckbox from '../../components/base/BaseCheckbox.vue'
+import BaseTextArea from '../../components/base/BaseTextArea.vue'
 export default {
     name: "NewPotential",
     components: {
-        BaseButton,TextField,BaseCheckbox
+        BaseButton,TextField,BaseCheckbox,BaseTextArea
     }
     
 }

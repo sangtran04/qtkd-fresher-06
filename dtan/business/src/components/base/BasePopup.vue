@@ -1,5 +1,5 @@
 <template>
-    <div class="dialog" id="dlgPopup">
+    <div class="dialog" id="dialogPopup">
             <div class="popup">
                 <div class="popup__header">
                     <div class="popup__title">{{titleText}}</div>

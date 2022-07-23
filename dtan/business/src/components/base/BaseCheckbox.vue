@@ -1,6 +1,6 @@
 <template>
   <div class="base__checkbox">
-    <input type="checkbox" :id="`checkbox--${id}`" />
+      <input type="checkbox" :id="`checkbox--${id}`" />
     <label :for="`checkbox--${id}`"></label>
   </div>
 </template>
@@ -8,12 +8,9 @@
 <script>
 export default {
   props: {
-    // id của checkbox
-    id: {
-      type: Number,
-      // required: true,
-    },
-  },
+    id: Number,
+    contentLabel: String,
+  }
 }
 </script>
 

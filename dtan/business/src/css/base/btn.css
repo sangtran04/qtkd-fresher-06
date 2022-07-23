@@ -144,12 +144,12 @@
     height: 32px;
 }
 
-.btn--cboleft {
-    border-radius: 4px 0 0 4px;
-    border-left: 1px solid white;
+.btn--left {
+    border-radius: 4px 0 0 4px !important;
+    border-left: 1px solid white !important;
 }
 
-.btn--cboright {
-    border-radius: 0 4px 4px 0;
-    border-left: 1px solid white;
+.btn--right {
+    border-radius: 0 4px 4px 0 !important;
+    border-left: 1px solid white !important;
 }

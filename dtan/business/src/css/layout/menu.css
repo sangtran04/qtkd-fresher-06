@@ -3,9 +3,10 @@
     box-sizing: border-box;
     height: 84px;
     box-shadow: 0 2px 4px #1f222929;
-    /* position: fixed; */
+    position: sticky;
     right: 0;
     left: 0;
+    top: 0;
     border-width: 0 0 1px;
     background-color: white;
     z-index: 10;
