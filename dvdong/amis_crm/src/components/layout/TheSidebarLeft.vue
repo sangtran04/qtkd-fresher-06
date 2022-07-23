@@ -44,12 +44,15 @@
       <div class="filter-select__item">
         <BaseCheckbox  checkboxId="8" checkboxLabel="Email cá nhân"/>
       </div> -->
-      <BaseButton :dark="true" />
-      <BaseButton :green="true" buttonText="sua" />
+
       <BaseTag />
       <base-toast-message></base-toast-message>
       <BaseTextField labelContent="true" />
-      <BaseDropdown options=""/>
+      <BaseDropdown :options="options" @click="updateOption(option)" />
+
+      <div style="margin-left: 15px">
+        <BaseButton  buttonText="Thêm mới" :hasDropdown="true" :hasIcon="true"/>
+      </div>
     </div>
   </div>
 </template>
@@ -83,6 +86,11 @@ export default {
         { checkboxId: 7, checkboxLabel: "Thẻ7" },
       ],
     };
+  },
+  props: {
+    options: {
+      return: [{ name: "drop1" }, { name: "drop2" }],
+    },
   },
 };
 </script>

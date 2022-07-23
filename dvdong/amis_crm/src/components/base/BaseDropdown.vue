@@ -33,7 +33,7 @@ export default {
   data() {
     return {
       selectedOption: {
-        name: 'hau chon o'
+        name: '-Không chọn-'
       },
       showMenu: false,
       placeholderText: "Please select an item",
@@ -41,7 +41,7 @@ export default {
   },
   props: {
     options: {
-      type: [Array, Object],
+      type:[Array, Object]
     },
     selected: {},
     placeholder: [String],
@@ -91,12 +91,14 @@ export default {
 
 <style>
 .btn-group {
-  min-width: 160px;
-  height: 40px;
+  min-width: 200px;
+  height: 32px;
   position: relative;
   margin: 10px 1px;
   display: inline-block;
   vertical-align: middle;
+  border: 1px solid #D3D7DE;
+  border-radius: 4px;
 }
 .btn-group a:hover {
   text-decoration: none;
@@ -109,7 +111,7 @@ export default {
   text-transform: none;
   font-weight: 300;
   margin-bottom: 7px;
-  border: 0;
+  
   background-image: linear-gradient(#009688, #009688),
     linear-gradient(#d2d2d2, #d2d2d2);
   background-size: 0 2px, 100% 1px;

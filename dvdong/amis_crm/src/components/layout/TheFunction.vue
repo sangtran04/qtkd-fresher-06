@@ -7,15 +7,7 @@
       <div class="icon icon--refresh"></div>
     </div>
     <div class="function__right">
-      <div class="button__drop">
-        <div class="button button-comboprimary button--blue">
-        <div class="icon icon--plus"></div>
-          Thêm
-        </div>
-        <div class="button--dropdown">
-          <div class="icon icon--down-white"></div>
-        </div>
-      </div>
+      <BaseButton buttonText="Thêm mới" :hasDropdown="true" :hasIcon="true" />
       <div class="function__btn">
         <div class="icon icon--threedot"></div>
       </div>
@@ -28,7 +20,13 @@
 </template>
 
 <script>
-export default {};
+import BaseButton from "./../base/BaseButton.vue";
+
+export default {
+  components: {
+    BaseButton,
+  }
+};
 </script>
 
 <style>

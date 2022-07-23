@@ -16,6 +16,7 @@ import Content from "./components/layout/TheContent.vue";
 import Function from "./components/layout/TheFunction.vue";
 import SidebarLeft from "./components/layout/TheSidebarLeft.vue";
 import SidebarRight from "./components/layout/TheSidebarRight.vue";
+
 export default {
   name: "App",
   components: {
