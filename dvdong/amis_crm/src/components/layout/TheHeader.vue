@@ -7,7 +7,9 @@
         <div class="title">Bán hàng</div>
       </div>
       <div class="header__center">
-        <BaseTextField/>
+        <!-- <BaseTextField/> -->
+        <BaseCombobox/>
+
         <div class="header__search">
           <input
             type="text"
@@ -94,9 +96,13 @@
 
 <script>
 import BaseTextField from "./../base/BaseTextField.vue";
+import BaseCombobox from './../base/BaseCombobox.vue'
+
 export default {
   components: {
-    BaseTextField,
+    // BaseTextField,
+    BaseCombobox,
+
   },
   data() {
     const propsInputText = {

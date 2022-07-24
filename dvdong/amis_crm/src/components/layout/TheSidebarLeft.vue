@@ -47,11 +47,13 @@
 
       <BaseTag />
       <base-toast-message></base-toast-message>
-      <BaseTextField labelContent="true" />
-      <BaseDropdown :options="options" @click="updateOption(option)" />
+      <!-- <BaseTextField labelContent="true" /> -->
+      <BaseDropdown :options="options" 
+      @click="clickHandler(event)"
+        />
 
-      <div style="margin-left: 15px">
-        <BaseButton  buttonText="Thêm mới" :hasDropdown="true" :hasIcon="true"/>
+      <div style="margin-top:15px; margin-left: 15px;">
+        <BaseCombobox/>
       </div>
     </div>
   </div>
@@ -59,20 +61,20 @@
 
 <script>
 import BaseCheckbox from "./../base/BaseCheckbox.vue";
-import BaseButton from "./../base/BaseButton.vue";
 import BaseTag from "./../base/BaseTag.vue";
 import BaseToastMessage from "./../base/BaseToastMessage.vue";
-import BaseTextField from "./../base/BaseTextField.vue";
+// import BaseTextField from "./../base/BaseTextField.vue";
 import BaseDropdown from "./../base/BaseDropdown.vue";
+import BaseCombobox from './../base/BaseCombobox.vue'
 
 export default {
   components: {
     BaseCheckbox,
-    BaseButton,
     BaseTag,
     BaseToastMessage,
-    BaseTextField,
+    // BaseTextField,
     BaseDropdown,
+    BaseCombobox,
   },
   data() {
     return {
@@ -85,12 +87,14 @@ export default {
         { checkboxId: 6, checkboxLabel: "Thẻ6" },
         { checkboxId: 7, checkboxLabel: "Thẻ7" },
       ],
+      options: [
+        {name: 'sdasd'},
+        {name : 'dasd2'}
+      ]
     };
   },
   props: {
-    options: {
-      return: [{ name: "drop1" }, { name: "drop2" }],
-    },
+    
   },
 };
 </script>
