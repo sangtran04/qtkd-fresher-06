@@ -1,6 +1,6 @@
 <template>
   <TheFunction />
-      <div class="content">
+  <div class="content">
     <div class="content__left">
       <div class="content__left__title">
         <div class="icon--downblack--small icon__content--positon"></div>
@@ -14,10 +14,11 @@
         LỌC THEO TIỀM NĂNG
       </div>
       <div class="checkbox__list">
-        <BaseCheckboxItem 
-            v-for="item in checkboxs" 
-            :key="item.id" 
-            :contentLabel="item.contentLabel"/>
+        <BaseCheckboxItem
+          v-for="item in checkboxs"
+          :key="item.id"
+          :contentLabel="item.contentLabel"
+        />
       </div>
       <div class="slideleft">
         <div class="icon--slideleft"></div>
@@ -62,7 +63,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr v-for="customer in customers" :key="customer.CustomerId">
               <td style="width: 36px"></td>
               <th style="width: 28px" class="text-align-right">
                 <BaseCheckbox id="11" style="margin: 0 12px" />
@@ -70,30 +71,34 @@
               <td style="width: 100px" class="text-align-left"></td>
               <td class="text-align-left" style="width: 100px">Anh</td>
               <td class="text-align-left text--blue" style="width: 180px">
-                Đặng Thành An
+                {{ customer.FullName }}
               </td>
-              <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
+              <td class="text-align-left" style="width: 120px">
+                {{showData(customer.PositionName)}}
+              </td>
               <td class="text-align-left text--blue" style="width: 150px">
                 <div class="text--icon">
-                  <div class="icon--tblcall"></div>
-                  <div>0339541266</div>
+                  <div v-if="customer.PhoneNumber" class="icon--tblcall"></div>
+                  <div>{{showData(customer.PhoneNumber)}}</div>
                 </div>
               </td>
               <td class="text-align-left text--blue" style="width: 150px">
                 <div class="text--icon">
-                  <div class="icon--tblcall"></div>
-                  <div>0339541266</div>
+                  <div v-if="customer.PhoneNumber" class="icon--tblcall"></div>
+                  <div>{{showData(customer.PhoneNumber)}}</div>
                 </div>
               </td>
               <td class="text-align-left text--blue" style="width: 180px">
-                dangthanhan.c2ap@mail.com
+                {{ customer.Email }}
               </td>
               <td class="text-align-left text--blue" style="width: 180px">
-                dangthanhan.c2ap@gmail.com
+                {{ customer.Email }}
               </td>
               <td class="text-align-left" style="width: 300px">Trùm mõm</td>
               <td class="text-align-left" style="width: 200px">Xóm 13</td>
-              <td class="text-align-left" style="width: 120px">Nam Định</td>
+              <td class="text-align-left" style="width: 120px">
+                {{ customer.IdentityPlace }}
+              </td>
               <td class="text-align-left" style="width: 150px">Trực Ninh</td>
               <td class="text-align-left" style="width: 150px">Xã Trực Thái</td>
               <td class="text-align-left" style="width: 200px">Good boy</td>
@@ -162,23 +167,50 @@
 </template>
 
 <script>
+import axios from "axios";
 import { ref } from "vue";
-import BaseTag from '../base/BaseTag.vue';
-import BaseCheckbox from '../base/BaseCheckbox.vue';
-import TheFunction from '../layout/TheFunction.vue';
-import LIST_CHECKBOX from '../../constants/listcheckbox';
+import BaseTag from "../base/BaseTag.vue";
+import BaseCheckbox from "../base/BaseCheckbox.vue";
+import TheFunction from "../layout/TheFunction.vue";
+import LIST_CHECKBOX from "../../constants/listcheckbox";
 import BaseCheckboxItem from "../base/BaseCheckboxItem.vue";
 
-
 export default {
-    components: { BaseTag, BaseCheckbox, TheFunction, BaseCheckboxItem },
-     setup() {
+  components: { BaseTag, BaseCheckbox, TheFunction, BaseCheckboxItem },
+  setup() {
     const checkboxs = ref(LIST_CHECKBOX);
     return {
       checkboxs,
     };
   },
-}
+  created() {
+    try {
+      var temp = this;
+      axios
+        .get("https://cukcuk.manhnv.net/api/v1/Employees")
+        .then(function (res) {
+          console.log(res);
+          temp.customers = res.data;
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
+    } catch (error) {
+      console.log(error);
+    }
+  },
+  methods: {
+    showData(text) {
+      if (text == null || text == "") text = "-";
+      return text;
+    },
+  },
+  data() {
+    return {
+      customers: null,
+    };
+  },
+};
 </script>
 
 <style scoped>

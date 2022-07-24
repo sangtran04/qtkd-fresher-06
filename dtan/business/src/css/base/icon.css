@@ -52,6 +52,12 @@
     top: -12px; */
 }
 
+.icon--knowledge {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -193px -362px;
+    width: 22px;
+    height: 21px;
+}
+
 .icon--help {
     background: url('../../assets/img/icon_collection.svg') no-repeat -218px -363px;
     width: 20px;
@@ -59,9 +65,13 @@
 }
 
 .icon--facebook {
-    background: url('../../assets/img/icon_collection.svg') no-repeat -288px -321px;
+    /* background: url('../../assets/img/icon_collection.svg') no-repeat -288px -321px;
     width: 16px;
-    height: 18px;
+    height: 18px; */
+    background: url('../../assets/img/icon_collection.svg') no-repeat -314px -387px;
+    width: 20px;
+    width: 20px;
+    height: 19px;
 }
 
 .icon--3d {

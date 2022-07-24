@@ -51,6 +51,11 @@
     height: 40px;
     padding: 8px;
     border-radius: 50%;
+    position: relative;
+}
+
+.item__icon__right:hover .show__tooltip {
+    display: block;
 }
 
 .item__icon__right:hover {

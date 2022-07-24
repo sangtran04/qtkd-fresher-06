@@ -20,29 +20,15 @@
         />
       </div>
       <div class="menu__row__right">
-        <div class="item__icon__right">
-          <div class="icon--facebook"></div>
-        </div>
-        <div class="item__icon__right">
-          <div class="icon--facebook"></div>
-        </div>
-        <div class="item__icon__right">
-          <div class="icon--3d"></div>
-        </div>
-        <div class="item__icon__right">
-          <div class="icon--calendar"></div>
-        </div>
-        <div class="item__icon__right">
-          <div class="icon--noti"></div>
-        </div>
-        <div class="item__icon__right">
-          <div class="icon--setting"></div>
-        </div>
-        <div class="item__icon__right">
-          <div class="icon--help"></div>
-        </div>
-        <div class="item__icon__right">
-          <div class="icon--avatar"></div>
+        <div class="item__icon__right" 
+        v-for="contact in contacts"
+        :key="contact.id"
+        >
+          <div :class="contact.iconContact"></div>
+          <BaseTooltip class="show__tooltip" 
+          :contentTooltip="contact.tooltip"
+          :width="contact.width"
+          />
         </div>
       </div>
     </div>
@@ -61,15 +47,19 @@
   </div>
 </template>
 <script>
+import LIST_CONTACT from "@/constants/contact";
 import LIST_TAB from "@/constants/listtab";
 import { ref } from "vue";
 import BaseTab from "../../components/base/BaseTab.vue";
 import TextField from "../../components/base/BaseTextField.vue";
+import BaseTooltip from "../base/BaseTooltip.vue";
+
 export default {
   components: {
     TextField,
     BaseTab,
-  },
+    BaseTooltip
+},
   data() {
     const propsInputText = {
       placeholder: "my placeholder",
@@ -82,8 +72,9 @@ export default {
   },
   setup() {
     const tabs = ref(LIST_TAB);
+    const contacts = ref(LIST_CONTACT);
     return {
-      tabs,
+      tabs,contacts
     };
   },
 };

@@ -1,13 +1,14 @@
 <template>
-  <div>
-      <input
-        class="input"
-        :id="labelContent"
-        type="text"
-        :placeholder="placeholder"
-        :readonly="readOnly"
-        :class="{'input__icon input__icon--search': hasIconSearchFunction }"
-      />
+  <div :class="{'form__item': hasLabelFunc}">
+    <label :class="{'label': hasLabelFunc }" for="">{{ contentLabel }}</label>
+    <input
+      class="input"
+      :id="labelContent"
+      type="text"
+      :placeholder="placeholder"
+      :readonly="readOnly"
+      :class="{ 'input__icon input__icon--search': hasIconSearchFunction }"
+    />
   </div>
 </template>
 <script>
@@ -15,8 +16,8 @@ export default {
   props: {
     // Thiết lập chiều ngang cho text field
     width: {
-        type: String,
-        default: '240px'
+      type: String,
+      default: "240px",
     },
     // Gợi ý cho text filed
     placeholder: {
@@ -29,7 +30,7 @@ export default {
       default: false,
     },
     // Chỉ định nội dung thẻ label
-    labelContent: {
+    contentLabel: {
       type: String,
     },
     // Label nằm ngang hàng với thẻ input
@@ -44,14 +45,18 @@ export default {
     hasIconSearch: {
       type: Boolean,
     },
+    hasLabel: {
+      type: Boolean,
+      default: false,
+    },
   },
   computed: {
     /**
      * Kiểm tra props truyền vào có label không ?
      * Author: ANDT 20/07/2022
      */
-    hasLabel() {
-      return this.labelContent ? true : false;
+    hasLabelFunc() {
+      return this.hasLabel;
     },
     /**
      * Kiểm trả props truyền vào có icon search không ?
@@ -67,12 +72,12 @@ export default {
 .input {
   box-sizing: border-box;
   min-width: v-bind(width);
+  max-width: 400px;
   height: 32px;
   border-radius: 4px;
   border: 1px solid #ccc;
   padding: 8px 16px;
   outline: none;
-  
 }
 
 .input:hover {
@@ -111,6 +116,18 @@ export default {
   border: none;
   margin-left: 32px;
 }
+.input[readonly] {
+  background-color: #e2e4e9;
+}
+.input[readonly]::placeholder {
+  color: #586074;
+}
+.input[readonly]:focus {
+  border: 1px solid #d3d7de;
+}
+.input[readonly]:hover {
+  border: 1px solid #d3d7de;
+}
 
 .input__icon--search:hover {
   border: 1px solid#4262F0;
@@ -118,6 +135,12 @@ export default {
 
 .input__icon--search:focus {
   border: 1px solid#4262F0;
+}
+
+.label {
+  padding-top: 0px;
+  min-width: 200px;
+  max-height: 32px;
 }
 </style>
 

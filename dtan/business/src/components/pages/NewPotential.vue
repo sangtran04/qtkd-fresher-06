@@ -20,113 +20,113 @@
                 <div class="form__col1">
                     <div class="form__item">
                         <label for="">Xưng hô</label>
-                        <TextField width="510px"/>
+                        <TextField contentLabel="" width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tên *</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Phòng ban</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">ĐT di động</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Email cơ quan</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Mã số thuế</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Nguồn gốc</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Zalo</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Phân loại khách hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Loại học bổng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Điểm HSKK</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Điểm HSK</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div isTextArea class="form__item">
                         <label for="">Chia sẻ cá nhân</label>
-                        <BaseTextArea  width="510px"/>
+                        <BaseTextArea  width="465px"/>
                     </div> 
                 </div>
                 <div class="form__col2">
                     <div class="form__item">
                         <label for="">Họ và tên</label>
-                        <TextField readonly  width="510px"/>
+                        <TextField readOnly width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Họ và đệm</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Chức danh</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">ĐT cơ quan</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Email cá nhân</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Tổ chức</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Mã ngân sách</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Quy mô</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Học vấn hiện tại</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Trường học</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Hình thức học mong muốn</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div isTextArea class="form__item">
                         <label for="">Hồ sơ</label>
-                        <BaseTextArea  width="510px"/>
+                        <BaseTextArea  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Thời gian dự định du học</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Test chuyển đổi</label>
-                        <TextField  width="510px"/>
+                        <TextField  width="465px"/>
                     </div> 
                 </div>
             </div>
@@ -135,37 +135,37 @@
                 <div class="form__col1">
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                 </div>
                 <div class="form__col2">
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                 </div>
             </div>
@@ -174,37 +174,37 @@
                 <div class="form__col1">
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div isTextArea class="form__item">
                         <label for="">Địa chỉ</label>
-                         <BaseTextArea width="510px"/>
+                         <BaseTextArea width="465px"/>
                     </div>
                 </div>
                 <div class="form__col2">
                     <div class="form__item">
                         <label for="">Địa chỉ</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                     <div class="form__item">
                         <label for="">Tài khoản ngân hàng</label>
-                        <TextField width="510px"/>
+                        <TextField width="465px"/>
                     </div>
                 </div>
             </div>
@@ -213,7 +213,7 @@
                 <div class="form__col1">
                     <div isTextArea class="form__item">
                         <label for="">Mô tả</label>
-                        <BaseTextArea  width="1260px"/>
+                        <BaseTextArea  width="1210px"/>
                     </div>
                 </div>
             </div>
@@ -224,10 +224,7 @@
                         <label for="">Dùng chung</label>
                         <BaseCheckbox/>
                     </div>
-                    <div class="form__item">
-                        <label for="">Mã tiềm năng</label>
-                        <TextField placeholder="Mã tự sinh" width="510px"/>
-                    </div>
+                    <TextField hasLabel contentLabel="Mã tiềm năng" placeholder="Mã tự sinh" width="465px"/>
                 </div>
             </div>
         </div>
@@ -281,15 +278,15 @@ div[isTextArea] > label {
 }
 .form__col1 label, .form__col2 label
 {
-    min-width: 160px;
-    max-width: 160px;
+    min-width: 200px;
+    /* max-width: 160px; */
     max-height: 32px;
 }
 .form__item{
     display: flex;
     align-items: center;
     height: 40px;
-    margin-bottom: 2px;
+    padding: 2px 0;
 }
 </style>
 <script>
