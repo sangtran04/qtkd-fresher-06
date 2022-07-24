@@ -52,8 +52,9 @@ export default {
 
 .tooltip > .content {
   color: #fff;
-  text-align: center;
+  text-align: left;
   margin: 0;
+  line-height: 18px;
 }
 
 .show-tooltip:hover .tooltip {

@@ -42,6 +42,7 @@
 <script>
 import TooltipComp from '../base/TooltipComp.vue'
 export default {
+  name: 'TheSideBarRight',
   components: { TooltipComp },
   data() {
     return {
@@ -157,7 +158,6 @@ export default {
     no-repeat 0px -320px;
 }
 .side-bar-right {
-  grid-row: 3 / 4;
   border-left: 1px solid rgb(222, 225, 230);
   position: relative;
 }

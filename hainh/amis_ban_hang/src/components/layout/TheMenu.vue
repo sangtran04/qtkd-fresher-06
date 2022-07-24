@@ -9,6 +9,7 @@
         <BaseTextField
           placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
           :hasIconSearch="true"
+          backgroundColorWhenHover="#e2e4e9"
         />
       </div>
 
@@ -37,7 +38,7 @@
       </div>
     </div>
     <div class="m-bottom">
-      <div class="m-tabs">
+      <ul class="m-tabs">
         <BaseTab
           v-for="tab in tabs"
           :key="tab.id"
@@ -46,11 +47,10 @@
           @click="handleClickTab(tab.id)"
         >
           <div
-            class="icon-dashboard m-tab__icon"
-            :class="{ checked: tab.checked }"
+            :class="{ checked: tab.checked, [tab.className]: tab.className }"
           ></div>
         </BaseTab>
-      </div>
+      </ul>
     </div>
   </div>
 </template>
@@ -85,8 +85,15 @@ export default {
 </script>
 
 <style scoped>
+.m-top__icon-logo {
+  cursor: pointer;
+}
+.m-top__icon-menu {
+  cursor: pointer;
+}
 .m-tabs {
   display: flex;
+  margin-left: -16px;
 }
 .margin-right-20 {
   margin-right: 2rem;

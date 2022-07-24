@@ -1,69 +1,64 @@
 const TAB_LIST = [
   {
     id: 1,
-    contentTab: 'Bàn làm viec',
+    contentTab: 'Bàn làm việc',
     checked: true,
+    className: 'icon-dashboard',
   },
   {
     id: 2,
     contentTab: 'Tiềm năng',
     checked: false,
+    className: 'icon-lead',
   },
   {
     id: 3,
-    contentTab: 'Khách hàng',
+    contentTab: 'Chào hàng',
     checked: false,
+    className: 'icon-offer',
   },
   {
     id: 4,
-    contentTab: 'Cơ hội',
+    contentTab: 'Liên hệ',
     checked: false,
+    className: 'icon-contact',
   },
   {
     id: 5,
-    contentTab: 'Báo giá',
+    contentTab: 'Khách hàng',
     checked: false,
+    className: 'icon-account',
   },
   {
     id: 6,
-    contentTab: 'Đơn hàng',
+    contentTab: 'Cơ hội',
     checked: false,
+    className: 'icon-opportunity',
   },
   {
     id: 7,
-    contentTab: 'Hóa đơn',
+    contentTab: 'Báo giá',
     checked: false,
+    className: 'icon-quote',
   },
   {
     id: 8,
-    contentTab: 'Ao cơ hội',
+    contentTab: 'Đơn hàng',
     checked: false,
+    className: 'icon-sale-order',
   },
   {
     id: 9,
-    contentTab: 'Hoạt động',
+    contentTab: 'Hóa đơn',
     checked: false,
+    className: 'icon-invoice-request',
   },
   {
     id: 10,
-    contentTab: 'Mục tiêu',
+    contentTab: 'Khác',
     checked: false,
+    className: 'icon-other',
   },
-  // {
-  //   id: 10,
-  //   contentTab: 'Chiến dịch',
-  //   checked: false,
-  // },
-  // {
-  //   id: 10,
-  //   contentTab: 'Báo cáo',
-  //   checked: false,
-  // },
-  //   {
-  //     id: 11,
-  //     contentTab: 'Khác',
-  //     checked: false,
-  //   },
 ]
 
 export default TAB_LIST

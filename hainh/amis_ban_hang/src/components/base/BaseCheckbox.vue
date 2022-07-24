@@ -23,11 +23,11 @@ export default {
 }
 
 .base-check-box > label {
+  background-color: #fff;
   display: block;
   width: 16px;
   height: 16px;
   border: 1px solid #7c869c;
-  cursor: pointer;
   border-radius: 4px;
 }
 .base-check-box > label:hover {

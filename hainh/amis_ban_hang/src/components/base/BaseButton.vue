@@ -1,6 +1,13 @@
 <template>
   <div class="baseButton" :class="{ disabled: isDisabled }">
-    <button type="button" :class="{ 'button-icon': hasIconFunc }">
+    <router-link v-if="hasPathLink" :to="pathLink" class="router-link">
+      <button type="button" :class="{ 'button-icon': hasIconFunc }">
+        <div v-if="hasIconFunc" class="icon-plus"></div>
+        <div class="buttonContent">{{ buttonContent }}</div>
+      </button>
+      <div class="menu-trigger"></div>
+    </router-link>
+    <button v-else type="button" :class="{ 'button-icon': hasIconFunc }">
       <div v-if="hasIconFunc" class="icon-plus"></div>
       <div class="buttonContent">{{ buttonContent }}</div>
     </button>
@@ -10,6 +17,7 @@
 
 <script>
 export default {
+  name: 'BaseButton',
   props: {
     // Chỉ định nội dung button
     buttonContent: {
@@ -31,6 +39,11 @@ export default {
       type: Boolean,
       default: false,
     },
+    // đường dẫn
+    pathLink: {
+      type: String,
+      default: '/',
+    },
   },
   computed: {
     hasIconFunc() {
@@ -39,7 +52,11 @@ export default {
     isDisabled() {
       return this.disabled
     },
+    hasPathLink() {
+      return this.pathLink === '/' ? false : true
+    },
   },
+  created() {},
 }
 </script>
 
@@ -55,8 +72,13 @@ export default {
   display: flex;
   align-items: center;
 }
-
-.baseButton > button {
+.router-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+}
+.baseButton button {
   display: flex;
   cursor: pointer;
   outline: none;
@@ -67,7 +89,7 @@ export default {
   align-items: center;
 }
 
-.baseButton > .button-icon {
+.baseButton .button-icon {
   padding-left: 0;
   border-right: 1px solid #fff;
 }

@@ -71,9 +71,14 @@
 }
 /* Tiềm năng */
 .icon-lead {
-    background: url('../assets/Resource/img/icon_collection.svg')no-repeat -160px -289px;
+    background: url('../assets/Resource/img/icon_collection.svg')no-repeat -0 -48px;
     width: 16px;
     height: 16px;
+}
+.icon-lead.checked {
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -160px -288px;
 }
 /* Chào hàng */
 .icon-offer {
@@ -81,11 +86,23 @@
     width: 16px;
     height: 16px;
 }
-
+.icon-offer.checked {
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -16px -288px;
+}
 .icon-contact {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -129px -48px;
-    width: 14px;
+    width: 16px;
     height: 16px;
+}
+
+.icon-contact.checked {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -176px -288px;
 }
 /* Khách hàng */
 .icon-account {
@@ -93,11 +110,21 @@
     width: 16px;
     height: 16px;
 }
+.icon-account.checked {
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -224px -288px;
+}
 /* Cơ hội */
-.icon-oppotunity {
+.icon-opportunity {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -80px -48px;
     width: 16px;
     height: 16px;
+}
+.icon-opportunity.checked {
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -160px -304px;
 }
 /* Báo giá */
 .icon-quote {
@@ -105,20 +132,33 @@
     width: 12px;
     height: 16px;
 }
+.icon-quote.checked {
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -176px -304px;
+}
 /* đơn hàng */
 .icon-sale-order {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -144px -48px;
     width: 16px;
     height: 16px;
 }
-
+.icon-sale-order.checked {
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -160px -240px;
+}
 /* hóa đơn */
 .icon-invoice-request {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -50px -48px;
     width: 12px;
     height: 16px;
 }
-
+.icon-invoice-request.checked {
+    width: 16px;
+    height: 16px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -208px -304px;
+}
 /* ao cơ hội */
 .icon-oppotunity-pool {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -66px -305px;
@@ -151,11 +191,15 @@
 }
 
 .icon-other {
-    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -275px;
-    width: 14px;
-    height: 11px;
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -271px;
+    width: 16px;
+    height: 16px;
 }
-
+.icon-other.checked {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -287px;
+    width: 16px;
+    height: 16px;
+}
 .icon-refresh {
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -351px -32px;
     width: 16px;

@@ -1,27 +1,20 @@
 <template>
   <div class="grid-layout">
     <TheMenu />
-    <TheFunction />
-    <TheSideBarLeft />
-    <TheContent />
-    <TheSideBarRight />
+    <TheContent>
+      <router-view />
+    </TheContent>
   </div>
 </template>
 
 <script>
 import TheMenu from './components/layout/TheMenu'
-import TheFunction from './components/layout/TheFunction.vue'
-import TheSideBarLeft from './components/layout/TheSideBarLeft.vue'
 import TheContent from './components/layout/TheContent.vue'
-import TheSideBarRight from './components/layout/TheSideBarRight.vue'
 export default {
   name: 'App',
   components: {
     TheMenu,
-    TheFunction,
-    TheSideBarLeft,
     TheContent,
-    TheSideBarRight,
   },
 }
 </script>
@@ -29,7 +22,8 @@ export default {
 <style>
 @import url('./style/icons.css');
 @import url('./style/font.css');
-@import url('./style/color.css');
+@import url('./style/root.css');
+@import url('./style/scroll-bar.css');
 /* reset css */
 * {
   padding: 0;
@@ -46,15 +40,14 @@ html {
   /* convert 1rem = 10px */
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: Regular;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
 .grid-layout {
   display: grid;
-  grid-template-columns: 240px auto 320px;
-  grid-template-rows: 84px 56px auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 84px auto;
   height: 100vh;
   width: 100vw;
-  /* overflow: hidden; */
 }
 </style>

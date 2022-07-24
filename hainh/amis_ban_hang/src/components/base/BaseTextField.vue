@@ -1,7 +1,11 @@
 <template>
   <div
     class="base-input-text-field"
-    :class="{ leftLabel: leftLabel, topLabel: topLabel }"
+    :class="{
+      leftLabel: leftLabel,
+      topLabel: topLabel,
+      hoverBackground: hasBackgroundColorInProps,
+    }"
   >
     <label :class="{ hasLabel: hasLabel }" :for="labelContent">{{
       labelContent
@@ -50,6 +54,20 @@ export default {
     hasIconSearch: {
       type: Boolean,
     },
+    // Chỉ định màu nền khi hover
+    backgroundColorWhenHover: {
+      type: String,
+    },
+    // chỉ định màu nền
+    backgroundColor: {
+      type: String,
+      default: '#f0f2f4',
+    },
+    // Chỉ định chiều dài cho button
+    width: {
+      type: String,
+      default: '320px',
+    },
   },
   computed: {
     /**
@@ -61,16 +79,25 @@ export default {
     },
     /**
      * Kiểm trả props truyền vào có icon search không ?
-     * Author: hainh 17/07/2022
+     * @Author: hainh 17/07/2022
      */
     hasIconSearchFunction() {
       return this.hasIconSearch ? true : false
+    },
+    /**
+     *
+     */
+    hasBackgroundColorInProps() {
+      return this.backgroundColorWhenHover
     },
   },
 }
 </script>
 
 <style scoped>
+.hoverBackground input:hover {
+  background-color: v-bind(backgroundColorWhenHover);
+}
 .base-input-text-field {
   display: flex;
 }
@@ -86,8 +113,8 @@ export default {
   border-radius: 4px;
   border: none;
   outline: none;
-  width: 320px;
-  background-color: #f0f2f4;
+  width: v-bind(width);
+  background-color: v-bind(backgroundColor);
 }
 
 .base-input-text-field input:hover {
