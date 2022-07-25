@@ -86,7 +86,7 @@ export default {
         box-shadow: 1px 0 4px #00000029;
         border-radius: 0 6px 6px 0;
         background-color: #fff;
-        z-index: 20;
+        z-index: 1;
         position: absolute;
         left: 249px;
         top: calc(50% - 20px);

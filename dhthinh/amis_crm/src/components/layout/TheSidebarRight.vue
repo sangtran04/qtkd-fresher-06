@@ -26,9 +26,11 @@
                 <div>Nguyễn Văn Hà (A006) - 12/08/2022</div>
             </div>
         </div>
+
         <div class="collapse-right">
             <div class="icon-collapse-right"></div>
         </div>
+        
   </div>
 </template>
 
@@ -36,7 +38,7 @@
 export default {
     name: 'TheSidebarRight',
     components: {
-        
+    
     }
 }
 </script>
@@ -53,7 +55,7 @@ export default {
         box-shadow: -2px 0 4px #00000029;
         border-radius: 6px 0 0 6px;
         background-color: #fff;
-        z-index: 20;
+        z-index: 1;
         position: absolute;
         right: 320px;
         top: calc(50% - 20px);
