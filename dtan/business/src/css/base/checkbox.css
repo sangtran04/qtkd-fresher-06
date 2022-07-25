@@ -9,13 +9,26 @@
     background-color: #fff;
 }
 
-.checkbox__list label {
-    font-weight: 500;
-    font-size: 14px;
+.checkbox__list {
+    height: 32px;
+    padding: 0 16px;
+    line-height: 32px;
+    box-sizing: border-box;
 }
 
 .checkbox__item {
     display: flex;
     align-items: center;
-    margin-bottom: 18px;
+    box-sizing: border-box;
+    height: 32px;
+}
+
+.checkbox__list label {
+    font-weight: 400;
+    font-size: 13px;
+    padding-left: 8px;
+}
+
+label {
+    padding-top: 1.5px;
 }
