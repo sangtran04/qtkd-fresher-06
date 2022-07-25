@@ -12,10 +12,10 @@
         <div class="popup__footer">
             <div class="popup__center"></div>
             <div class="popup__button">
-                <BaseButton buttonContent="Hủy" backgroundColor="#E2E4E9" color="#000000"/>
+                <BaseButton buttonContent="Hủy" :hasIcon="false" backgroundColor="#fff" backgroundColorHover="#E2E4E9" color="#000000"/>
             </div>
             <div class="popup__button">
-                <BaseButton buttonContent="Đồng ý" backgroundColor="#EC4141" color="#000000"/>
+                <BaseButton buttonContent="Đồng ý" :hasIcon="false" backgroundColor="#EC4141" backgroundColorHover="#EA2E2E" color="#fff" />
             </div>
         </div>
     </div>

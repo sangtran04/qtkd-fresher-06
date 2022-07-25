@@ -36,7 +36,7 @@ export default {
 <style>
     .base-checkbox {
       display: flex;
-      padding: 7px 0px;
+      padding: 8px 0px;
     }
     .checkbox {
         width: 16px;
