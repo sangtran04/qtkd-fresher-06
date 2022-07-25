@@ -1,0 +1,7 @@
+/* ẩn thanh scroll */
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+
+

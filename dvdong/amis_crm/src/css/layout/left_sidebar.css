@@ -1,0 +1,45 @@
+.sidebar__left{
+    padding-top: 8px;
+    width: 250px;
+    border-right: 1px solid #bbbbbb;
+}
+
+.filter-save {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 40px;
+}
+
+.filter-by {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.filter-select {
+
+}
+
+.filter-select__item {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin-bottom: 17px;
+    cursor: pointer;
+}
+
+.filter-select__item input{
+    width: 16px;
+    height: 16px;
+    margin-right: 9.5px;
+    border-radius: 1.5px;   
+    border: 1px solid #586074;
+    cursor: pointer;
+}

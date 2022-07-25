@@ -1,0 +1,48 @@
+.sidebar__right{
+    width: 320px;
+    padding-right: 8px;
+    border-left: 1px solid #bbbbbb;
+}
+
+.sidebar-right__icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    border-bottom: #ccc 1px solid;
+    box-sizing: border-box;
+}
+
+.sidebar-right__icon div:hover {
+    background-color: #ccc;
+    cursor: pointer;
+    padding: auto;
+}
+
+.sidebar-right__note {
+    display: flex;
+    height: 72px;
+    padding: 0 16px 12px;
+}
+
+.sidebar-right__history {
+    font-weight: 700;
+    font-size: 16;
+    padding: 16px;
+}
+
+.note-icon {
+    background-color: #2EC2FC;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.note-detail {
+    padding-left: 8px;
+    font-size: 13px;
+}

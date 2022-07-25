@@ -1,0 +1,44 @@
+.function{
+    padding: 0 16px;
+    height: 56px;
+    background-color: #E2E4E9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #bbbbbb;
+
+}
+
+.function__left {
+    display: flex;
+    align-items: center;
+}
+
+.menu__name {
+    font-family: Roboto Bold ;
+    font-size: 20px;
+}
+
+.function__fix {
+    text-decoration: none;
+    color: #4262F0;
+}
+
+.function__right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.function__btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    color: #1F2229;
+    margin-left: 8px;
+    min-width: 32px;
+    height: 32px;
+    background-color: white;
+}

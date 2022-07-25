@@ -1,0 +1,66 @@
+/* layout */
+@import url(./layout/header.css);
+@import url(./layout/function.css);
+@import url(./layout/content.css);
+@import url(./layout/left_sidebar.css);
+@import url(./layout/right_sidebar.css);
+@import url(./layout/right_sidebar.css);
+@import url(./layout/main.css);
+
+/* base  */
+@import url(./base/icon.css);
+@import url(./base/text-field.css);
+@import url(./base/table.css);
+@import url(./base/navigate.css);
+
+/* page */
+@import url(./page/sale.css);
+
+@font-face {
+    font-family: Roboto Medium;
+    src: url(../assets/fonts/roboto-v20-vietnamese_latin-regular.woff2);
+}
+
+
+@font-face {
+    font-family: Roboto Bold;
+    src: url(../assets/fonts/roboto-v20-vietnamese_latin-500.woff2);
+}
+
+@font-face {
+    font-family: Roboto Italic;
+    src: url(../assets/fonts/roboto-v20-vietnamese_latin-italic.woff2);
+}
+
+* {
+    margin: 0;
+    font-family: Roboto;
+    font-size: 13px;
+    /* min-width: 1280px;
+    min-height: 630px; */
+}
+
+.pr-8 {
+    padding-right: 8px;
+}
+
+.mr-8 {
+    margin-right: 8px;
+}
+
+.mr-16 {
+    margin-right: 16px;
+}
+
+.ml-8 {
+    margin-left: 8px;
+}
+
+.ml-16 {
+    margin-left: 16px;
+}
+
+
+
+
+
