@@ -58,7 +58,7 @@ export default {
   margin-left: 16px;
   font-size: 20px;
   font-weight: 500;
-  font-family: RobotoBold;
+  font-family: Roboto;
   line-height: 1.428571429;
   color: #1f2229;
 }

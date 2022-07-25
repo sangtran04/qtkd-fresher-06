@@ -42,7 +42,7 @@ export default {
 <style>
 .function {
   width: 100%;
-  height: 64px;
+  
 }
 
 .function__left {
