@@ -1,5 +1,7 @@
 <template>
+<div class="app">
      <textarea class="textarea" name="" id="" placeholder="placeholder" ></textarea>
+</div>
 </template>
 
 <script>

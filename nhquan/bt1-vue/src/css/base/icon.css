@@ -8,37 +8,37 @@
     width: 16px;
     height: 16px;
 }
-.icon--fb{
+.icon--facebook{
     background: url('../../assets/img/icon_collection.svg') no-repeat -288px -321px;
 	width: 16px;
 	height: 16px;
     margin-right: 20px;
 }
-.icon--lapphuong{
+.icon--3D{
 	background: url('../../assets/img/icon_collection.svg') no-repeat -369px -193px;
 	width: 15px;
 	height: 14px;
     margin-right: 20px;
 }
-.icon--lich{
+.icon--calendar{
     background: url('../../assets/img/icon_collection.svg') no-repeat -97px -65px;
 	width: 14px;
 	height: 15px;
     margin-right: 20px;
 }
-.icon--chuong{
+.icon--bell{
     background: url('../../assets/img/icon_collection.svg') no-repeat -75px -339px;
 	width: 18px;
 	height: 20px;
     margin-right: 20px;
 }
-.icon--thietlap{
+.icon--setting{
     background: url('../../assets/img/icon_collection.svg') no-repeat -16px 1px;
 	width: 17px;
 	height: 17px;
     margin-right: 20px;
 }
-.icon--hoi{
+.icon--question{
 	background: url('../../assets/img/icon_collection.svg') no-repeat -218px -363px;
 	width: 20px;
 	height: 20px;
@@ -77,80 +77,94 @@
     height: 13px;
 }
 
-.icon__banlamviec{
-    background: url('../../assets/img/icon_collection.svg') no-repeat 0px -271px;
-	width: 17px;
-	height: 17px;
+.icon--dashboard {
+    background: url('../../assets/img/icon_collection.svg') no-repeat 0 -272px;
+    width: 16px;
+    height: 16px;
 }
-.icon__tiemnang{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--potential {
+    background: url('../../assets/img/icon_collection.svg')no-repeat -160px -289px;
+    width: 16px;
+    height: 16px;
 }
-.icon__chaohang{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--offer {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -16px -272px;
+    width: 16px;
+    height: 16px;
 }
-.icon__lienhe{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--contact {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -129px -48px;
+    width: 14px;
+    height: 16px;
 }
-.icon__khachhang{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--customer {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -112px -48px;
+    width: 16px;
+    height: 16px;
 }
-.icon__cohoi{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--opportunity {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -80px -48px;
+    width: 16px;
+    height: 16px;
 }
-.icon__baogia{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--quote {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -66px -48px;
+    width: 12px;
+    height: 16px;
 }
-.icon__donhang{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--order {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -144px -48px;
+    width: 16px;
+    height: 16px;
 }
-.icon__hoadon{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--receipt {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -50px -48px;
+    width: 12px;
+    height: 16px;
 }
-.icon__aocohoi{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--pond {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -66px -305px;
+    width: 12px;
+    height: 15px;
 }
-.icon__hoatdong{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--active {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -129px -272px;
+    width: 15px;
+    height: 15px;
 }
-.icon__muctieu{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--target {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -81px -273px;
+    width: 15px;
+    height: 15px;
 }
-.icon__chiendich{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--campaign {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -208px -48px;
+    width: 16px;
+    height: 16px;
 }
-.icon__baocao{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--report {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -32px -272px;
+    width: 16px;
+    height: 16px;
 }
-.icon__khac{
-    background: url('../../assets/img/icon_collection.svg') no-repeat 0px -48px;
-	width: 16px;
-	height: 16px;
+
+.icon--other {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -49px -275px;
+    width: 14px;
+    height: 11px;
 }
 
 .function__left__item__icon1{

@@ -1,16 +1,13 @@
 .content{
     width: 100%;
-    height:calc(100vh - 148px);
+    height:calc(100vh - 168px); 
     display:flex;
     position: relative;
-    flex: 1;
     box-sizing: border-box;  
 }
 .content__left{
     width:240px;
-    display: flex;
     flex-shrink: 0;
-    flex-direction: column;
     margin-left: 10px;
     border-right: 1px solid #ccc;
 }
@@ -50,16 +47,15 @@
             margin-bottom: 10px;
         }
             .menucheck__item__text{
-                font-size: 12px;
+                font-size: 13px;
                 margin-left: 8px;
                 align-items: center;
             }
 
 .content__mid{
     width: calc(100% - 560px);
-    display: flex;
-    flex-direction: column;
     flex:1;
+    position: relative;
 }
     .content__mid__table{
         flex:1;

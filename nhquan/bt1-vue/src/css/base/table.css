@@ -1,0 +1,91 @@
+.table {
+    width: 2600px;
+    border-spacing: unset;
+    border: unset;
+    border-collapse: collapse;
+}
+
+.table thead tr {
+    background-color: rgb(240 242 244);
+}
+
+.table thead tr th {
+    font-weight: 700;
+}
+
+.table tbody tr td {
+    font-weight: 500;
+}
+
+.table .text--blue {
+    color: rgb(19, 59, 236);
+}
+
+.text--icon {
+    display: flex;
+    align-items: center;
+    line-height: 40px;
+}
+
+.table tr {
+    height: 40px;
+    border-bottom: 0.5px solid #D3D7DE;
+    cursor: pointer;
+}
+
+.table td,
+th {
+    padding: 0 8px;
+    border: none;
+}
+
+.table__checkbox {
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+.table tbody tr:hover {
+    background-color: #E7EBFD;
+}
+
+.th__120 {
+    width: 160px;
+    background-color: red;
+    height: 48px;
+}
+
+.th__80 {
+    width: 80px;
+}
+
+.th__60 {
+    width: 60px;
+}
+
+.text-align-left {
+    text-align: left;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+table tr.row--selected {
+    background-color: #dedede;
+}
+
+.abc {
+    /* padding: 0 10px; */
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 56px;
+    overflow: auto;
+}
+
+.m-table thead {
+    position: sticky;
+}
+
+
