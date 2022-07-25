@@ -11,6 +11,9 @@
 
 .table thead tr th {
     font-weight: 700;
+    position: sticky;
+    top: 0;
+    background-color: rgb(240 242 244);
 }
 
 .table tbody tr td {
@@ -39,6 +42,12 @@
     padding-right: 10px;
 }
 
+.table tbody {
+    overflow: scroll;
+    width: calc(100% - 320px - 249px);
+    height: calc(100vh - 84px - 56px);
+}
+
 .table tbody tr:hover {
     background-color: #E7EBFD;
 }
@@ -62,6 +71,7 @@ table tr.row--selected {
     position: absolute;
     top: 0;
     bottom: 56px;
+    overflow: hidden;
     overflow: auto;
 }
 
@@ -79,4 +89,8 @@ table tr.row--selected {
     background-color: white;
     border-radius: 50%;
     box-shadow: 0 2px 4px #1f222929;
+}
+
+.parent__td--icon:hover {
+    background-color: #d3d7de;
 }

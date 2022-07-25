@@ -23,7 +23,7 @@
                         <TextField contentLabel="" width="465px"/>
                     </div>
                     <div class="form__item">
-                        <label for="">Tên *</label>
+                        <label for="">Tên <span style="color:red">*</span></label>
                         <TextField width="465px"/>
                     </div>
                     <div class="form__item">
@@ -68,7 +68,7 @@
                     </div>
                     <div isTextArea class="form__item">
                         <label for="">Chia sẻ cá nhân</label>
-                        <BaseTextArea  width="465px"/>
+                        <BaseTextArea style="margin-left: 10px"  width="465px"/>
                     </div> 
                 </div>
                 <div class="form__col2">
@@ -118,7 +118,7 @@
                     </div> 
                     <div isTextArea class="form__item">
                         <label for="">Hồ sơ</label>
-                        <BaseTextArea  width="465px"/>
+                        <BaseTextArea style="margin-left: 10px"  width="465px"/>
                     </div> 
                     <div class="form__item">
                         <label for="">Thời gian dự định du học</label>
@@ -186,7 +186,7 @@
                     </div>
                     <div isTextArea class="form__item">
                         <label for="">Địa chỉ</label>
-                         <BaseTextArea width="465px"/>
+                         <BaseTextArea style="margin-left: 10px" width="465px"/>
                     </div>
                 </div>
                 <div class="form__col2">
@@ -213,7 +213,7 @@
                 <div class="form__col1">
                     <div isTextArea class="form__item">
                         <label for="">Mô tả</label>
-                        <BaseTextArea  width="1210px"/>
+                        <BaseTextArea style="margin-left: 10px"  width="1210px"/>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@
                 <div class="form__col1">
                     <div class="form__item">
                         <label for="">Dùng chung</label>
-                        <BaseCheckbox/>
+                        <BaseCheckbox style="margin-left: 10px"/>
                     </div>
                     <TextField hasLabel contentLabel="Mã tiềm năng" placeholder="Mã tự sinh" width="465px"/>
                 </div>
@@ -249,6 +249,8 @@ div[isTextArea] > label {
 }
 .add__content{
     padding: 32px 56px 0 56px;
+    overflow:auto ;
+    height: calc(100vh - 176px);
 }
 .add__content .title__image{
     
@@ -264,10 +266,15 @@ div[isTextArea] > label {
     margin: 16px 0 40px 0;
 }
 .icon__avatar{
+    content:"";
     display: inline-block;
     width: 48px;
     height: 48px;
-    background: url(../../assets/img/icon_collection.svg) no-repeat -144px -848px;
+    background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)     no-repeat -144px -848px;;
+
+    /* -144px -848px; */
+    
 }
 .form__row{
     padding: 8px 0;
@@ -278,7 +285,7 @@ div[isTextArea] > label {
 }
 .form__col1 label, .form__col2 label
 {
-    min-width: 200px;
+    min-width: 190px;
     /* max-width: 160px; */
     max-height: 32px;
 }

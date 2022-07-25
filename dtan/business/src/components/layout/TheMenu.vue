@@ -12,11 +12,12 @@
         </div>
       </div>
       <div class="menu__row__mid">
-        <div :class="{ 'icon--search': hasIconSearch }"></div>
+        <div :class="{'icon--search': hasIconSearch}"></div>
         <TextField
           hasIconSearch
           width="320px"
           placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
+          backgroundColor="rgb(240 242 244)"
         />
       </div>
       <div class="menu__row__right">
@@ -81,4 +82,5 @@ export default {
 </script>
 <style scoped>
 @import url(../../css/layout/menu.css);
+
 </style>

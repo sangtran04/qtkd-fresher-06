@@ -43,6 +43,7 @@ const LIST_CONTACT = [{
     {
         id: 7,
         iconContact: 'icon--avatar',
+        width: "0px",
     },
 
 ]

@@ -3,17 +3,21 @@
     <label :class="{'label': hasLabelFunc }" for="">{{ contentLabel }}</label>
     <input
       class="input"
-      :id="labelContent"
       type="text"
       :placeholder="placeholder"
       :readonly="readOnly"
       :class="{ 'input__icon input__icon--search': hasIconSearchFunction }"
     />
+          <!-- :id="labelContent" -->
   </div>
 </template>
 <script>
 export default {
   props: {
+    backgroundColor:{
+      type: String,
+      default: '#fff'
+    },
     // Thiết lập chiều ngang cho text field
     width: {
       type: String,
@@ -32,6 +36,7 @@ export default {
     // Chỉ định nội dung thẻ label
     contentLabel: {
       type: String,
+      default: "",
     },
     // Label nằm ngang hàng với thẻ input
     leftLabel: {
@@ -78,6 +83,8 @@ export default {
   border: 1px solid #ccc;
   padding: 8px 16px;
   outline: none;
+  background-color: v-bind(backgroundColor);
+  margin-left: 10px;
 }
 
 .input:hover {
@@ -110,11 +117,9 @@ export default {
 }
 
 .input__icon--search {
-  background-color: rgb(240 242 244);
-  margin-top: 0px;
-  width: 275px;
+  margin-top: 0px;  
   border: none;
-  margin-left: 32px;
+  margin-left: 36px;
 }
 .input[readonly] {
   background-color: #e2e4e9;
@@ -129,17 +134,18 @@ export default {
   border: 1px solid #d3d7de;
 }
 
-.input__icon--search:hover {
+/* .input__icon--search:hover {
   border: 1px solid#4262F0;
-}
+} */
 
 .input__icon--search:focus {
+  box-sizing: border-box;
   border: 1px solid#4262F0;
 }
 
 .label {
   padding-top: 0px;
-  min-width: 200px;
+  min-width: 190px;
   max-height: 32px;
 }
 </style>

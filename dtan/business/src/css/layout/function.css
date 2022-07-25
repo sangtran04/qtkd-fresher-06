@@ -44,7 +44,8 @@
 }
 
 .right__threedot--32 {
-    width: 32px;
+    box-sizing: border-box;
+    width: 36px;
     height: 32px;
     background-color: white;
     border-radius: 4px;
@@ -57,7 +58,8 @@
 }
 
 .right__threedot--64 {
-    width: 64px;
+    box-sizing: border-box;
+    width: 55px;
     height: 32px;
     background-color: white;
     border-radius: 4px;
@@ -70,5 +72,5 @@
 
 .downblack__position {
     position: absolute;
-    right: -32px;
+    right: -18px;
 }

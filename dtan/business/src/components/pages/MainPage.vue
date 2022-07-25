@@ -11,7 +11,7 @@
           class="icon--search"
           style="position: absolute; top: 10px; left: calc(249px - 36px)"
         ></div>
-        LỌC THEO TIỀM NĂNG
+        LỌC TIỀM NĂNG THEO
       </div>
       <div class="checkbox__list">
         <BaseCheckboxItem
@@ -31,11 +31,11 @@
             <tr>
               <th style="width: 36px">
                 <div class="parent__td--icon">
-                  <div class="icon--tdtable"></div>
+                  <div title="Tùy chỉnh cột" class="icon--tdtable"></div>
                 </div>
               </th>
               <th style="width: 28px" class="text-align-right">
-                <BaseCheckbox id="10" style="margin: 0 12px" />
+                <BaseCheckbox :id="uuidv4()" style="margin: 0 12px" />
               </th>
               <th style="width: 150px" class="text-align-left">Thẻ</th>
               <th class="text-align-left" style="width: 100px">Xưng hô</th>
@@ -62,11 +62,11 @@
               <th class="text-align-left" style="width: 200px">Mô tả</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody class="cc">
             <tr v-for="customer in customers" :key="customer.CustomerId">
               <td style="width: 36px"></td>
               <th style="width: 28px" class="text-align-right">
-                <BaseCheckbox id="11" style="margin: 0 12px" />
+                <BaseCheckbox :id="uuidv4()" style="margin: 0 12px" />
               </th>
               <td style="width: 100px" class="text-align-left"></td>
               <td class="text-align-left" style="width: 100px">Anh</td>
@@ -94,7 +94,7 @@
               <td class="text-align-left text--blue" style="width: 180px">
                 {{ customer.Email }}
               </td>
-              <td class="text-align-left" style="width: 300px">Trùm mõm</td>
+              <td class="text-align-left" style="width: 300px">Cộng đồng mõm NĐ</td>
               <td class="text-align-left" style="width: 200px">Xóm 13</td>
               <td class="text-align-left" style="width: 120px">
                 {{ customer.IdentityPlace }}
@@ -105,7 +105,7 @@
               <td class="text-align-left" style="width: 180px">Dịch vụ</td>
               <td class="text-align-left" style="width: 180px">Kinh tế</td>
               <td class="text-align-left" style="width: 200px">
-                it so fking nice
+                it so nice
               </td>
             </tr>
           </tbody>
@@ -119,6 +119,9 @@
               :arrays="CHANGE_PAGE_SIZE"
               dropdownContent="20 Bản ghi trên trang"
             /> -->
+            <select class="navigate__select">
+              <option>100 bản ghi trên Trang</option>
+            </select>
           </div>
           <div class="icon--pre2"></div>
           <div class="icon--pre1"></div>
@@ -167,6 +170,7 @@
 </template>
 
 <script>
+import uuidv4 from '../../constants/checkbox-id'
 import axios from "axios";
 import { ref } from "vue";
 import BaseTag from "../base/BaseTag.vue";
@@ -180,7 +184,7 @@ export default {
   setup() {
     const checkboxs = ref(LIST_CHECKBOX);
     return {
-      checkboxs,
+      checkboxs,uuidv4
     };
   },
   created() {
