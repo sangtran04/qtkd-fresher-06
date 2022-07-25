@@ -167,15 +167,15 @@
 }
 
 .icon-down {
-	background: url(../assets/Resource/img/icon_collection.svg) no-repeat -77px -160px;
+	background: url(../assets/Resource/img/icon_collection.svg) no-repeat -80px -160px;
     width: 16px;
     height: 16px;
 }
 
 .icon-future {
-	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -291px -371px;
-	width: 18px;
-	height: 4px;
+	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -6px;
+    width: 14px;
+    height: 4px;
 }
 
 .icon-threecol {
@@ -298,3 +298,20 @@
     height: 9px;
     float: left;
 }
+
+.iconaddwhite{
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -242px -130px;
+	width: 13px;
+	height: 13px;
+}
+
+.icon-telephone {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -320px -48px;
+	width: 16px;
+	height: 16px;
+    margin-right: 8px;
+}
+
+/* .icon-facebook24 {
+    background-color: ../assets/Resource/img/;
+} */
