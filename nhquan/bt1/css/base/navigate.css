@@ -1,13 +1,11 @@
-
 .navigate {
-    width: 100%;
+    width:calc(100% - 560px);
     background-color: white;
     height: 56px;
     position: absolute;
     top: calc(100% - 56px);
     box-sizing: border-box;
-    border-top: 1px solid #D3D7DE;
-    border-bottom: 1px solid #D3D7DE;
+    border: 1px solid #D3D7DE;
     display: flex;
     justify-content: space-between;
     align-items: center;

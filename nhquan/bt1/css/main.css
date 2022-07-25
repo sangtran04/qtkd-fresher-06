@@ -5,6 +5,8 @@
 @import url(./base/icon.css);
 @import url(./base/checkbox.css);
 @import url(./base/textarea.css);
+@import url(./base/table.css);
+@import url(./base/navigate.css);
 
 
 
@@ -17,4 +19,18 @@
 body{
     font-size: 11px;
     font-family: MISA Font;
+}
+
+
+
+
+.abc{
+    position: relative;
+}
+
+.container{
+    width:100%;
+    height:100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
 }

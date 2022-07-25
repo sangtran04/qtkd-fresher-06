@@ -3,6 +3,8 @@
     height:64px;
     background-color:#D3D7DE;
     display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
 }
 .function__left{
     display:flex;
@@ -27,3 +29,18 @@
 .function__left__item__text2:hover{
     color:rgb(43, 78, 238)
 }
+
+.fuction__right{
+    display:flex;
+    align-items: center;
+    padding-right: 30px;
+}
+.function__right__add{
+    margin-right: 180px;
+    align-items: center;
+    width: 40px;;
+    
+}
+    .function__right__add__text{
+        
+    }

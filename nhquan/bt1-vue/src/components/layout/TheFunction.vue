@@ -2,7 +2,7 @@
             <div class="function">
             <div class="function__left">
                 <div class="function__left__item">
-                    <div class="function__left__item__text1">Tất cả tiềm năng</div>
+                    <div class="function__left__item__text1">Tiềm năng của tôi</div>
                     <div class="function__left__item__icon1"></div>
                 </div>
                 <div class="function__left__item">

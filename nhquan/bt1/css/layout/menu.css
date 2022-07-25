@@ -34,6 +34,7 @@
 
 .menu__top__right{
     display: flex;
+    align-items: center;
 }
 
 .menu__bottom{
@@ -50,7 +51,10 @@
 .menu__text{
     margin-left: 8px;
 }
-.menu__bottom__item:hover{
-    background-color: #7189F4;
+.menu__bottom__item2{
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+    background-color: #a1b0ee;
     border-bottom: 1px solid  #7189F4;
 }

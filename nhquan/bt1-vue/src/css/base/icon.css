@@ -8,37 +8,37 @@
     width: 16px;
     height: 16px;
 }
-.icon--fb{
+.icon--facebook{
     background: url('../../assets/img/icon_collection.svg') no-repeat -288px -321px;
 	width: 16px;
 	height: 16px;
     margin-right: 20px;
 }
-.icon--lapphuong{
+.icon--3D{
 	background: url('../../assets/img/icon_collection.svg') no-repeat -369px -193px;
 	width: 15px;
 	height: 14px;
     margin-right: 20px;
 }
-.icon--lich{
+.icon--calendar{
     background: url('../../assets/img/icon_collection.svg') no-repeat -97px -65px;
 	width: 14px;
 	height: 15px;
     margin-right: 20px;
 }
-.icon--chuong{
+.icon--bell{
     background: url('../../assets/img/icon_collection.svg') no-repeat -75px -339px;
 	width: 18px;
 	height: 20px;
     margin-right: 20px;
 }
-.icon--thietlap{
+.icon--setting{
     background: url('../../assets/img/icon_collection.svg') no-repeat -16px 1px;
 	width: 17px;
 	height: 17px;
     margin-right: 20px;
 }
-.icon--hoi{
+.icon--question{
 	background: url('../../assets/img/icon_collection.svg') no-repeat -218px -363px;
 	width: 20px;
 	height: 20px;

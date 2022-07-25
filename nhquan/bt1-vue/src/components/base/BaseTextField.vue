@@ -51,6 +51,16 @@ export default {
     hasIconSearch: {
       type: Boolean,
     },
+    //thêm prop Width
+    setWidth: {
+      type:String,
+      default:"320px",
+    },
+    //theme prop height
+    setHeight: {
+      type:String,
+      default:"32px",
+    }
   },
   computed: {
     /**
@@ -87,8 +97,10 @@ export default {
   border-radius: 4px;
   border: none;
   outline: none;
-  width: 320px;
+  width: v-bind(setWidth);
+  height:v-bind(setHeight);
   background-color: #f0f2f4;
+  border: 1px solid #f0f2f4;
 }
 .base-input-text-field input:hover {
   border-color: #7c869c;

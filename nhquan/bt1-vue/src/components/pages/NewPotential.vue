@@ -1,5 +1,5 @@
 <template>
-<div class="menu">
+    <div class="menu">
             <div class="menu__top">
                 <div class="menu__top__left">
                     <div class="sibar"></div>
@@ -89,18 +89,53 @@
 
             </div>
         </div>
+
+                    <div class="function">
+            <div class="function__left">
+                <div class="function__left__item">
+                    <div class="function__left__item__text1_1">Thêm tiềm năng    </div>
+                    <div class="function__left__item__text1_2"> - Mẫu tiêu chuẩn</div>
+
+                </div>
+                <div class="function__left__item">
+                    <div class="function__left__item__text2_1">Sửa bố cục</div>
+
+                </div>
+            </div>
+
+            <div class="fuction__right">
+                <BaseTextField placeholder="Tìm theo địa chỉ,tổ chức,Email cá nhân ,ĐT di động,ĐT cơ quan,Email cơ quan"
+                    :hasIconSearch="true"  setWidth="190px" setHeight="30px" class="margin-right"/>
+             
+
+                 <BaseButton buttonContent="Thêm" hasIcon />
+
+                <div class="function__right__option">
+                    <button class="function__right__option__button"></button>
+                </div>
+                <div class="function__right__value">
+                    <button class="function__right__value__button1 "></button>
+                    <button class="function__right__value__button2 "></button>
+                </div>
+            </div>
+        </div>
 </template>
 
 <script>
 import BaseTextField from '../base/BaseTextField.vue'
+import BaseButton from '../base/BaseButton.vue'
+
 export default {
-  components: {
+    components: {
     BaseTextField,
+    BaseButton,
+
   },
 }
 </script>
+
 <style>
-.menu{
+    .menu{
     width:100%;
     height:84px;
     display: flex;

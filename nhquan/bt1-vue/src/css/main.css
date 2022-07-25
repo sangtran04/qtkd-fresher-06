@@ -17,13 +17,10 @@
 *{margin: 0}
 
 body{
-    font-size: 11px;
+    font-size: 13px;
     font-family: MISA Font;
 }
 
-
-
-
-.abc{
-    position: relative;
+.margin-right{
+    margin-right: 10px;
 }

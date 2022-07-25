@@ -12,38 +12,39 @@
     background: url('../../assets/img/icon_collection.svg') no-repeat -288px -321px;
 	width: 16px;
 	height: 16px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .icon--lapphuong{
-	background: url('../../assets/img/icon_collection.svg') no-repeat -128px -241px;
-	width: 14px;
+	background: url('../../assets/img/icon_collection.svg') no-repeat -369px -193px;
+	width: 15px;
 	height: 14px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .icon--lich{
     background: url('../../assets/img/icon_collection.svg') no-repeat -97px -65px;
 	width: 14px;
 	height: 15px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .icon--chuong{
     background: url('../../assets/img/icon_collection.svg') no-repeat -75px -339px;
 	width: 18px;
 	height: 20px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .icon--thietlap{
     background: url('../../assets/img/icon_collection.svg') no-repeat -16px 1px;
 	width: 17px;
 	height: 17px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 .icon--hoi{
-	background: url('../../assets/img/icon_collection.svg') no-repeat 76.316% 39.49%;
-	background-size: 200px 500px;
-	width: 10px;
-	height: 10px;
-    margin-right: 10px;
+	background: url('../../assets/img/icon_collection.svg') no-repeat -218px -363px;
+	width: 20px;
+	height: 20px;
+    margin-right: 20px;
+    
+
 }
 .icon--avt{
     background: url('../../assets/img/icon_collection.svg') no-repeat 26.087% 58.264%;
@@ -52,6 +53,29 @@
 	height: 16px;
 }
 
+.icon--pre1 {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -293px -34px;
+    width: 7px;
+    height: 13px;
+}
+
+.icon--pre2 {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -115px -226px;
+    width: 9px;
+    height: 13px;
+}
+
+.icon--next1 {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -308px -34px;
+    width: 7px;
+    height: 13px;
+}
+
+.icon--next2 {
+    background: url('../../assets/img/icon_collection.svg') no-repeat -132px -226px;
+    width: 9px;
+    height: 13px;
+}
 
 .icon__banlamviec{
     background: url('../../assets/img/icon_collection.svg') no-repeat 0px -271px;
@@ -158,25 +182,41 @@
     background: url('../../assets/img/icon_collection.svg') no-repeat -177px -322px;
 	width: 15px;
 	height: 15px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .icon__box{
     background: url('../../assets/img/icon_collection.svg') no-repeat -194px -321px;
 	width: 12px;
 	height: 16px;
-    margin-left: 40px;
+    margin-left: 30px;
 
 }
 .icon__sheet{
     background: url('../../assets/img/icon_collection.svg') no-repeat -209px -321px;
 	width: 14px;
 	height: 16px;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 .icon__mail{
     background: url('../../assets/img/icon_collection.svg') no-repeat 0 -324px;
 	width: 16px;
 	height: 11px;
-    margin-left: 40px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+}
+
+.icon--text{
+	background: url('../../assets/img/icon_collection.svg') no-repeat -34px -18px;
+	width: 16px;
+	height: 16px;
+	
+	
+}
+.icon__bot{
+	background: url('../../assets/img/icon_collection.svg') no-repeat -52px -38px;
+	width: 9px;
+	height: 5px;
+	
 
 }
