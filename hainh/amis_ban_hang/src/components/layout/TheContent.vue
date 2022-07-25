@@ -647,16 +647,20 @@
         <span>Tổng số: 893</span>
       </div>
       <div class="navigate__right">
-        <select class="navigate__select" name="" id="">
-          <option value="">50 bản ghi trên trang</option>
-          <option value="">50 bản ghi trên trang</option>
-        </select>
-        <div class="icon-pre2"></div>
-        <div class="icon-pre1"></div>
+        <div>
+          <DropDownMenu
+            :arrays="CHANGE_PAGE_SIZE"
+            dropdownContent="20 Bản ghi trên trang"
+          />
+        </div>
+        <div class="pagination-icon">
+          <div class="icon-pre2"></div>
+          <div class="icon-pre1"></div>
 
-        <div class="navigate__text" style="font-weight: 500">1 đến 50</div>
-        <div class="icon-next1"></div>
-        <div class="icon-next2"></div>
+          <div class="navigate__text" style="font-weight: 500">1 đến 50</div>
+          <div class="icon-next1"></div>
+          <div class="icon-next2"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -664,10 +668,25 @@
 
 <script>
 import BaseCheckbox from '../base/BaseCheckbox.vue'
-export default { components: { BaseCheckbox } }
+import DropDownMenu from '../base/DropDownMenu.vue'
+import CHANGE_PAGE_SIZE from '../../constants/change-page-size'
+export default {
+  components: { BaseCheckbox, DropDownMenu },
+  data() {
+    return {
+      CHANGE_PAGE_SIZE,
+    }
+  },
+}
 </script>
 
 <style scoped>
+.pagination-icon {
+  margin-left: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
 .ic-sort-setting-16:before {
   content: '';
   display: inline-block;
@@ -799,7 +818,7 @@ table tr.row--selected {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 16px;
+  padding: 16px 12px;
 }
 
 .navigate__left {
@@ -807,14 +826,20 @@ table tr.row--selected {
   display: flex;
   align-items: center;
 }
+.navigate__left > span {
+  padding: 0 16px;
+}
 
 .navigate__right {
-  padding-right: 16px;
   display: flex;
   align-items: center;
-  width: 340px;
-  justify-content: space-between;
+  width: 370px;
 }
+
+.navigate__right button {
+  height: 32px !important;
+}
+
 .icon-add_colums_16 {
   display: inline-block;
   cursor: pointer;

@@ -39,7 +39,13 @@ export default {
   position: relative;
   align-items: center;
   cursor: pointer;
+  /* padding: 0 16px;
+  transition: all 0.3s ease-in-out; */
 }
+
+/* .m-tab:hover {
+  background-color: #f0f2f4;
+} */
 
 .m-tab.checked > span {
   position: absolute;
