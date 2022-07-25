@@ -1,7 +1,7 @@
 <template>
   <div class="function">
     <div class="function__left">
-      <h1 class="function__title">Tiềm năng của tôi</h1>
+      <h1 class="function__title mgr-8">Tiềm năng của tôi</h1>
       <div class="icon icon-dropdown"></div>
       <div class="function__edit">Sửa</div>
       <div class="icon-refresh"></div>
@@ -18,10 +18,10 @@
         <router-link to="/AddPage" class="link-router">
           <BaseButton class="mgr-8" buttonContent="Thêm" backgroundColor="#4262F0" color="#fff" :hasIcon="true" :hasDown="true"/>
         </router-link>
-        <BaseButton class="mgr-8" backgroundColor="#fff" backgroundColorHover="#f0f2f4">
+        <BaseButton class="mgr-8" backgroundColor="#fff" backgroundColorHover="#f0f2f4" :hasContent="false" width="36px">
             <div class="icon-future"></div>
         </BaseButton>
-        <BaseButton class="mgr-8" backgroundColor="#fff" backgroundColorHover="#f0f2f4">
+        <BaseButton class="mgr-8" backgroundColor="#fff" backgroundColorHover="#f0f2f4" :hasContent="false">
             <div class="icon-threecol mgr-8"></div>
             <div class="icon-dropdown"></div>
         </BaseButton>
@@ -58,7 +58,7 @@ export default {
   margin-left: 16px;
   font-size: 20px;
   font-weight: 500;
-  font-family: Roboto;
+  font-family: Regular;
   line-height: 1.428571429;
   color: #1f2229;
 }
@@ -75,6 +75,7 @@ export default {
 
 .function__right {
     display: flex;
+    margin-right: 8px;
 }
 
 .link-router {

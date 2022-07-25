@@ -13,10 +13,6 @@
     src: url("../assets/Resource/fonts/roboto-v20-vietnamese_latin-regular.woff2");
 }
 
-@font-face {
-    font-family: RobotoBold;
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-}
 ::placeholder {
     font-weight: 400;
     font-size: 1.3rem;

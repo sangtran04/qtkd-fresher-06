@@ -1,18 +1,20 @@
 <template>
-  <button class="crm-button" :class="{ disabled: isDisabled }">
+  <div :class="{ disabled: isDisabled }">
+    <button class="crm-button" :class="{buttonoutlined: isOutLined}">
     <div class="crm-button__icon">
       <div :class="{iconaddwhite: isIcon}">
 
       </div>
-    </div>
-    <div class="crm-button__content">
-      {{buttonContent}}
       <slot></slot>
+    </div>
+    <div v-if="isContent" class="crm-button__content">
+      {{buttonContent}}
     </div>
     <div v-if="isDown" class="crm-button__down" >
       <div class="icon-down"></div>
     </div>
   </button>
+  </div>
 </template>
 
 
@@ -55,10 +57,22 @@ export default {
       default: "#fff"
     },
 
+    //thiết lập màu cho border
+    borderColor: {
+      type: String,
+      default: "#fff"
+    },
+
     // button có icon không
     hasIcon: {
       type: Boolean,
       default: false,
+    },
+
+    // button có nội dung không
+    hasContent: {
+      type: Boolean,
+      default: true,
     },
 
     // button có dropdown không
@@ -72,6 +86,12 @@ export default {
       type: Boolean,
       default: false,
     },
+
+    // Có phải dạng button outlined không
+    hasOutLined: {
+      type: Boolean,
+      default: false,
+    }
   },
   computed: {
     isIcon() {
@@ -84,6 +104,14 @@ export default {
 
     isDisabled() {
       return this.disabled
+    },
+
+    isContent() {
+      return this.hasContent
+    },
+
+    isOutLined() {
+      return this.hasOutLined
     },
   },
 }
@@ -130,6 +158,14 @@ export default {
   height: 100%;
   padding: 0 8px;
   border-left: solid 1px #fff;
+}
+
+.buttonoutlined {
+  background-color: v-bind(backgroundColor);
+  color: v-bind(color);
+  border-style: solid;
+  border-width: 1px;
+  border-color: v-bind(borderColor);
 }
 
 .disabled {
