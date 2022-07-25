@@ -48,13 +48,17 @@
       <BaseTag />
       <base-toast-message></base-toast-message>
       <!-- <BaseTextField labelContent="true" /> -->
-      <BaseDropdown :options="options" 
-      @click="clickHandler(event)"
-        />
+      <BaseDropdown :options="options" @click="clickHandler(event)" />
 
-      <div style="margin-top:15px; margin-left: 15px;">
-        <BaseCombobox/>
+      <div style="margin-top: 15px; margin-left: 15px">
+        <BaseCombobox />
       </div>
+
+      <BaseSelect
+        :options="categories"
+        v-model="event.category"
+        label="Select a category"
+      />
     </div>
   </div>
 </template>
@@ -65,7 +69,8 @@ import BaseTag from "./../base/BaseTag.vue";
 import BaseToastMessage from "./../base/BaseToastMessage.vue";
 // import BaseTextField from "./../base/BaseTextField.vue";
 import BaseDropdown from "./../base/BaseDropdown.vue";
-import BaseCombobox from './../base/BaseCombobox.vue'
+import BaseCombobox from "./../base/BaseCombobox.vue";
+import BaseSelect from "./../base/BaseSelect.vue";
 
 export default {
   components: {
@@ -75,6 +80,7 @@ export default {
     // BaseTextField,
     BaseDropdown,
     BaseCombobox,
+    BaseSelect,
   },
   data() {
     return {
@@ -87,14 +93,31 @@ export default {
         { checkboxId: 6, checkboxLabel: "Thẻ6" },
         { checkboxId: 7, checkboxLabel: "Thẻ7" },
       ],
-      options: [
-        {name: 'sdasd'},
-        {name : 'dasd2'}
-      ]
+      options: [{ name: "sdasd" }, { name: "dasd2" }],
+      categories: [
+        "sustainability",
+        "nature",
+        "animal welfare",
+        "housing",
+        "education",
+        "food",
+        "community",
+      ],
+      event: {
+        category: '',
+        title: '',
+        description: '',
+        location: '',
+        pets: 1,
+        extras: {
+          catering: false,
+          music: false
+        }
+      }
     };
   },
   props: {
-    
+    return: {},
   },
 };
 </script>

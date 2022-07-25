@@ -1,7 +1,8 @@
 <template>
   <div class="btn-group">
     <li
-      @click="toggleMenu()"
+      @click="showMenu =!showMenu"
+      :class="{'dropdown-toggle' :showMenu}"
       class="dropdown-toggle"
       v-if="selectedOption.name !== undefined"
     >
@@ -19,7 +20,7 @@
     </li>
 
     <ul class="dropdown-menu" v-if="showMenu">
-      <li v-for="(option, idx) in options" :key="idx">
+      <li v-for="(option, index) in options" :key="index">
         <a href="javascript:void(0)" @click="updateOption(option)">
           {{ option.name }}
         </a>
@@ -33,10 +34,13 @@ export default {
   data() {
     return {
       selectedOption: {
-        name: '-Không chọn-'
+        name: '-None-',
+       showMenu: {
+         type: Boolean,
+         default: false,
+       },
+       placeholderText: "Please select an item",
       },
-      showMenu: false,
-      placeholderText: "Please select an item",
     };
   },
   props: {

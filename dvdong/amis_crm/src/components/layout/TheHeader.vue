@@ -4,11 +4,11 @@
       <div class="header__left">
         <div class="icon icon--toggle"></div>
         <div class="icon icon--logo"></div>
-        <div class="title">Bán hàng</div>
+        <div class="title">CRM</div>
       </div>
       <div class="header__center">
         <!-- <BaseTextField/> -->
-        <BaseCombobox/>
+        <!-- <BaseCombobox/> -->
 
         <div class="header__search">
           <input
@@ -101,7 +101,7 @@ import BaseCombobox from './../base/BaseCombobox.vue'
 export default {
   components: {
     // BaseTextField,
-    BaseCombobox,
+    // BaseCombobox,
 
   },
   data() {

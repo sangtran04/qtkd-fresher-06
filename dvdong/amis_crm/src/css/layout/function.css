@@ -1,6 +1,6 @@
 .function{
     padding: 0 16px;
-    height: 64px;
+    height: 56px;
     background-color: #E2E4E9;
     display: flex;
     align-items: center;
@@ -16,6 +16,7 @@
 
 .menu__name {
     font-family: Roboto Bold ;
+    font-size: 20px;
 }
 
 .function__fix {
