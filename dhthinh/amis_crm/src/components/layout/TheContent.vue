@@ -441,10 +441,12 @@
     <div class="navigate">
       <div class="navigate__left">Tổng số: 893</div>
       <div class="navigate__right">
-        <select class="navigate__select" name="" id="">
-          <option value="">50 bản ghi trên trang</option>
-          <option value="">50 bản ghi trên trang</option>
-        </select>
+        <div class="page__size">
+          <BaseDropDown
+            :arrays="PAGESIZE"
+            dropdownContent="20 Bản ghi trên trang"
+          />
+        </div>
         <div class="icon-pre2"></div>
         <div class="icon-pre1"></div>
         <div class="navigate__text" style="font-weight: 500">1 đến 50</div>
@@ -456,11 +458,17 @@
 </template>
 
 <script>
-// import BaseToggle from "../base/BaseToggle.vue";
+import PAGESIZE from '../../constants/PageSize'
+import BaseDropDown from '../base/BaseDropDown.vue'
 export default {
   name: "TheContent",
   components: {
-    // BaseToggle
+    BaseDropDown,
+},
+  data() {
+    return {
+      PAGESIZE,
+    }
   },
 };
 </script>
@@ -504,5 +512,9 @@ export default {
 
 .content {
   position: relative;
+}
+
+.page__size {
+  width: 182px;
 }
 </style>
