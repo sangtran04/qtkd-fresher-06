@@ -1,10 +1,9 @@
 <template>
-  <div class="function">
+    <div class="function">
     <div class="function__left">
-      <h1 class="function__title">Tiềm năng của tôi</h1>
-      <div class="icon icon-dropdown"></div>
-      <div class="function__edit">Sửa</div>
-      <div class="icon-refresh"></div>
+      <h1 class="function__title mgr-8">Thêm Tiềm Năng</h1>
+      <div>Mẫu tiêu chuẩn</div>
+      <div class="function__edit">Sửa bố cục</div>
     </div>
     <div class="layout__center"></div>
     <div class="function__right">
@@ -42,11 +41,8 @@ export default {
 
 <style>
 .function {
-  display: flex;
-  background-color: #e2e4e9;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  align-items: center;
+  width: 100%;
+  height: 64px;
 }
 
 .function__left {
@@ -80,5 +76,4 @@ export default {
 .link-router {
   text-decoration: none;
 }
-
 </style>
