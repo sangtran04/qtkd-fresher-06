@@ -1,17 +1,38 @@
 <template>
   <div class="base-check-box">
-    <input type="checkbox" :id="`checkbox--${id}`" />
+    <input
+      :checked="checked"
+      type="checkbox"
+      :id="`checkbox--${id}`"
+      @click="handleCheckBoxAll"
+    />
     <label :for="`checkbox--${id}`"></label>
   </div>
 </template>
 
 <script>
 export default {
+  name: 'BaseCheckBox',
   props: {
     // id của button
     id: {
-      type: Number,
+      type: String,
       required: true,
+    },
+    // Kiểm tra xem có checked không
+    checked: {
+      type: Boolean,
+      default: false,
+    },
+    checkboxAll: {
+      type: Boolean,
+    },
+  },
+  methods: {
+    handleCheckBoxAll() {
+      if (this.checkboxAll) {
+        this.$emit('checkAll')
+      }
     },
   },
 }

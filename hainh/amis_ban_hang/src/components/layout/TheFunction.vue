@@ -219,8 +219,8 @@ export default {
   display: flex;
 }
 .function {
-  grid-column: 1 / 4;
-  grid-row: 1 / 2;
+  height: 56px;
+  width: 100%;
   background-color: rgb(226, 228, 233);
   display: flex;
   align-items: center;

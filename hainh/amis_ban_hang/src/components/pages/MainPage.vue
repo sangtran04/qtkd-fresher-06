@@ -1,9 +1,11 @@
 <template>
   <div class="main-page">
     <TheFunction title="Tiềm năng của tôi" />
-    <TheSideBarLeft />
-    <MainContent />
-    <TheSideBarRight />
+    <div class="flex-layout">
+      <TheSideBarLeft />
+      <MainContent />
+      <TheSideBarRight />
+    </div>
   </div>
 </template>
 
@@ -20,11 +22,15 @@ export default {
 
 <style scoped>
 .main-page {
-  display: grid;
-  grid-template-rows: 56px auto;
-  grid-template-columns: 249px auto 320px;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   position: relative;
+}
+.flex-layout {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="side-bar-right">
+  <div class="side-bar-right" :class="{ toggle: !isOpen }">
     <div class="side-bar-right-quick-action">
       <button
         class="mat-tooltip-trigger item-ation btn-add-grid-layout show-tooltip"
@@ -36,6 +36,11 @@
         </div>
       </div>
     </div>
+    <div
+      class="expand-right-sidebar"
+      :class="{ changeIcon: isOpen === false }"
+      @click="toggleExpand"
+    ></div>
   </div>
 </template>
 
@@ -46,22 +51,62 @@ export default {
   components: { TooltipComp },
   data() {
     return {
-      arrays: [
-        {
-          text: 'Link 1',
-          link: '/about',
-        },
-        {
-          text: 'Link 1',
-          link: '/about',
-        },
-      ],
+      isOpen: true,
     }
+  },
+  methods: {
+    toggleExpand() {
+      this.isOpen = !this.isOpen
+    },
   },
 }
 </script>
 
 <style scoped>
+.toggle {
+  width: 0 !important;
+}
+.expand-right-sidebar {
+  box-shadow: -2px 0 4px #00000029;
+  border-radius: 6px 0 0 6px;
+  background-color: #fff;
+  z-index: 20;
+  position: absolute;
+  left: -13px;
+  top: calc(50% - 20px);
+  width: 12px !important;
+  height: 40px !important;
+  padding: 12px 0 !important;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.expand-right-sidebar:hover {
+  width: 20px !important;
+  left: -20px;
+}
+
+.expand-right-sidebar::before {
+  margin-right: -2px;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat 0px -32px;
+}
+.expand-right-sidebar:hover.expand-right-sidebar::before {
+  margin-right: 0 !important;
+}
+
+.changeIcon::before {
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat -16px -32px;
+}
+
 .empty-record {
   width: 100%;
   text-align: center;
@@ -160,6 +205,8 @@ export default {
 .side-bar-right {
   border-left: 1px solid rgb(222, 225, 230);
   position: relative;
+  width: 320px;
+  height: 100%;
 }
 
 .side-bar-right-quick-action {

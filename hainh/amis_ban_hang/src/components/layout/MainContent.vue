@@ -13,7 +13,12 @@
               </div>
             </th>
             <th class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
+              <BaseCheckbox
+                checkboxAll
+                :checked="this.isCheckAll"
+                @checkAll="handleCheckAll"
+                id="danhDz"
+              />
             </th>
             <th style="width: 100px" class="text-align-left">Thẻ</th>
             <th class="text-align-left" style="width: 80px">Xưng hô</th>
@@ -40,573 +45,25 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr v-for="lead in LEAD_DATA" :key="lead.id">
             <td></td>
             <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
+              <BaseCheckbox :checked="lead.checked" :id="lead.id" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
+            <td class="text-align-left" style="width: 80px">
+              {{ lead.vocative }}
+            </td>
             <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
+              {{ lead.fullName }}
             </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
+            <td class="text-align-left" style="width: 120px">
+              {{ lead.title }}
             </td>
             <td class="text-align-left text--blue" style="width: 100px">
               <div class="text--icon">
                 <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
-              </div>
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@mail.com
-            </td>
-            <td class="text-align-left text--blue" style="width: 120px">
-              dangthanhan.c2ap@gmail.com
-            </td>
-            <td class="text-align-left" style="width: 100px">Trùm mõm</td>
-            <td class="text-align-left" style="width: 100px">Xóm 13</td>
-            <td class="text-align-left" style="width: 100px">Nam Định</td>
-            <td class="text-align-left" style="width: 100px">Trực Ninh</td>
-            <td class="text-align-left" style="width: 100px">Xã Trực Thái</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">Kinh tế</td>
-            <td class="text-align-left" style="width: 100px">
-              it so fking nice
-            </td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-            <td class="text-align-left" style="width: 100px">30000000000</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">MrRainDrop9x</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :id="1234" />
-            </td>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
-              MrRainDrop9x
-            </td>
-            <td class="text-align-left" style="width: 120px">Trưởng phòng</td>
-            <td class="text-align-left text--blue" style="width: 100px">
-              <div class="text--icon">
-                <div class="icon--tblcall"></div>
-                <div>0339541266</div>
+                <div>{{ lead.phone }}</div>
               </div>
             </td>
             <td class="text-align-left text--blue" style="width: 100px">
@@ -670,13 +127,45 @@
 import BaseCheckbox from '../base/BaseCheckbox.vue'
 import DropDownMenu from '../base/DropDownMenu.vue'
 import CHANGE_PAGE_SIZE from '../../constants/change-page-size'
+import LEAD_DATA from '@/constants/lead-data'
 export default {
   name: 'MainContent',
   components: { BaseCheckbox, DropDownMenu },
+
   data() {
     return {
       CHANGE_PAGE_SIZE,
+      LEAD_DATA,
+      isCheckAll: false,
     }
+  },
+
+  methods: {
+    handleCheckAll() {
+      this.isCheckAll = !this.isCheckAll
+      console.log(this.isCheckAll)
+
+      if (this.isCheckAll) {
+        this.LEAD_DATA = this.LEAD_DATA.map(lead => ({
+          ...lead,
+          checked: true,
+        }))
+      } else {
+        this.LEAD_DATA = this.LEAD_DATA.map(lead => ({
+          ...lead,
+          checked: false,
+        }))
+      }
+    },
+  },
+
+  mounted() {
+    this.LEAD_DATA = this.LEAD_DATA.map(lead => {
+      return {
+        ...lead,
+        checked: false,
+      }
+    })
   },
 }
 </script>
@@ -708,7 +197,7 @@ export default {
 }
 
 .content {
-  grid-column: auto;
+  flex: 1;
   position: relative;
 }
 
