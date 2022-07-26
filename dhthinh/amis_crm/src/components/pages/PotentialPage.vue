@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-    .function {
+.function {
   display: flex;
   background-color: #e2e4e9;
   grid-column-start: 1;
@@ -36,7 +36,7 @@ export default {
   margin-left: 16px;
   font-size: 20px;
   font-weight: 500;
-  font-family: Roboto,Arial,Helvetica,sans-serif;
+  font-family: Roboto;
   line-height: 1.428571429;
   color: #1f2229;
 }

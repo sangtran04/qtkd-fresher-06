@@ -1,48 +1,74 @@
 <template>
-    <div class="function">
+  <div class="function set-height">
     <div class="function__left">
       <h1 class="function__title mgr-8">Thêm Tiềm Năng</h1>
-      <div>Mẫu tiêu chuẩn</div>
+      <div style="font-family: Roboto; font-size: 16px">Mẫu tiêu chuẩn</div>
       <div class="function__edit">Sửa bố cục</div>
     </div>
     <div class="layout__center"></div>
     <div class="function__right">
-        <BaseTextField
+      <router-link class="link-router" to="/">
+        <BaseButton
           class="mgr-8"
-          placeholder="Tìm kiếm theo Địa chỉ, Tổ chức, Email cá nhân, Họ và tên, ĐT di động, ĐT cơ quan, Email cơ quan, Mã số thuế"
-          :isIconSearch="true"
-          width="240px"
+          :hasContent="true"
+          buttonContent="Hủy bỏ"
+          color="#000"
           backgroundColor="#fff"
+          backgroundColorHover="#f0f2f4"
+          borderColor="#d3d7de"
+          :hasOutLined="true"
         />
-        <router-link to="/AddPage" class="link-router">
-          <BaseButton class="mgr-8" buttonContent="Thêm" backgroundColor="#4262F0" color="#fff" :hasIcon="true" :hasDown="true"/>
-        </router-link>
-        <BaseButton class="mgr-8" backgroundColor="#fff" backgroundColorHover="#f0f2f4">
-            <div class="icon-future"></div>
-        </BaseButton>
-        <BaseButton class="mgr-8" backgroundColor="#fff" backgroundColorHover="#f0f2f4">
-            <div class="icon-threecol mgr-8"></div>
-            <div class="icon-dropdown"></div>
-        </BaseButton>
+      </router-link>
+      <BaseButton
+        class="mgr-8"
+        :hasContent="true"
+        buttonContent="Lưu và thêm"
+        color="#4262F0"
+        :hasOutLined="true"
+        backgroundColor="#fff"
+        borderColor="#4262F0"
+        backgroundColorHover="#f0f2f4"
+      />
+      <BaseButton
+        class="mgr-8"
+        :hasContent="true"
+        buttonContent="Lưu"
+        color="#fff"
+        backgroundColor="#4262F0"
+        :hasOutLined="false"
+      />
     </div>
   </div>
+  <div class="potential-content">
+    <div class="image-potential">
+      <div class="image__title">
+        Ảnh tiềm năng
+      </div>
+      <div class="image__content">
+        ảnh
+      </div>
+    </div>
+  </div>
+
 </template>
 
 <script>
-import BaseButton from "../base/BaseButton.vue"
-import BaseTextField from "../base/BaseTextField.vue"
+import BaseButton from "../base/BaseButton.vue";
 export default {
-    name: 'TheFunction',
-    components: {
-    BaseButton,BaseTextField,
-    }
-}
+  name: "TheFunction",
+  components: {
+    BaseButton,
+  },
+};
 </script>
 
-<style>
+<style scoped>
+.set-height {
+  height: 62px;
+}
+
 .function {
   width: 100%;
-  height: 64px;
 }
 
 .function__left {
@@ -54,7 +80,7 @@ export default {
   margin-left: 16px;
   font-size: 20px;
   font-weight: 500;
-  font-family: RobotoBold;
+  font-family: Roboto;
   line-height: 1.428571429;
   color: #1f2229;
 }
@@ -70,10 +96,32 @@ export default {
 }
 
 .function__right {
-    display: flex;
+  display: flex;
+  margin-right: 8px;
 }
 
 .link-router {
   text-decoration: none;
+}
+
+.potential-content {
+  padding: 32px 0 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.image-potential {
+  margin: 0 0 16px 56px;
+}
+
+.image__title {
+  
+  margin-bottom: 16px;
+}
+
+.image__content {
+  width: 48px;
+  height: 48px;
 }
 </style>

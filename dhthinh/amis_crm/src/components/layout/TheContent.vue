@@ -6,15 +6,15 @@
       <table class="table">
         <thead>
           <tr>
-            <th style="width: 20px;">
+            <th style="width: 40px;" class="icon__setcolumn">
               <div class="btn-settings-column icon-sticky-setting-column">
                 <span class="icon-add_colums_16"></span>
               </div>
             </th>
-            <th class="text-align-right" style="width: 50px">
+            <th class="text-align-left" style="width: 20px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </th>
-            <th style="width: 100px" class="text-align-left">Thẻ</th>
+            <th style="width: 30px" class="text-align-left">Thẻ</th>
             <th class="text-align-left" style="width: 80px">Xưng hô</th>
             <th class="text-align-left" style="width: 140px">Họ và tên</th>
             <th class="text-align-left" style="width: 120px">Chức danh</th>
@@ -33,7 +33,6 @@
             <th class="text-align-left" style="width: 100px">Mô tả</th>
             <th class="text-align-left" style="width: 100px">Bố cục</th>
             <th class="text-align-left" style="width: 100px">Chủ sở hữu</th>
-            <th class="text-align-left" style="width: 100px">Doanh thu</th>
             <th class="text-align-left" style="width: 100px">Dùng chung</th>
             <th class="text-align-left" style="width: 100px">Facebook</th>
           </tr>
@@ -41,7 +40,7 @@
         <tbody>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 20px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -79,13 +78,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -123,13 +121,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -167,13 +164,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -211,13 +207,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -255,13 +250,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -299,13 +293,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -343,13 +336,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -387,13 +379,12 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-right" style="width: 50px">
+            <td class="text-align-left" style="width: 50px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
@@ -431,7 +422,6 @@
             <td class="text-align-left" style="width: 100px">Code phần mềm</td>
             <td class="text-align-left" style="width: 100px">3 phần</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">280000000</td>
             <td class="text-align-left" style="width: 100px">Không</td>
             <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
           </tr>
@@ -441,10 +431,12 @@
     <div class="navigate">
       <div class="navigate__left">Tổng số: 893</div>
       <div class="navigate__right">
-        <select class="navigate__select" name="" id="">
-          <option value="">50 bản ghi trên trang</option>
-          <option value="">50 bản ghi trên trang</option>
-        </select>
+        <div class="page__size">
+          <BaseDropDown
+            :arrays="PAGESIZE"
+            dropdownContent="20 Bản ghi trên trang"
+          />
+        </div>
         <div class="icon-pre2"></div>
         <div class="icon-pre1"></div>
         <div class="navigate__text" style="font-weight: 500">1 đến 50</div>
@@ -456,11 +448,17 @@
 </template>
 
 <script>
-// import BaseToggle from "../base/BaseToggle.vue";
+import PAGESIZE from '../../constants/PageSize'
+import BaseDropDown from '../base/BaseDropDown.vue'
 export default {
   name: "TheContent",
   components: {
-    // BaseToggle
+    BaseDropDown,
+},
+  data() {
+    return {
+      PAGESIZE,
+    }
   },
 };
 </script>
@@ -504,5 +502,13 @@ export default {
 
 .content {
   position: relative;
+}
+
+.page__size {
+  width: 182px;
+}
+
+.icon__setcolumn {
+  padding-left: 12px;
 }
 </style>
