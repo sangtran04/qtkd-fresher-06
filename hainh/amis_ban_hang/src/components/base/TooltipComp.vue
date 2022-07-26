@@ -8,9 +8,15 @@
 export default {
   name: 'TooltipComp',
   props: {
+    // Chỉ định nội dung của tooltip
     contentTooltip: {
       type: String,
       default: 'Test Tooltip',
+    },
+    // Chỉ định left của tooltip
+    left: {
+      type: String,
+      default: '50%',
     },
   },
 }
@@ -24,20 +30,24 @@ export default {
 .tooltip {
   position: absolute;
   top: calc(100% + 10px);
-  left: 50%;
-  transform: translateX(-50%);
+  left: v-bind(left);
+  transform: translateX(-50%) scale(0.95);
   border-radius: 4px;
   background: #424857;
   box-shadow: 0 0 10px #d5d5d5;
   z-index: 3;
-  display: none;
   width: max-content;
   padding: 12px;
   min-height: 32px;
   max-width: 250px;
+  opacity: 0;
+  transition: all 0.1s ease;
+  visibility: hidden;
 }
-
-.tooltip::after {
+.tooltip:hover {
+  display: none;
+}
+/* .tooltip::after {
   position: absolute;
   content: '';
   top: -4px;
@@ -48,7 +58,7 @@ export default {
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
   border-bottom: 5px solid #424857;
-}
+} */
 
 .tooltip > .content {
   color: #fff;
@@ -58,6 +68,8 @@ export default {
 }
 
 .show-tooltip:hover .tooltip {
-  display: block;
+  opacity: 1;
+  visibility: initial;
+  transform: translateX(-50%) scale(1);
 }
 </style>

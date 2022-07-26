@@ -1,16 +1,21 @@
 <template>
   <div :id="id" class="dropdown">
-    <button
-      type="button"
-      @click="isOpen = !isOpen"
+    <div
+      class="crm-combo-box"
+      @click="onClickDropBox"
       :class="{ isActive: isOpen }"
     >
-      <div class="test">{{ refContent || dropdownContent }}</div>
-      <div class="icon-down icon"></div>
-    </button>
+      <div class="input">
+        <span class="placeholder" :class="{ selected: isSelected }">{{
+          refContent
+        }}</span>
+      </div>
+      <div class="selection-arrow"></div>
+    </div>
     <div class="dropdown-list" v-if="isOpen">
-      <div v-show="hasInputSearch" class="select-search-dropdown">
+      <div class="select-search-dropdown">
         <input
+          ref="danhInput"
           placeholder="Tìm kiếm"
           type="search"
           class="select-search__field"
@@ -23,6 +28,7 @@
         :key="index"
         :item="item"
         :closeDropdown="callToClose"
+        @click="ifSelected"
       >
         {{ item.text }}
       </DropDownItem>
@@ -32,35 +38,30 @@
 
 <script>
 import DropDownItem from './DropDownItem.vue'
-import uuid from '@/utils/random-id'
+import uuidv4 from '@/utils/random-id'
 export default {
   components: {
     DropDownItem,
   },
   setup() {
     return {
-      id: uuid(),
+      id: uuidv4(),
     }
   },
   data() {
     return {
       isOpen: false,
-      refContent: '20 Bản ghi trên Trang',
+      refContent: '- Không chọn -',
+      isSelected: false,
     }
   },
-
   props: {
     arrays: {
       type: Array,
       default: () => [],
     },
-    dropdownContent: {
+    placeholder: {
       type: String,
-      required: true,
-    },
-    inputSearch: {
-      type: Boolean,
-      default: false,
     },
   },
   methods: {
@@ -79,6 +80,16 @@ export default {
       this.refContent = content
     },
     // Kiểm tra props được truyền vào có input search không ?
+    //
+    onClickDropBox() {
+      this.isOpen = !this.isOpen
+      this.$refs?.danhInput?.focus()
+      console.log(this.$refs.danhInput)
+    },
+    //
+    ifSelected() {
+      this.isSelected = true
+    },
   },
   computed: {
     hasInputSearch() {
@@ -122,30 +133,6 @@ export default {
   outline: none;
 }
 
-button {
-  position: relative;
-  padding: 0 8px 0 16px;
-  background-color: white;
-  border: 1px solid black;
-  cursor: pointer;
-  transition: 0.3s;
-  height: 32px;
-  width: 100%;
-  border: 1px solid #d3d7de;
-  padding-left: 16px;
-  padding-right: 8px;
-  border-radius: 4px;
-  -moz-background-clip: padding;
-  -webkit-background-clip: padding-box;
-  background-clip: padding-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-button:focus {
-  outline: 0px;
-}
-
 .dropdown {
   position: relative;
   width: fit-content;
@@ -153,6 +140,7 @@ button:focus {
   background: #ffffff;
   min-width: 182px;
   position: relative;
+  width: 100%;
 }
 .dropdown-list {
   padding-top: 8px;
@@ -169,5 +157,59 @@ button:focus {
   bottom: 32px;
   right: 0px;
   position: absolute;
+  z-index: 1000;
+}
+</style>
+
+<style scoped>
+.crm-combo-box {
+  width: 100%;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #d3d7de;
+  border-radius: 4px;
+  height: 32px;
+  cursor: pointer;
+  user-select: text;
+  height: 32px;
+  position: relative;
+  padding: 0 30px 0 16px;
+}
+.crm-combo-box .input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.placeholder {
+  line-height: 29px;
+  color: #99a1b2;
+}
+
+.placeholder.selected {
+  color: #1f2229;
+}
+.selection-arrow {
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100% !important;
+  width: 32px !important;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.selection-arrow::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat -48px -31px;
+  top: 7px;
+  right: 8px;
 }
 </style>

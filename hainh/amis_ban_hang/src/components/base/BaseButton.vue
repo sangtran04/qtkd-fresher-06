@@ -44,6 +44,21 @@ export default {
       type: String,
       default: '/',
     },
+    // chỉ định màu sắc chữ cho phần nội dung
+    color: {
+      type: String,
+      default: '#fff',
+    },
+    // Chỉ định màu nền của border
+    borderColor: {
+      type: String,
+      default: '#4262F0',
+    },
+    // Chỉ định màu nền khi hover
+    backgroundColorHover: {
+      type: String,
+      default: '#2b4eee',
+    },
   },
   computed: {
     hasIconFunc() {
@@ -71,6 +86,8 @@ export default {
   height: 32px;
   display: flex;
   align-items: center;
+  border: 1px solid v-bind(borderColor);
+  transition: all 0.3s ease-in-out;
 }
 .router-link {
   display: flex;
@@ -95,7 +112,8 @@ export default {
 }
 
 .buttonContent {
-  color: #fff;
+  color: v-bind(color);
+  font-family: Bold;
 }
 
 .baseButton .disable {
@@ -135,8 +153,8 @@ export default {
   border-radius: 4px;
 }
 
-button:hover {
-  background-color: #2b4eee;
+.baseButton:hover {
+  background-color: v-bind(backgroundColorHover);
   border-radius: 4px;
 }
 

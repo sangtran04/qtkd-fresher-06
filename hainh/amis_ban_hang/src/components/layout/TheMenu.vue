@@ -10,30 +10,48 @@
           placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
           :hasIconSearch="true"
           backgroundColorWhenHover="#e2e4e9"
+          width="320px"
         />
       </div>
 
       <div class="m-top__icons">
-        <div class="icon-facebook margin-right-20 show-tooltip show-tooltip">
-          <TooltipComp contentTooltip="Cộng đồng hỗ trợ AMIS CRM" />
+        <div class="icon-blog show-tooltip">
+          <TooltipComp contentTooltip="Tri thức" />
         </div>
-        <div class="icon-notification margin-right-20 show-tooltip">
-          <TooltipComp contentTooltip="Thông báo" />
+        <div class="icon-menu-wrap">
+          <div class="icon-facebook show-tooltip">
+            <TooltipComp contentTooltip="Cộng đồng hỗ trợ AMIS CRM" />
+          </div>
         </div>
-        <div class="icon-setting margin-right-20 show-tooltip">
-          <TooltipComp contentTooltip="Thiết lập" />
+        <div class="icon-menu-wrap">
+          <div class="icon-3d show-tooltip">
+            <TooltipComp contentTooltip="Tra cứu tồn kho" />
+          </div>
         </div>
-        <div class="icon-3d margin-right-20 show-tooltip">
-          <TooltipComp contentTooltip="Tra cứu tồn kho" />
+        <div class="icon-menu-wrap">
+          <div class="icon-calender show-tooltip">
+            <TooltipComp contentTooltip="Lịch làm việc" />
+          </div>
         </div>
-        <div class="icon-calender margin-right-20 show-tooltip">
-          <TooltipComp contentTooltip="Lịch làm việc" />
+        <div class="icon-menu-wrap">
+          <div class="icon-notification show-tooltip">
+            <TooltipComp contentTooltip="Thông báo" />
+          </div>
         </div>
-        <div class="icon-help margin-right-20 show-tooltip">
-          <TooltipComp contentTooltip="Hướng dẫn" />
+        <div class="icon-menu-wrap">
+          <div class="icon-setting show-tooltip">
+            <TooltipComp contentTooltip="Thiết lập" />
+          </div>
         </div>
-        <div class="icon-avatar margin-right-20 show-tooltip">
-          <TooltipComp contentTooltip="Nguyễn Hoàng Hải" />
+        <div class="icon-menu-wrap">
+          <div class="icon-help show-tooltip">
+            <TooltipComp contentTooltip="Hướng dẫn" />
+          </div>
+        </div>
+        <div class="icon-menu-wrap margin-right-16">
+          <div class="icon-avatar show-tooltip">
+            <TooltipComp contentTooltip="Nguyễn Hoàng Hải" left="-100%" />
+          </div>
         </div>
       </div>
     </div>
@@ -85,6 +103,41 @@ export default {
 </script>
 
 <style scoped>
+.margin-right-16 {
+  margin-right: 16px;
+}
+.icon-menu-wrap {
+  cursor: pointer;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.icon-menu-wrap:hover {
+  background-color: #f0f2f4;
+}
+.icon-blog {
+  display: inline-block;
+  cursor: pointer;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.icon-blog:hover {
+  background-color: #f0f2f4;
+}
+.icon-blog::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat -96px -433px;
+}
 .m-top__icon-logo {
   cursor: pointer;
 }
@@ -106,6 +159,10 @@ export default {
   box-shadow: 0 2px 4px rgba(31, 34, 41, 0.16);
   z-index: 1;
   border-right: 1px solid rgb(222, 225, 230);
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  background-color: #fff;
 }
 
 .m-top {

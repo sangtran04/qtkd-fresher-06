@@ -33,14 +33,13 @@ export default {
   color: #1f2229;
   line-height: 16px;
   font-size: 13px;
-  font-weight: 400;
 }
 
 html {
   /* convert 1rem = 10px */
   font-size: 62.5%;
   box-sizing: border-box;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-family: Regular;
 }
 
 .grid-layout {

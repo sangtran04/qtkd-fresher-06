@@ -25,5 +25,6 @@ export default {
   grid-template-columns: 249px auto 320px;
   width: 100%;
   height: 100%;
+  position: relative;
 }
 </style>
