@@ -47,6 +47,8 @@ export default {
   grid-column-start: 1;
   grid-column-end: 5;
   align-items: center;
+  border-bottom: 1px solid #d3d7de;
+  z-index: 1;
 }
 
 .function__left {

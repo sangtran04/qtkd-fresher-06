@@ -85,6 +85,7 @@ export default {
   max-height: 84px;
   overflow: hidden;
   box-shadow: 0 2px 4px #1f222929;
+  z-index: 3;
 }
 .logo-amis {
   background-image: url("../../assets/Resource/img/Logo_Ban_hang.svg");

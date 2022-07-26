@@ -1,9 +1,9 @@
 <template>
   <div class="function set-height">
     <div class="function__left">
-      <h1 class="function__title mgr-8">Thêm Tiềm Năng</h1>
-      <div style="font-family: Roboto; font-size: 16px">Mẫu tiêu chuẩn</div>
-      <div class="function__edit">Sửa bố cục</div>
+      <h1 class="function__title" style="margin-right: 16px">Thêm Tiềm năng</h1>
+      <div style="font-family: Roboto; font-size: 16px; padding-top: 4px;">Mẫu tiêu chuẩn</div>
+      <div class="function__edit" style="padding-top: 4px;">Sửa bố cục</div>
     </div>
     <div class="layout__center"></div>
     <div class="function__right">
@@ -155,9 +155,9 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title">Chia sẻ cá nhân</div>
+            <div class="content__title" style="padding-bottom: 45px;">Chia sẻ cá nhân</div>
             <div class="content__input">
-              <BaseTextArea />
+              <BaseTextArea placeholder=""/>
             </div>
           </div>
         </div>
@@ -170,6 +170,7 @@
                 backgroundColor="#fff"
                 :hasBorder="true"
                 width="100%"
+                :readOnly="true"
               />
             </div>
           </div>
@@ -270,9 +271,9 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title">Hồ sơ</div>
+            <div class="content__title" style="padding-bottom: 45px;">Hồ sơ</div>
             <div class="content__input">
-              <BaseTextArea />
+              <BaseTextArea placeholder=""/>
             </div>
           </div>
           <div class="content__row">
@@ -402,7 +403,7 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title">
+            <div class="content__title" style="padding-bottom: 45px;">
               Địa chỉ
             </div>
             <div class="content__input">
@@ -444,7 +445,7 @@
       <div class="main__content">
         <div class="content__col">
           <div class="content__row">
-            <div class="content__title">Mô tả</div>
+            <div class="content__title" style="padding-bottom: 45px;">Mô tả</div>
             <div class="content__input">
                <BaseTextArea textContent="" placeholder=""/>
             </div>
@@ -501,13 +502,15 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+
 .set-height {
   height: 62px;
 }
 
 .function {
   width: 100%;
+  z-index: 1;
 }
 
 .function__left {
@@ -525,7 +528,7 @@ export default {
 }
 
 .function__edit {
-  margin-left: 16px;
+  margin-left: 8px;
   color: #5973eb;
   font-size: 13px;
 }
@@ -544,10 +547,11 @@ export default {
 }
 
 .potential-content {
-  padding: 32px 0 0;
+  padding: 38px 0 0;
   grid-column-start: 1;
   grid-column-end: 5;
   font-family: Roboto;
+  overflow: auto;
 }
 
 .image-potential {
