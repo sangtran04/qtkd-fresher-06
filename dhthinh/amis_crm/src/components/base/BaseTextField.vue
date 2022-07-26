@@ -1,15 +1,14 @@
 <template>
-  <div
-    class="textfield" :class="{ leftLabel: leftLabel, topLabel: topLabel }">
+  <div class="crm-textfield" :class="{ leftLabel: leftLabel, topLabel: topLabel }">
     <label :class="{ haveLabel: isHaveLabel }" :for="labelContent">{{
       labelContent
     }}</label>
-    <div class="absoluted ">
+    <div class="absoluted" :class="{inputborder: isBorder}">
       <div v-if="isIconSearchFunction" class="icon-search"></div>
       <div class="icon-success"></div>
       <input
         :id="labelContent"
-        type="text"
+        :type="typeInput"
         :placeholder="placeholder"
         :readonly="readOnly"
         :class="{ 'padding-left-32': isIconSearchFunction }"
@@ -48,78 +47,101 @@ export default {
     isIconSearch: {
       type: Boolean,
     },
+    // thiết lập chiều rộng cho input
     width: {
       type: String,
-      default: '240px',
+      default: "auto",
     },
+    //Thiết lập màu nền cho input
     backgroundColor: {
       type: String,
-      default: 'rgb(240, 242, 244)',
-    }
+      default: "rgb(240, 242, 244)",
+    },
+    //Có border không
+    hasBorder: {
+      type: Boolean,
+      default: false,
+    },
+    colorBoder: {
+      type: String,
+      default: "#ccc"
+    },
+    typeInput: {
+      type: String,
+      default: "text"
+    },
   },
   computed: {
     // Kiểm tra props truyền vào có label không ?
     isHaveLabel() {
-      return this.labelContent ? true : false
+      return this.labelContent ? true : false;
     },
     // Kiểm trả props truyền vào có icon search không ?
     isIconSearchFunction() {
-      return this.isIconSearch ? true : false
+      return this.isIconSearch ? true : false;
     },
+    // Kiểm tra xem có border không
+    isBorder() {
+      return this.hasBorder ? true : false;
+    },
+    
   },
-}
+};
 </script>
 
 <style scoped>
-.textfield {
+.crm-textfield {
   display: flex;
-  justify-content: center;
+  width: 100%;
 }
-.textfield .topLabel {
+.crm-textfield .topLabel {
   flex-direction: column;
 }
-.textfield .leftLabel {
+.crm-textfield .leftLabel {
   align-items: center;
 }
-.textfield input {
+.crm-textfield input {
   height: 32px;
   padding: 0 16px;
   border-radius: 4px;
   border: 0;
-  /* border: 1px solid #d3d7de; */
   outline: none;
   background-color: v-bind(backgroundColor);
-  min-width: v-bind(width);
+  width: v-bind(width);
 }
-.textfield input::placeholder {
+.inputborder {
+  border: solid 1px v-bind(colorBoder);
+  border-radius: 4px;
+}
+.crm-textfield input::placeholder {
   font-size: 13px;
 }
 
-.textfield input:hover {
+.crm-textfield input:hover {
   border-color: #7c869c;
 }
 
-.textfield input:focus {
+.crm-textfield input:focus {
   border: 1px solid #4262f0;
 }
 
-.textfield input[readonly] {
+.crm-textfield input[readonly] {
   background-color: #e2e4e9;
 }
 
-.textfield input[readonly]::placeholder {
+.crm-textfield input[readonly]::placeholder {
   color: #586074;
 }
 
-.textfield  input[readonly]:focus {
+.crm-textfield input[readonly]:focus {
   border: 1px solid #d3d7de;
 }
 
-.textfield input[readonly]:hover {
+.crm-textfield input[readonly]:hover {
   border: 1px solid #d3d7de;
 }
 
-.textfield label {
+.crm-textfield label {
   display: none;
 }
 
@@ -135,6 +157,7 @@ export default {
 
 .absoluted {
   position: relative;
+  width: 100%;
 }
 
 .icon-search {
