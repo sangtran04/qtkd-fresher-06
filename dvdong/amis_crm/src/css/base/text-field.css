@@ -1,16 +1,25 @@
-.header__center {
-    
+.header__search-input {
+    justify-self: center;
 }
 
-.text-field{
-    min-height: 32px;
+.text-field {
+    height: 32px;
     min-width: 320px;
     border-radius: 4px;
-    border: none;
     outline: none;
     padding: 8px 16px 8px 30px;
-    background-color: #f0f2f4 !important;
     box-sizing: border-box;
+    border: 1px solid #ffffff80 !important;
+    background-color: #f0f2f4 !important;
+    color: #99A1B2;
+}
+
+.text-field:focus {
+    box-sizing: border-box;
+    background-color: #fff !important;
+    border-color: #4262f0 !important;
+    border: 1px solid;
+    color: #1f2229;
 }
 
 .header__search {
@@ -21,6 +30,13 @@
     position: absolute;
     top: 0;
     margin: 8px;
+    cursor: pointer;
+}
+
+.header__center .icon-close-16px {
+    position: absolute;
+    top: 8px;
+    right: 8px;
     cursor: pointer;
 }
 
