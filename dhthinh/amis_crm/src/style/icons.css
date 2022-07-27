@@ -313,7 +313,7 @@
 }
 
 .icon-facebook24 {
-    background-color: url('../assets/Resource/img/icon_facebook_24_blue.svg') no-repeat 0 0;
-    width: 24px;
-    height: 24px;
+    background: url('../assets/Resource/img/icon_facebook_24_blue.svg') no-repeat 0 0;
+	width: 24px;
+	height: 24px;
 }

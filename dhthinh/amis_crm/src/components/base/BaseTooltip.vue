@@ -1,91 +1,54 @@
 <template>
-  <div class="crm-tooltip" data-tooltip="thinh day nha"></div>
+        <div class="crm-tooltip">
+            {{contentTooltip}}
+        </div>
 </template>
 
 <script>
-export default {
-  name: "BaseTooltip",
-  props: {
-    tooltipContent: {
-      type: String,
-      default: "tool tip",
-    },
-    // isLeft: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
-    // isRight: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
-    // isTop: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
-    // isBottom: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
-  },
-
-  computed: {
-
-  }
-};
+    export default {
+        props: {
+            contentTooltip:{
+                type: String,
+                default: ""
+            },
+            width:{
+                type: String,
+                default: "auto"
+            }
+        }
+    }
 </script>
 
-<style>
+<style scoped>
 .crm-tooltip {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  position: absolute;
+    box-sizing: border-box;
+    width: v-bind(width);
+    max-width:320px;
+    background-color: #424857;
+    max-height: 32px;
+    border-radius: 4px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-left: 12px;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left: -30px;
+    display: none;
+    animation: tooltipGrow ease 0.1s;
 }
-div[data-tooltip] {
-  
-  position: relative;
-}
-div[data-tooltip]::before {
-  content: attr(data-tooltip);
-  position: absolute;
-  background-color: #333;
-  font-size: 13px;
-  color: #fff;
-  text-align: center;
-  padding: 3px 5px;
-  border-radius: 4px;
-  bottom: 0;
-  line-height: 1rem;
-  left: -40%;
-  right: -40%;
-  transform: scale(0);
-  opacity: 0;
-  transition: 0.25s ease-in-out;
-}
-div[data-tooltip]::after {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #333;
-  left: calc(50% - 2.5px);
-  bottom: 100%;
-  transform: scale(0);
-  opacity: 0;
-  transition: 0.25s ease-in-out;
+@keyframes tooltipGrow {
+    from{
+        opacity: 0;
+        transform:scale(0);
+    }to{
+        opacity: 1;
+        transform:scale(1);
+    }
+    
 }
 
-/* Mặc định thì cho ẩn đi khi hover chuột vào mới hiện lên */
-div[data-tooltip]:hover::before {
-  transform: scale(1);
-  bottom: 100%;
-  opacity: 1;
-}
-div[data-tooltip]:hover::after {
-  transform: scale(1);
-  bottom: calc(100% - 5px);
-  opacity: 1;
-}
 </style>
+

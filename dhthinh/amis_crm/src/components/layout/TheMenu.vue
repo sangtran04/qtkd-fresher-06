@@ -8,11 +8,11 @@
       <div class="sidebar__center">
         <div class="input--search">
           <BaseTextField
-          class="input-center"
-          placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
-          :isIconSearch="true"
-          width="320px"
-        />
+            class="input-center"
+            placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
+            :isIconSearch="true"
+            width="320px"
+          />
         </div>
       </div>
       <div class="sidebar__right">
@@ -35,7 +35,7 @@
           <div class="icon icon-box"></div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-facebook"></div>
+          <div class="icon icon-facebook24"></div>
         </div>
       </div>
     </div>
