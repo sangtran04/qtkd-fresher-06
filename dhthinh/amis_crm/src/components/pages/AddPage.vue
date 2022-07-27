@@ -627,7 +627,7 @@ export default {
   width: 160px;
   font-size: 13px;
   flex-shrink: 0;
-  color: #1f2229;
+  color: #454545;
   font-weight: 400;
 }
 

@@ -2,16 +2,16 @@
   <div class="content">
     <!-- <BaseToggle switchText="Switch" />
         <BaseToggle switchText="Switch Disabled" :switchDisabled="true"/> -->
-    <div class="abc">
+    <div class="content__table">
       <table class="table">
         <thead>
           <tr>
-            <th style="width: 40px;" class="icon__setcolumn">
+            <th class="icon__setcolumn">
               <div class="btn-settings-column icon-sticky-setting-column">
                 <span class="icon-add_colums_16"></span>
               </div>
             </th>
-            <th class="text-align-left" style="width: 20px">
+            <th class="text-align-center" style="width: 28px">
               <input class="checkbox" type="checkbox" name="" id="" />
             </th>
             <th style="width: 30px" class="text-align-left">Thẻ</th>
@@ -40,9 +40,9 @@
         <tbody>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 20px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -83,9 +83,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -126,9 +126,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -169,9 +169,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -212,9 +212,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -255,9 +255,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -298,9 +298,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -341,9 +341,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -384,9 +384,9 @@
           </tr>
           <tr>
             <td></td>
-            <td class="text-align-left" style="width: 50px">
-              <input class="checkbox" type="checkbox" name="" id="" />
-            </td>
+            <th class="text-align-center" style="width: 28px">
+              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            </th>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">Anh</td>
             <td class="text-align-left text--blue" style="width: 140px">
@@ -509,6 +509,7 @@ export default {
 }
 
 .icon__setcolumn {
-  padding-left: 12px;
+  padding: 0 10px 0 12px;
+  width: 30px;
 }
 </style>
