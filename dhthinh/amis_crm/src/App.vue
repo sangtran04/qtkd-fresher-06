@@ -33,7 +33,7 @@ export default {
 <style>
 @import url("./style/font.css");
 @import url("./style/icons.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 .container {
   display: grid;
   grid-template-columns: 249px calc(100% - 569px) 320px;
