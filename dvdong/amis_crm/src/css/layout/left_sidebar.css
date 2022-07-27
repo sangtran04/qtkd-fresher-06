@@ -1,8 +1,9 @@
 .sidebar__left{
     width: 250px;
-    border-right: 1px solid #bbbbbb;
+    border-right: 1px solid #d3d7de;
     box-sizing: border-box;
     overflow: hidden;
+    position: relative;
 }
 
 .filter-save, .filter-by {
@@ -71,3 +72,4 @@
     cursor: pointer;
     margin: 0 10px;
 }
+

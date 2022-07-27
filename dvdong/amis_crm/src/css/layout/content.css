@@ -2,4 +2,45 @@
     flex: 1;
     height: 100vh;
     position: relative;
+    width: 100%;
+}
+
+.sidebar-right-close {
+    box-shadow: -2px 0 4px #00000029;
+    border-radius: 6px 0 0 6px;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    width: 12px;
+    height: 40px!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    top: 40%;
+}
+
+.sidebar-right-close:hover {
+    width: 20px;
+}
+
+.sidebar-left-close { 
+    box-shadow: 2px 0 4px #00000029;
+    border-radius: 0 6px 6px 0;
+    background-color: #fff;
+    z-index: 20;
+    position: absolute;
+    width: 12px;
+    height: 40px!important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 40%;
+}
+
+.sidebar-left-close:hover {
+    width: 20px;
 }

@@ -3,7 +3,7 @@
     <div class="header__top">
       <div class="header__left">
         <div class="icon icon--toggle"></div>
-        <div><img src="./../../assets/img/Logo_CRM_App.svg" alt="" /></div>
+        <div style="margin-top: 2px;"><img src="./../../assets/img/Logo_CRM_App.svg" alt="" /></div>
       </div>
       <div class="header__center">
         <!-- <BaseTextField/> -->
@@ -83,10 +83,10 @@
           <div class="icon icon--activity mr-8"></div>
           <p>Hoạt động</p>
         </li>
-        <li class="menu__item">
+        <!-- <li class="menu__item">
           <div class="icon icon--forcecast mr-8"></div>
           <p>Mục tiêu</p>
-        </li>
+        </li> -->
         <!-- <li class="menu__item">
           <div class="icon icon--campaign mr-8"></div>
           <p>Chiến dịch</p>
