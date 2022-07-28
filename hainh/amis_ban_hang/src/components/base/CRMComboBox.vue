@@ -12,10 +12,11 @@
       </div>
       <div class="selection-arrow"></div>
     </div>
-    <div class="dropdown-list" v-if="isOpen">
+    <div class="dropdown-list" v-show="isOpen">
       <div class="select-search-dropdown">
         <input
-          ref="danhInput"
+          :id="`input-${id}`"
+          ref="inputs"
           placeholder="Tìm kiếm"
           type="search"
           class="select-search__field"
@@ -83,18 +84,36 @@ export default {
     //
     onClickDropBox() {
       this.isOpen = !this.isOpen
-      this.$refs?.danhInput?.focus()
-      console.log(this.$refs.danhInput)
+      // this.$refs.inputs[0].focus()
+      console.log(this.$refs.inputs)
+      this.$refs.inputs.focus()
     },
     //
     ifSelected() {
       this.isSelected = true
+    },
+    // focus vào input
+    showInput() {
+      // Show the input component
+      this.isOpen = true
+
+      // Focus the component, but we have to wait
+      // so that it will be showing first.
+      this.nextTick(() => {
+        this.focusInput()
+      })
+    },
+    focusInput() {
+      this.$refs.inputs.$el.focus()
     },
   },
   computed: {
     hasInputSearch() {
       return this.inputSearch
     },
+  },
+  mounted() {
+    // this.focusInput()
   },
   created() {
     window.addEventListener('click', this.onClick)

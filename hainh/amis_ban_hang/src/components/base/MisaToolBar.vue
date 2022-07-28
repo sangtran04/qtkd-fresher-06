@@ -25,7 +25,7 @@
             backgroundColorHover="#e7ebfd"
           />
         </div>
-        <div class="button-save">
+        <div class="button-save" @click="validate">
           <BaseButton buttonContent="Lưu" backgroundColor="#4262F0" />
         </div>
       </div>
@@ -41,6 +41,12 @@ export default {
     title: {
       type: String,
       default: 'Thêm Tiềm năng',
+    },
+  },
+  methods: {
+    //
+    validate() {
+      this.$emit('errorInput')
     },
   },
 }

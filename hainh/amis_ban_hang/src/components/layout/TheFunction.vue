@@ -219,7 +219,7 @@ export default {
   display: flex;
 }
 .function {
-  height: 56px;
+  min-height: 56px;
   width: 100%;
   background-color: rgb(226, 228, 233);
   display: flex;

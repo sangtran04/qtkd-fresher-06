@@ -1,42 +1,43 @@
+import uuidv4 from '@/utils/random-id'
 const LEAD_FILTERS = [
   {
-    id: 1,
+    id: uuidv4(),
     filter: 'Thẻ',
   },
   {
-    id: 2,
+    id: uuidv4(),
     filter: 'Xưng hô',
   },
   {
-    id: 3,
+    id: uuidv4(),
     filter: 'Họ và tên',
   },
   {
-    id: 4,
+    id: uuidv4(),
     filter: 'Chức danh',
   },
   {
-    id: 5,
+    id: uuidv4(),
     filter: 'ĐT di động',
   },
   {
-    id: 6,
+    id: uuidv4(),
     filter: 'ĐT cơ quan',
   },
   {
-    id: 7,
+    id: uuidv4(),
     filter: 'Email cơ quan',
   },
   {
-    id: 8,
+    id: uuidv4(),
     filter: 'Email cá nhân',
   },
   {
-    id: 9,
+    id: uuidv4(),
     filter: 'Tổ chức',
   },
   //   {
-  //     id: 10,
+  //     id: uuidv4()0,
   //     filter: 'Địa chỉ',
   //   },
 ]

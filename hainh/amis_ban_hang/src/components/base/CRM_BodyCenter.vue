@@ -26,6 +26,7 @@
                 :hasToolTipIcon="field.hasToolTipIcon"
                 :fullToolTipContent="field.fullToolTipContent"
                 :type="field.type"
+                :error="error"
               />
             </div>
             <div class="right-group">
@@ -188,7 +189,12 @@ export default {
     BaseTextArea,
     BaseCheckbox,
   },
-  props: {},
+  props: {
+    error: {
+      type: Boolean,
+      default: false,
+    },
+  },
   data() {
     const GROUP_FIELD_1 = GROUP_FIELD.GROUP_FILED_1
     const GROUP_FIELD_2 = GROUP_FIELD.GROUP_FILED_2
@@ -205,9 +211,6 @@ export default {
       GROUP_FIELD_6,
       CHANGE_PAGE_SIZE,
     }
-  },
-  mounted() {
-    // console.log(GROUP_FIELD.GROUP_FILED_1)
   },
 }
 </script>

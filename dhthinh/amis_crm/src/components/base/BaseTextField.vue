@@ -52,6 +52,10 @@ export default {
       type: String,
       default: '240px',
     },
+    backgroundColor: {
+      type: String,
+      default: 'rgb(240, 242, 244)',
+    }
   },
   computed: {
     // Kiểm tra props truyền vào có label không ?
@@ -81,13 +85,14 @@ export default {
   height: 32px;
   padding: 0 16px;
   border-radius: 4px;
-  border: 1px solid #d3d7de;
+  border: 0;
+  /* border: 1px solid #d3d7de; */
   outline: none;
-  background-color: rgb(240, 242, 244);
+  background-color: v-bind(backgroundColor);
   min-width: v-bind(width);
 }
 .textfield input::placeholder {
-  font-size: 11px;
+  font-size: 13px;
 }
 
 .textfield input:hover {

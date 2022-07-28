@@ -1,0 +1,73 @@
+.sidebar__left{
+    width: 250px;
+    border-right: 1px solid #bbbbbb;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.filter-save, .filter-by {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding: 0 16px;
+    height: 40px;
+    color: #586074;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.filter-by>.icon--search {
+   position: absolute;
+   right: 16px;
+   
+}
+
+.filter-select {
+
+}
+
+.filter-select__item {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    height: 32px;
+    cursor: pointer;
+    color: #586074;
+}
+
+/* cần sửa màu khi hover vào label */
+.filter-select__item input:hover {
+    /* color: #4262f0;
+    border-color: #4262f0; */
+}
+
+.filter-select__item input{
+    width: 16px;
+    height: 16px;
+    margin-right: 9.5px;
+    border-radius: 1.5px;   
+    border: 1px solid #586074;
+    cursor: pointer;
+}
+
+.xem-them {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+.xem-them hr {
+    border-bottom: 1px solid #d3d7de!important;
+    border: hidden;
+    height: 2px;
+}
+
+.xem-them span {
+    color: #4262f0;
+    cursor: pointer;
+    margin: 0 10px;
+}

@@ -1,6 +1,7 @@
 <template>
   <div class="base-check-box">
     <input
+      ref="test-input"
       :checked="checked"
       type="checkbox"
       :id="`checkbox--${id}`"
@@ -30,8 +31,11 @@ export default {
   },
   methods: {
     handleCheckBoxAll() {
+      // 1. Nếu cần checkAll
       if (this.checkboxAll) {
         this.$emit('checkAll')
+      } else {
+        this.$emit('checkboxItem', this.id)
       }
     },
   },

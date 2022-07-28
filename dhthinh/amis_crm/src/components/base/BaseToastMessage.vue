@@ -6,7 +6,7 @@
       </div>
       <div class="crm-toastmessage__content">{{ toastContent }}</div>
       <div class="crm-toastmessage__close">
-        <i class="fas fa-times" style="color: #fff"></i>
+        <div class="icon-close"></div>
       </div>
     </div>
   </div>

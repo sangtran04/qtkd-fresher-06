@@ -6,7 +6,7 @@
       hoverBackground: hasBackgroundColorInProps,
     }"
   >
-    <div class="relative witdth-100">
+    <div class="relative witdth-100" :class="{ error: error }">
       <div v-if="hasIconSearchFunction" class="icon-search"></div>
       <div class="icon-success"></div>
       <input
@@ -138,6 +138,10 @@ export default {
     // Chọn kiểu [CRMComboBox,text]
     type: {
       type: String,
+    },
+    error: {
+      type: Boolean,
+      default: false,
     },
   },
   computed: {

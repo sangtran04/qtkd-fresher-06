@@ -13,16 +13,17 @@
         <div
           v-for="filter in LEAD_FILTERS"
           :key="filter.id"
-          class="filter-item"
+          class="filter-item show-tooltip"
         >
           <BaseCheckbox :id="filter.id" />
           <div class="filter-content">{{ filter.filter }}</div>
+          <TooltipComp :contentTooltip="filter.filter" />
         </div>
       </div>
     </div>
     <div
       class="collapse-left-sidebar"
-      :class="{ changeIcon: isOpen === false }"
+      :class="{ changeIcon: isOpen === true }"
       @click="toggleCollapse"
     ></div>
   </div>
@@ -31,10 +32,12 @@
 <script>
 import BaseCheckbox from '../base/BaseCheckbox.vue'
 import LEAD_FILTERS from '../../constants/lead-filters'
+import TooltipComp from '../base/TooltipComp.vue'
 export default {
   name: 'TheSideBarLeft',
   components: {
     BaseCheckbox,
+    TooltipComp,
   },
   data() {
     return {
@@ -148,6 +151,7 @@ export default {
 .filter-item {
   display: flex;
   margin-bottom: 16px;
+  cursor: default;
 }
 
 .filter-content {

@@ -7,9 +7,9 @@
                 <div class="layout__center"></div>
                 <div class="icon-up"></div>
             </div>
-            <div class="count-heading">
+            <!-- <div class="count-heading">
 
-            </div>
+            </div> -->
             <div class="sidebarleft__heading filter-search">
                 <div class="heading">
                     LỌC TIỀM NĂNG THEO
@@ -27,6 +27,9 @@
                     />
                 </li>
             </ul>
+            <div class="collapse-left">
+                <div class="icon-collapse-left"></div>
+            </div>
         </div>
 </template>
 
@@ -51,28 +54,17 @@ export default {
 <style>
     .sidebarleft {
         border-right: solid 1px #ccc;
+        position: relative;
     }
-
-    .count-heading {
-        height: 32px;
-    }
-
     .sidebarleft__heading {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 40px;
         padding: 0 16px;
-    }
-
-    .filter-down {
         margin: 8px 0px 0px;
+        color: #586074;
     }
-
-    .filter-search {
-
-    }
-
     .sidebarleft__heading .heading {
         font-size: 13px;
     }
@@ -84,8 +76,26 @@ export default {
         list-style: none;
         margin: 0px 0px 0px 0px;
         padding: 0 16px;
+        color: #586074  ;
     }
-    .filter-item {
-        
+    .collapse-left {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        cursor: pointer;
+        box-shadow: 1px 0 4px #00000029;
+        border-radius: 0 6px 6px 0;
+        background-color: #fff;
+        z-index: 1;
+        position: absolute;
+        left: 249px;
+        top: calc(50% - 20px);
+        width: 12px!important;
+        height: 40px!important;
+        padding: 12px 0!important;
+    }
+
+    .collapse-left:hover {
+        width: 20px!important;
     }
 </style>

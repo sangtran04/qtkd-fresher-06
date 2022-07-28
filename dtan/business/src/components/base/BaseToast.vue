@@ -41,6 +41,10 @@ export default {
     },
   },
   computed: {
+    /**
+     * Kiểm tra trạng thái của toast message
+     * AUTHOR: ANDT (19/07/2022)
+     */
     isInformation() {
       return this.type === "information";
     },

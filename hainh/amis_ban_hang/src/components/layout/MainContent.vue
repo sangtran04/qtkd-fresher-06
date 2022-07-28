@@ -20,7 +20,9 @@
                 id="danhDz"
               />
             </th>
-            <th style="width: 100px" class="text-align-left">Thẻ</th>
+            <th style="width: 10px; padding-left: 0" class="text-align-left">
+              Thẻ
+            </th>
             <th class="text-align-left" style="width: 80px">Xưng hô</th>
             <th class="text-align-left" style="width: 140px">Họ và tên</th>
             <th class="text-align-left" style="width: 120px">Chức danh</th>
@@ -45,10 +47,20 @@
           </tr>
         </thead>
         <tbody>
-          <tr v-for="lead in LEAD_DATA" :key="lead.id">
-            <td></td>
+          <tr
+            v-for="lead in LEAD_DATA"
+            :key="lead.id"
+            :class="{ 'row-checked': lead.checked }"
+          >
+            <td>
+              <div class="icon-row-edit"></div>
+            </td>
             <td class="text-align-right" style="width: 50px">
-              <BaseCheckbox :checked="lead.checked" :id="lead.id" />
+              <BaseCheckbox
+                :checked="lead.checked"
+                :id="lead.id"
+                @checkboxItem="handleCheckBoxItem"
+              />
             </td>
             <td style="width: 100px" class="text-align-left"></td>
             <td class="text-align-left" style="width: 80px">
@@ -101,7 +113,9 @@
     <div class="navigate">
       <div class="navigate__left">
         <div class="ic-sort-setting-16" title="Tùy chỉnh trường"></div>
-        <span>Tổng số: 893</span>
+        <span
+          >Tổng số: <span class="bold" style="margin-left: 10px">893</span>
+        </span>
       </div>
       <div class="navigate__right">
         <div>
@@ -114,7 +128,10 @@
           <div class="icon-pre2"></div>
           <div class="icon-pre1"></div>
 
-          <div class="navigate__text" style="font-weight: 500">1 đến 50</div>
+          <div class="navigate__text" style="font-weight: 500">
+            <span class="bold" style="margin-right: 8px">1</span> đến
+            <span class="bold" style="margin-left: 8px">50</span>
+          </div>
           <div class="icon-next1"></div>
           <div class="icon-next2"></div>
         </div>
@@ -157,6 +174,14 @@ export default {
         }))
       }
     },
+    handleCheckBoxItem(idCheckBox) {
+      this.LEAD_DATA = this.LEAD_DATA.map(lead => {
+        if (lead.id === idCheckBox) {
+          return { ...lead, checked: !lead.checked }
+        }
+        return { ...lead }
+      })
+    },
   },
 
   mounted() {
@@ -171,6 +196,34 @@ export default {
 </script>
 
 <style scoped>
+tr.row-checked {
+  background-color: #fdefe7;
+}
+tr.row-checked:hover {
+  background-color: #fbded0 !important;
+}
+span.bold {
+  font-weight: 700;
+}
+tr:hover .icon-row-edit {
+  visibility: inherit;
+}
+.icon-row-edit {
+  visibility: hidden;
+}
+.icon-row-edit::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat -128px 0px;
+}
+.icon-sticky-setting-column {
+  position: sticky;
+  position: -webkit-sticky;
+}
 .pagination-icon {
   margin-left: 16px;
   display: flex;
@@ -253,7 +306,7 @@ th {
 }
 
 .table tbody tr:hover {
-  background-color: #e7ebfd;
+  background-color: #e2e4e9;
 }
 
 .th__120 {

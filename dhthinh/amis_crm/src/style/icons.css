@@ -1,9 +1,8 @@
 
 .icon-toggle {
-    background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0px -335px;
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat 0px -337px;
 	width: 24px;
 	height: 24px;
-    margin-left: 10px;
 }
 
 .icon-change {
@@ -145,7 +144,7 @@
 }
 
 .icon-dropdown {
-	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -46px -31px;
+	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -52px -32px;
 	width: 16px;
 	height: 16px;
 }
@@ -168,15 +167,15 @@
 }
 
 .icon-down {
-	background: url(../assets/Resource/img/icon_collection.svg) no-repeat -77px -160px;
+	background: url(../assets/Resource/img/icon_collection.svg) no-repeat -80px -160px;
     width: 16px;
     height: 16px;
 }
 
 .icon-future {
-	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -291px -371px;
-	width: 18px;
-	height: 4px;
+	background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -6px;
+    width: 14px;
+    height: 4px;
 }
 
 .icon-threecol {
@@ -185,9 +184,9 @@
     height: 16px;
 }
 .icon-up {
-    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -322px -37px;
-	width: 13px;
-	height: 7px;
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -36px -38px;
+	width: 9px;
+	height: 5px;
     margin-right: 4px;
 }
 
@@ -279,4 +278,42 @@
     background: url('../assets/Resource/img/icon_collection.svg') no-repeat -384px -128px;
 	width: 16px;
 	height: 16px;
+}
+.icon-close {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -323px -476px;
+    width: 10px;
+    height: 10px;
+}
+
+.icon-collapse-left{
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -18px -36px;
+    width: 12px;
+    height: 9px;
+    float: right;
+}
+
+.icon-collapse-right {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -2px -36px;
+    width: 12px;
+    height: 9px;
+    float: left;
+}
+
+.iconaddwhite{
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -242px -130px;
+	width: 13px;
+	height: 13px;
+}
+
+.icon-telephone {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -320px -48px;
+	width: 16px;
+	height: 16px;
+    margin-right: 8px;
+}
+
+.icon-facebook24 {
+    background-color: url('../assets/Resource/img/icon_facebook_24_blue.svg') no-repeat 0 0;
+    width: 24px;
+    height: 24px;
 }

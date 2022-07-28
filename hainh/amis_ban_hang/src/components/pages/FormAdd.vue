@@ -1,6 +1,6 @@
 <template>
-  <MisaToolBar />
-  <CRMBodyCenter />
+  <MisaToolBar @errorInput="errorInput" />
+  <CRMBodyCenter :error="error" />
 </template>
 
 <script>
@@ -11,6 +11,16 @@ export default {
   components: {
     MisaToolBar,
     CRMBodyCenter,
+  },
+  data() {
+    return {
+      error: false,
+    }
+  },
+  methods: {
+    errorInput() {
+      this.error = true
+    },
   },
 }
 </script>
