@@ -1,53 +1,64 @@
 <template>
-        <div class="crm-tooltip">
-            {{contentTooltip}}
-        </div>
+  <div class="crm-tooltip">
+    <p class="subtitle-two content">{{ contentTooltip }}</p>
+  </div>
 </template>
 
 <script>
-    export default {
-        props: {
-            contentTooltip:{
-                type: String,
-                default: ""
-            },
-            width:{
-                type: String,
-                default: "auto"
-            }
-        }
-    }
+export default {
+  name: 'BaseTooltip',
+  props: {
+    contentTooltip: {
+      type: String,
+      default: 'Test Tooltip',
+    },
+  },
+}
 </script>
 
-<style scoped>
+<style>
+.show-tooltip {
+  position: relative;
+}
+
 .crm-tooltip {
-    box-sizing: border-box;
-    width: v-bind(width);
-    max-width:320px;
-    background-color: #424857;
-    max-height: 32px;
-    border-radius: 4px;
-    padding: 8px 16px;
-    display: flex;
-    align-items: center;
-    margin-left: 12px;
-    color: #fff;
-    position: absolute;
-    top: 50px;
-    left: -30px;
-    display: none;
-    animation: tooltipGrow ease 0.1s;
-}
-@keyframes tooltipGrow {
-    from{
-        opacity: 0;
-        transform:scale(0);
-    }to{
-        opacity: 1;
-        transform:scale(1);
-    }
-    
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  font-size: 13px;
+  font-family: Roboto;
+  transform: translateX(-50%);
+  border-radius: 4px;
+  background: #424857;
+  box-shadow: 0 0 10px #d5d5d5;
+  z-index: 10;
+  display: none;
+  width: max-content;
+  padding: 12px;
+  min-height: 32px;
+  max-width: 250px;
 }
 
+.crm-tooltip::after {
+  position: absolute;
+  content: '';
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #424857;
+}
+
+.crm-tooltip > .content {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+}
+
+.show-tooltip:hover .crm-tooltip {
+  display: block;
+}
 </style>
-

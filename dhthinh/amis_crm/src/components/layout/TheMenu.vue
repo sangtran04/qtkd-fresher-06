@@ -17,27 +17,40 @@
       </div>
       <div class="sidebar__right">
         <div class="boder-icon">
-            <div class="icon icon-avatar"></div>
+            <div class="icon icon-avatar show-tooltip">
+              <BaseTooltip contentTooltip="Đặng Hữu Thịnh"/>
+            </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-help"></div>
+          <div class="icon icon-help show-tooltip">
+              <BaseTooltip contentTooltip="Hỏi đáp"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-noti"></div>
+          <div class="icon icon-noti show-tooltip">
+            <BaseTooltip contentTooltip="Thông báo"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-setting"></div>
+          <div class="icon icon-setting show-tooltip">
+            <BaseTooltip contentTooltip="Cài đặt chung"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-calender"></div>
+          <div class="icon icon-calender show-tooltip">
+            <BaseTooltip contentTooltip="Lịch làm việc"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-box"></div>
+          <div class="icon icon-box show-tooltip">
+            <BaseTooltip contentTooltip="Tra cứu tồn kho"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-facebook24"></div>
+          <div class="icon icon-facebook24 show-tooltip">
+            <BaseTooltip contentTooltip="Cộng đồng hỗ trợ CRM"/>
+          </div>
         </div>
-        <BaseTooltip contentTooltip="Cộng đồng hỗ trợ CRM"></BaseTooltip>
       </div>
     </div>
 
@@ -65,7 +78,7 @@ export default {
   components: {
     BaseTextField,
     BaseTags,
-    BaseTooltip
+    BaseTooltip,
 },
 
   setup() {
