@@ -37,6 +37,7 @@
         <div class="boder-icon">
           <div class="icon icon-facebook24"></div>
         </div>
+        <BaseTooltip contentTooltip="Cộng đồng hỗ trợ CRM"></BaseTooltip>
       </div>
     </div>
 
@@ -58,12 +59,14 @@ import BaseTags from "../base/BaseTags.vue";
 import { ref } from "vue";
 import ListTag from "../../constants/ListTab";
 import BaseTextField from "../base/BaseTextField.vue";
+import BaseTooltip from "../base/BaseTooltip.vue";
 export default {
   name: "TheMenu",
   components: {
     BaseTextField,
     BaseTags,
-  },
+    BaseTooltip
+},
 
   setup() {
     const tabs = ref(ListTag);
@@ -148,6 +151,7 @@ export default {
 }
 
 .boder-icon {
+  position: relative;
   cursor: pointer;
   position: relative;
   width: 40px;

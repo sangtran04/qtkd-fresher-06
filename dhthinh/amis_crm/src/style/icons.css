@@ -317,3 +317,9 @@
 	width: 24px;
 	height: 24px;
 }
+
+.icon-sortsetting {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -272px -176px;
+	width: 16px;
+	height: 16px;
+}

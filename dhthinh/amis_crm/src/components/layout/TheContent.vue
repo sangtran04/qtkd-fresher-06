@@ -515,7 +515,8 @@
       </table>
     </div>
     <div class="navigate">
-      <div class="navigate__left">Tổng số: 893</div>
+      <div class="navigate__left">
+        <div style="margin-right: 16px;" class="icon-sortsetting"></div>Tổng số: 893</div>
       <div class="navigate__right">
         <div class="page__size">
           <BaseDropDown
