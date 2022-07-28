@@ -32,7 +32,7 @@ export default {
     //Chỉ định độ rộng của text area
     width: {
       type: String,
-      default: "240px",
+      default: "100%",
     },
 
     //Chỉ định chiều cao cho text ara
@@ -44,13 +44,13 @@ export default {
     //Xác định chiều rộng của text area
     columns: {
       type: String,
-      default: "30",
+      default: "",
     },
 
     //Xác định số hàng của text area
     rows: {
       type: String,
-      default: "10",
+      default: "3",
     },
 
     //Trạng thái báo lỗi có lỗi hay không
@@ -85,8 +85,8 @@ export default {
 }
 
 .crm-textarea {
-  width: v-bind(textareaWidth);
-  height: v-bind(textareaHeight);
+  width: v-bind(width);
+  height: v-bind(height);
   border: solid 1px #99a1b2;
   padding: 8px 16px;
   border-radius: 4px;

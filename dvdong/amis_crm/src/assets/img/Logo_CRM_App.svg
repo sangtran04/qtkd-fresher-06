@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="32" viewBox="0 0 90 32">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.443" x2="0.45" y2="1.037" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2bb2ee"/>
+      <stop offset="1" stop-color="#2b4eee"/>
+    </linearGradient>
+    <filter id="Ellipse_2630" x="9.8" y="12.518" width="10.675" height="10.676" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-color="#1f2229" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_36629" x="2.998" y="4" width="14.139" height="13.185" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-2"/>
+      <feFlood flood-color="#1f2229" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_36630" x="14.537" y="4.483" width="13.978" height="13.976" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-3"/>
+      <feFlood flood-color="#1f2229" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_36631" x="15.814" y="15.862" width="13.186" height="14.14" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur-4"/>
+      <feFlood flood-color="#1f2229" flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Logo_CRM_App">
+      <rect width="90" height="32"/>
+    </clipPath>
+  </defs>
+  <g id="Logo_CRM_App" clip-path="url(#clip-Logo_CRM_App)">
+    <path id="Path_42202" data-name="Path 42202" d="M12.432-4.736a5.031,5.031,0,0,1-1.694,3.613A5.951,5.951,0,0,1,6.709.2a5.351,5.351,0,0,1-4.3-1.841A7.548,7.548,0,0,1,.84-6.7v-.869a8.523,8.523,0,0,1,.723-3.613,5.416,5.416,0,0,1,2.065-2.4,5.786,5.786,0,0,1,3.12-.835A5.8,5.8,0,0,1,10.713-13.1a5.407,5.407,0,0,1,1.738,3.7H9.521a2.97,2.97,0,0,0-.767-2,2.839,2.839,0,0,0-2.007-.62,2.489,2.489,0,0,0-2.192,1.05,5.883,5.883,0,0,0-.747,3.257v1.074a6.3,6.3,0,0,0,.7,3.369A2.443,2.443,0,0,0,6.709-2.2a2.892,2.892,0,0,0,2.026-.62A2.8,2.8,0,0,0,9.5-4.736Zm7.507-.469H17.605V0h-2.93V-14.219h5.283A5.972,5.972,0,0,1,23.845-13.1a3.876,3.876,0,0,1,1.367,3.174,4.374,4.374,0,0,1-.63,2.427,4.3,4.3,0,0,1-1.909,1.548L25.75-.137V0H22.605ZM17.605-7.578h2.363a2.42,2.42,0,0,0,1.709-.562,2.007,2.007,0,0,0,.605-1.548,2.148,2.148,0,0,0-.571-1.582,2.374,2.374,0,0,0-1.753-.576H17.605Zm13.982-6.641L35.24-3.906l3.633-10.312H42.72V0H39.781V-3.887l.293-6.709L36.236,0H34.224L30.4-10.586l.293,6.7V0h-2.93V-14.219Z" transform="translate(43.16 23)" fill="#1f2229"/>
+    <g id="ic_crm_36px" transform="translate(-12044 -3666)">
+      <g id="Group_29671" data-name="Group 29671" transform="translate(12044 3666)">
+        <path id="App_Icon_Mask-39" data-name="App Icon Mask-39" d="M31.99,10c0-.384,0-.765,0-1.145,0-.32-.006-.643-.013-.966a14.016,14.016,0,0,0-.186-2.1,6.973,6.973,0,0,0-.659-2A6.716,6.716,0,0,0,28.192.854a7.11,7.11,0,0,0-2-.659,14.025,14.025,0,0,0-2.1-.186C23.77,0,23.45,0,23.127-.007c-.381,0-.765,0-1.145,0H10c-.381,0-.765,0-1.145,0C8.533,0,8.213,0,7.89.009a14.025,14.025,0,0,0-2.1.186,6.976,6.976,0,0,0-2,.659A6.716,6.716,0,0,0,.854,3.79a7.106,7.106,0,0,0-.659,2,14.016,14.016,0,0,0-.186,2.1C0,8.212,0,8.531-.007,8.855c0,.381,0,.765,0,1.145V21.977c0,.381,0,.765,0,1.145,0,.32.006.643.016.966a14.016,14.016,0,0,0,.186,2.1,7.026,7.026,0,0,0,.659,2,6.733,6.733,0,0,0,2.937,2.937,7.11,7.11,0,0,0,2,.659,14.024,14.024,0,0,0,2.1.186c.32.01.643.013.966.016.381,0,.765,0,1.145,0h11.98c.381,0,.765,0,1.145,0,.323,0,.643-.006.966-.016a14.024,14.024,0,0,0,2.1-.186,6.976,6.976,0,0,0,2-.659,6.716,6.716,0,0,0,2.937-2.937,7.093,7.093,0,0,0,.659-2,14.016,14.016,0,0,0,.186-2.1c.01-.323.013-.643.013-.966,0-.384,0-.765,0-1.145Z" transform="translate(0.01 0.01)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="Group_47219" data-name="Group 47219" transform="translate(12049 3671)">
+        <g id="Group_47221" data-name="Group 47221">
+          <g transform="matrix(1, 0, 0, 1, -5, -5)" filter="url(#Ellipse_2630)">
+            <ellipse id="Ellipse_2630-2" data-name="Ellipse 2630" cx="3.338" cy="3.338" rx="3.338" ry="3.338" transform="translate(11.8 13.52)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -5, -5)" filter="url(#Path_36629)">
+            <path id="Path_36629-2" data-name="Path 36629" d="M44.4.654a11.884,11.884,0,0,0-7.01,5.206.371.371,0,0,0,.131.515l5.165,2.983a.371.371,0,0,0,.491-.112,5.165,5.165,0,0,1,3.951-2.282.371.371,0,0,0,.344-.371V.628a.371.371,0,0,0-.38-.371,11.9,11.9,0,0,0-2.693.4Z" transform="translate(-32.33 4.74)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -5, -5)" filter="url(#Path_36630)">
+            <path id="Path_36630-2" data-name="Path 36630" d="M295.407,16.163a11.879,11.879,0,0,0-6.842-5.427.371.371,0,0,0-.464.26l-1.544,5.762a.371.371,0,0,0,.235.446,5.121,5.121,0,0,1,.919.417,5.174,5.174,0,0,1,2.309,2.812.371.371,0,0,0,.445.235l5.765-1.542a.371.371,0,0,0,.259-.464A11.772,11.772,0,0,0,295.407,16.163Z" transform="translate(-269.99 -5.24)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+          <g transform="matrix(1, 0, 0, 1, -5, -5)" filter="url(#Path_36631)">
+            <path id="Path_36631-2" data-name="Path 36631" d="M317.335,256.13a.371.371,0,0,0-.371.344,5.175,5.175,0,0,1-2.284,3.952.371.371,0,0,0-.112.491l2.986,5.165a.371.371,0,0,0,.515.131,11.851,11.851,0,0,0,5.6-9.7.371.371,0,0,0-.371-.381Z" transform="translate(-296.67 -239.27)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

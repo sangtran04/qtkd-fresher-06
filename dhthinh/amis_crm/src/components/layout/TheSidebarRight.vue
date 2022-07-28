@@ -26,7 +26,6 @@
                 <div>Nguyễn Văn Hà (A006) - 12/08/2022</div>
             </div>
         </div>
-
         <div class="collapse-right">
             <div class="icon-collapse-right"></div>
         </div>
@@ -38,7 +37,7 @@
 export default {
     name: 'TheSidebarRight',
     components: {
-    
+        
     }
 }
 </script>

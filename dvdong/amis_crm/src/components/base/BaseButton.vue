@@ -82,14 +82,13 @@ export default {
 
 .icon {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 8px;
+  top: 0;
+  left: 0;
+  margin: 8px;
 }
 
 .button-dropdown {
   border-radius: 4px 0 0 4px;
- 
 }
 
 .button-drop {
