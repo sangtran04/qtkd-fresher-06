@@ -31,6 +31,7 @@ export default {
 <style>
 @import url("./style/font.css");
 @import url("./style/icons.css");
+@import url("./style/tooltip.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 .container {
   display: flex;
