@@ -1,14 +1,20 @@
 <template>
-  <div class="crm-textfield" :class="{ leftLabel: leftLabel, topLabel: topLabel }">
-    <label :class="{ hasLabel: hasLabel }" :for="labelContent">{{ labelContent }}</label>
+  <div
+    class="crm-textfield"
+    :class="{ leftLabel: leftLabel, topLabel: topLabel }"
+  >
+    <label :class="{ hasLabel: hasLabel }" :for="labelContent">{{
+      labelContent
+    }}</label>
     <div class="icon-position">
       <div class="icon-wrapper">
-<div v-if="hasIconSearch" class="icon-search"></div></div>
+        <div v-if="hasIconSearch" class="icon-search"></div>
+      </div>
 
       <div class="icon-success"></div>
       <input
         class="labelContent"
-        type="text"
+        :type="typeInput"
         :placeholder="placeHolder"
         :readonly="readOnly"
         :class="{ 'padding-left-32': hasIconSearchFunc }"
@@ -30,7 +36,7 @@ export default {
     },
     backgroundColor: {
       type: String,
-      default: "#f0f2f4"
+      default: "#f0f2f4",
     },
     // Định nghĩa nhãn cho thẻ Input
     labelContent: {
@@ -39,6 +45,10 @@ export default {
     // Có tồn tại nhãn nằm bên trên thẻ Input?
     topLabel: {
       type: Boolean,
+    },
+    typeInput: {
+      type: String,
+      default: "text",
     },
     width: {
       type: String,
@@ -81,12 +91,11 @@ export default {
   font-size: 13px;
 }
 input {
-    text-overflow: ellipsis;
+  text-overflow: ellipsis;
 }
 .crm-textfield {
-  display: flex;   
-  flex: 1; 
-
+  display: flex;
+  flex: 1;
 
   justify-content: center;
 }
@@ -101,24 +110,39 @@ input {
   background-position: center;
   padding: 8px 16px 8px 30px;
   border-radius: 4px;
-  height: 30px;;
+  height: 30px;
   border: 1px solid #f0f2f4;
   outline: none;
   width: v-bind(width);
   background-color: v-bind(backgroundColor);
 }
 
-
 .crm-textfield input::placeholder {
   font-size: 13px;
-  color: #bbbbbb; 
+  color: #bbbbbb;
 }
 .crm-textfield input:hover {
   background-color: #e2e4e9;
-outline: none;
+  outline: none;
+}
+.crm-textfield input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50em;
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat -80px -16px;
+  opacity: 0;
+  pointer-events: none;
+}
+.crm-textfield input[type="search"]:focus::-webkit-search-cancel-button {
+  opacity: 1;
 
-
-    
+  pointer-events: all;
+}
+.crm-textfield input[type="search"]:hover::-webkit-search-cancel-button {
+  background-color: #d3d7de;
 }
 
 .crm-textfield input:focus {
@@ -126,11 +150,6 @@ outline: none;
   background-color: #fff;
   outline: none;
 }
-
-
-
-
-
 
 .crm-textfield input[readonly]:focus {
   border: 1px solid #d3d7de;
@@ -157,9 +176,8 @@ outline: none;
   position: absolute;
   top: 25%;
   transform: translate(-10%);
-      margin-left: 8px;
-        padding: 8px 0;
-
+  margin-left: 8px;
+  padding: 8px 0;
 }
 
 .padding-left-32 {

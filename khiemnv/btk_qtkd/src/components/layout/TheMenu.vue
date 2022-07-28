@@ -12,7 +12,7 @@
       </div>
 
       <div class="menu__center">
-        <BaseTextField hasIcon></BaseTextField>
+        <BaseTextField hasIcon typeInput="search"></BaseTextField>
       </div>
       <div class="menu__right">
         <div class="menu__right--icon">

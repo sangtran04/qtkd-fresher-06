@@ -84,6 +84,20 @@ export default {
   font-family: Regular;
   color: #99a1b2;
 }
+.error-message {
+  display: none;
+  position: absolute;
+  color: #ec4141;
+  left: 0;
+  font-size: 13px;
+  top: calc(100% + 8px);
+}
+.error.crm-textarea {
+  border: solid 1px #ec4141;
+}
+.error.error-message {
+  display: initial;
+}
 .crm-textarea-error {
   outline: none !important;
   border: solid 1px #e81717;
@@ -100,18 +114,5 @@ export default {
 .crm-textarea textarea[readonly="readonly"]:hover {
   border: 1px solid #d3d7de;
 }
-.error-message {
-  display: none;
-  position: absolute;
-  color: #ec4141;
-  left: 0;
-  font-size: 13px;
-  top: calc(100% + 8px);
-}
-.error.crm-textarea {
-  border: solid 1px #ec4141;
-}
-.error.error-message {
-  display: initial;
-}
+
 </style>
