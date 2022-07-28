@@ -11,29 +11,29 @@
                 <span class="icon-add_colums_16"></span>
               </div>
             </th>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox" type="checkbox" name="" id="" />
+            <th class="text-align-center" style="width: 40px">
+              <input class="checkbox" type="checkbox" name="" id=""/>
             </th>
-            <th style="width: 30px" class="text-align-left">Thẻ</th>
-            <th class="text-align-left" style="width: 80px">Xưng hô</th>
-            <th class="text-align-left" style="width: 140px">Họ và tên</th>
-            <th class="text-align-left" style="width: 140px">Chức danh</th>
-            <th class="text-align-left" style="width: 120px">ĐT di động</th>
-            <th class="text-align-left" style="width: 120px">ĐT cơ quan</th>
-            <th class="text-align-left" style="width: 200px">Email cơ quan</th>
-            <th class="text-align-left" style="width: 200px">Email cá nhân</th>
-            <th class="text-align-left" style="width: 120px">Tổ chức</th>
+            <th style="width: 150px" class="text-align-left">Thẻ</th>
+            <th class="text-align-left" style="width: 120px">Xưng hô</th>
+            <th class="text-align-left" style="width: 250px">Họ và tên</th>
+            <th class="text-align-left" style="width: 180px">Chức danh</th>
+            <th class="text-align-left" style="width: 150px">ĐT di động</th>
+            <th class="text-align-left" style="width: 150px">ĐT cơ quan</th>
+            <th class="text-align-left" style="width: 250px">Email cơ quan</th>
+            <th class="text-align-left" style="width: 250px">Email cá nhân</th>
+            <th class="text-align-left" style="width: 150px">Tổ chức</th>
             <th class="text-align-left" style="width: 150px">Địa chỉ</th>
-            <th class="text-align-left" style="width: 100px">Tỉnh/Thành phố</th>
-            <th class="text-align-left" style="width: 100px">Quận/Huyện</th>
-            <th class="text-align-left" style="width: 100px">Phường/Xã</th>
-            <th class="text-align-left" style="width: 100px">Nguồn gốc</th>
-            <th class="text-align-left" style="width: 120px">Loại hình</th>
-            <th class="text-align-left" style="width: 100px">Lĩnh vực</th>
-            <th class="text-align-left" style="width: 100px">Mô tả</th>
-            <th class="text-align-left" style="width: 100px">Bố cục</th>
+            <th class="text-align-left" style="width: 150px">Tỉnh/Thành phố</th>
+            <th class="text-align-left" style="width: 150px">Quận/Huyện</th>
+            <th class="text-align-left" style="width: 150px">Phường/Xã</th>
+            <th class="text-align-left" style="width: 150px">Nguồn gốc</th>
+            <th class="text-align-left" style="width: 150px">Loại hình</th>
+            <th class="text-align-left" style="width: 150px">Lĩnh vực</th>
+            <th class="text-align-left" style="width: 150px">Mô tả</th>
+            <th class="text-align-left" style="width: 150px">Bố cục</th>
             <th class="text-align-left" style="width: 150px">Chủ sở hữu</th>
-            <th class="text-align-left" style="width: 100px">Dùng chung</th>
+            <th class="text-align-left" style="width: 150px">Dùng chung</th>
             <th class="text-align-left" style="width: 150px">Facebook</th>
           </tr>
         </thead>

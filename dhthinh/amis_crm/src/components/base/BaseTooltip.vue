@@ -30,7 +30,6 @@
     padding: 8px 16px;
     display: flex;
     align-items: center;
-    position: relative;
     margin-left: 12px;
     color: #fff;
     position: absolute;

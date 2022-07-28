@@ -17,7 +17,7 @@
       </div>
       <div class="sidebar__right">
         <div class="boder-icon">
-          <div class="icon icon-avatar"></div>
+            <div class="icon icon-avatar"></div>
         </div>
         <div class="boder-icon">
           <div class="icon icon-help"></div>
@@ -148,6 +148,8 @@ export default {
 }
 
 .boder-icon {
+  cursor: pointer;
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;
