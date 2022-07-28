@@ -5,7 +5,7 @@
       @click="isOpen = !isOpen"
       :class="{ isActive: isOpen }"
     >
-      <div>{{ dropdownContent }}</div>
+      <div class="dropdown-content">{{ dropdownContent }}</div>
       <div class="icon icon-dropdown"></div>
     </button>
     <div class="dropdown-list" v-if="isOpen">
@@ -40,10 +40,18 @@ export default {
     }
   },
   props: {
+    //Truyền vào màu của chữ
+    color: {
+      type: String,
+    },
+
+    //Truyền vào mảng
     arrays: {
       type: Array,
       default: () => [],
     },
+
+    //Truyền vào nội dụng hiển thị ban đầu của dropdown
     dropdownContent: {
       type: String,
       required: true,
@@ -97,11 +105,10 @@ button:focus {
 
 .crm-dropdown {
   position: relative;
-  position: relative;
   width: fit-content;
   cursor: pointer;
   background: #ffffff;
-  min-width: 182px;
+  width: 100%;
   
 }
 .dropdown-list {
@@ -119,5 +126,8 @@ button:focus {
   width: 100%;
   bottom: 32px;
   right: 0px;
+}
+.dropdown-content {
+  color: v-bind(color);
 }
 </style>

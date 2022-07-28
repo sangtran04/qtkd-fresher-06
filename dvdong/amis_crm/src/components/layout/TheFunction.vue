@@ -9,13 +9,13 @@
       </div>
     </div>
     <div class="function__right">
-       <div class="header__center mr-8">
-        <div class="header__search">
-          <div class="header__search-input">
+       <div class="function__center mr-8">
+        <div class="function__search">
+          <div class="function__search-input">
             <input
               type="text"
-              placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
-              class="text-field"
+              placeholder="Tìm kiếm theo Địa chỉ, Tổ chức, Email cá nhân, Họ và tên, ĐT di động, ĐT cơ quan, Email cơ quan, Mã số thuế"
+              class="function-text-field"
             />
           </div>
           <div class="icon icon--search"></div>

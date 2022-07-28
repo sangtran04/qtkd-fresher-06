@@ -6,12 +6,14 @@
         <div class="logo-amis"></div>
       </div>
       <div class="sidebar__center">
-        <BaseTextField
+        <div class="input--search">
+          <BaseTextField
           class="input-center"
           placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
           :isIconSearch="true"
           width="320px"
         />
+        </div>
       </div>
       <div class="sidebar__right">
         <div class="boder-icon">
@@ -107,7 +109,13 @@ export default {
 
 .sidebar__center {
   flex: 1;
+  display: flex;
   text-align: center;
+  justify-content: center;
+}
+
+.input--search {
+  width: 320px;
 }
 
 .sidebar__right {

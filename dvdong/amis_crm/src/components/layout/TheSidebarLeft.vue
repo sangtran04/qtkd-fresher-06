@@ -22,8 +22,8 @@
       </div>
 
       <div class="xem-them">
-        <hr  width="68" size="30" />
-        <span >Xem thêm</span>
+        <hr width="68" size="30" />
+        <span>Xem thêm</span>
         <hr width="68" size="30" />
       </div>
 
@@ -43,6 +43,7 @@
         label="Select a category"
       />
     </div>
+    
   </div>
 </template>
 

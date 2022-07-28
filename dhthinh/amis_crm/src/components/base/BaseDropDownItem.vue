@@ -8,7 +8,6 @@
 export default {
   name: "BaseDropDownItem",
   props: {
-
     //Truyền vào một mảng các item
     item: {
       type: Object,

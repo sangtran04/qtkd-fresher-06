@@ -1,8 +1,9 @@
 .table {
-    width: 2600px;
+    min-width: 3400px;
     border-spacing: unset;
     border: unset;
     border-collapse: collapse;
+    box-sizing: border-box;
 }
 
 .table thead tr {
@@ -10,22 +11,30 @@
 }
 
 .table thead tr th {
-    font-weight: 700;
-    
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #1f2229;
+    background-color: #f0f2f4;
+    border-right: 1px solid  #f0f2f4;
+    border-left: 1px solid #f0f2f4;
+}
+
+.table thead tr th:hover {
+    border-right: 1px solid #d3d7de!important;
 }
 
 .table tbody tr td {
-    font-weight: 500;
+    font-weight: 400;
+    color: #1f2229;
 }
 
 .table .text--blue {
-    color: rgb(19, 59, 236);
+    color: #0f2fbd;
 }
 
 .text--icon {
     display: flex;
     align-items: center;
-    line-height: 40px;
 }
 
 .text--icon-right {
@@ -72,6 +81,7 @@ th {
 
 .text-align-left {
     text-align: left;
+    
 }
 
 .text-align-right {
@@ -95,3 +105,4 @@ table tr.row--selected {
 .m-table thead {
     position: sticky;
 }
+

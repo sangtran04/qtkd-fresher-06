@@ -332,9 +332,11 @@
     }
 
     .icon--pre1 {
-        background: url('../../assets/img/icon_collection.svg') no-repeat -293px -34px;
-        width: 7px;
-        height: 13px;
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat -16px -32px;
     }
 
     .icon--pre2 {
@@ -344,9 +346,11 @@
     }
 
     .icon--next1 {
-        background: url('../../assets/img/icon_collection.svg') no-repeat -308px -34px;
-        width: 7px;
-        height: 13px;
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat 0px -32px;
     }
 
     .icon--next2 {
@@ -387,8 +391,26 @@
         height: 9px;
     }
 
-    .icon--tblcall {
-        background: url('../../assets/img/icon_collection.svg') no-repeat -322px -48px;
-        width: 15px;
+    .icon--tel {
+        content: "";
+        display: inline-block;
+        width: 16px;
         height: 16px;
+        background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat -320px -48px;
+    }
+
+    .icon-add-column::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat 0px 0px;
+    }
+
+    .icon--empty-report {
+        content: "";
+        display: inline-block;
+        width: 42px;
+        height: 46px;
+        background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/EmptyInbox.svg) no-repeat 0px 0px;
     }
