@@ -1,22 +1,40 @@
 <template>
-  <div :class="{'form__item': hasLabelFunc}">
-    <label :class="{'label': hasLabelFunc }" for="">{{ contentLabel }}</label>
-    <input
+  <div :class="[{ form__item: hasLabelFunc }]">
+    <label :class="{ label: hasLabelFunc }" for="">
+    <span>{{ contentLabel }} <span v-if="hasRequiedFunc" style="color:red"> *</span>
+    <BaseTooltip class="show__tooltip"
+      v-show="hasTooltipFunc"
+      :contentTooltip="contentTooltip"/>
+    </span>
+    </label>
+    <div class="inputeeee" style="box-sizing:border-box">
+      <input
+      :id="idInput"
       class="input"
       type="text"
       :placeholder="placeholder"
       :readonly="readOnly"
-      :class="{ 'input__icon input__icon--search': hasIconSearchFunction }"
+      :class="[{ 'input__icon input__icon--search': hasIconSearchFunction }]"
     />
-          <!-- :id="labelContent" -->
+      <div :id="classMessError" v-if="classMessError">{{contentError}}</div> 
+    </div>
   </div>
 </template>
 <script>
+import BaseTooltip from "./BaseTooltip.vue";
 export default {
   props: {
-    backgroundColor:{
+    classMessError: String,
+    idInput: String
+    ,
+    contentError: String,
+    contentTooltip: {
       type: String,
-      default: '#fff'
+      default: "this is default of tooltip",
+    },
+    backgroundColor: {
+      type: String,
+      default: "#fff",
     },
     // Thiết lập chiều ngang cho text field
     width: {
@@ -50,10 +68,25 @@ export default {
     hasIconSearch: {
       type: Boolean,
     },
+    hasIconSearchLeft: {
+      type: Boolean,
+    },
     hasLabel: {
       type: Boolean,
       default: false,
     },
+    hasTooltip: {
+      type: Boolean,
+      default: false,
+    },
+    hasRequied:{
+      type: Boolean,
+      default: false,
+    },
+    hasError:{
+      type: Boolean,
+      default: false,
+    }
   },
   computed: {
     /**
@@ -70,17 +103,45 @@ export default {
     hasIconSearchFunction() {
       return this.hasIconSearch ? true : false;
     },
+    /**
+     * Kiểm tra xem có tooltip không?
+     */
+    hasTooltipFunc() {
+      return this.hasTooltip;
+    },
+    /**
+     * Kiểm tra xem có tìm bắt buộc nhập không?
+     */
+    hasRequiedFunc(){
+      return this.hasRequied;
+    },
+    /**
+     * Author: ĐTAn 28/07/2022
+     * Kiểm tra xem input nhập có lỗi không?
+     */
+    hasErrorFunc(){
+      return this.hasError;
+    },
   },
+  components: { BaseTooltip },
+  methods: {
+
+    }
 };
 </script>
 <style>
+span:hover .show__tooltip {
+  display: block !important;
+  z-index: 1 !important;
+  cursor: pointer;
+}
 .input {
   box-sizing: border-box;
   min-width: v-bind(width);
   max-width: 400px;
   height: 32px;
   border-radius: 4px;
-  border: 1px solid #ccc;
+  border: 1px solid #d3d7de;
   padding: 8px 16px;
   outline: none;
   background-color: v-bind(backgroundColor);
@@ -102,7 +163,12 @@ export default {
 .input--error {
   border-color: #ec4141;
 }
-
+.input--error:focus {
+  border-color: #ec4141;
+}
+.input--error:hover {
+  border-color: #ec4141;
+}
 .input--success {
   border-color: #31b491;
 }
@@ -117,7 +183,7 @@ export default {
 }
 
 .input__icon--search {
-  margin-top: 0px;  
+  margin-top: 0px;
   border: none;
   margin-left: 36px;
 }
@@ -146,7 +212,24 @@ export default {
 .label {
   padding-top: 0px;
   min-width: 190px;
+  max-width:190px;
   max-height: 32px;
+}
+#message--error{
+  box-sizing: border-box;
+  color: red;
+  margin-left: 10px;
+  height: 28px;
+  padding-top: 8px;
+  display: none;
+}
+#message--error--test{
+  box-sizing: border-box;
+  color: red;
+  margin-left: 10px;
+  height: 28px;
+  padding-top: 8px;
+  display: none;
 }
 </style>
 
