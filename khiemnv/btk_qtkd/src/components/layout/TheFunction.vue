@@ -8,8 +8,8 @@
     </div>
     <div class="function__right">
       <div class="button__group">
-        <BaseTextField placeHolder= "Tìm kiếm theo Địa chỉ, Tổ chức, Email cá nhân, Họ và tên, ĐT di động, ĐT cơ quan, Email cơ quan, Mã số thuế" width="240px" backgroundColor="#fff"></BaseTextField>
-<BaseButton :buttonContent="btn" hasIcon display="block"></BaseButton>
+        <BaseTextField placeHolder= "Tìm kiếm theo Địa chỉ, Tổ chức, Email cá nhân, Họ và tên, ĐT di động, ĐT cơ quan, Email cơ quan, Mã số thuế" width="240px" backgroundColor="#fff" typeInput="search"></BaseTextField>
+<BaseButton :buttonContent="btn" hasIcon display="block" ></BaseButton>
        <div class="button__group--left">
                     <button class="icon-threedot"></button>
                 </div>
