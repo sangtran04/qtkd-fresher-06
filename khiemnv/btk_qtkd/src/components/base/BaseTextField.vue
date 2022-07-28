@@ -126,7 +126,7 @@ input {
   outline: none;
 }
 .crm-textfield input[type="search"]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
+  -webkit-appearance: inherit;
   height: 16px;
   width: 16px;
   border-radius: 50em;
@@ -134,14 +134,15 @@ input {
     url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
     no-repeat -80px -16px;
   opacity: 0;
-  pointer-events: none;
+  right: 3px;
+  position: absolute;
 }
 .crm-textfield input[type="search"]:focus::-webkit-search-cancel-button {
   opacity: 1;
-
   pointer-events: all;
 }
-.crm-textfield input[type="search"]:hover::-webkit-search-cancel-button {
+
+.crm-textfield input[type="search"]::-webkit-search-cancel-button:hover {
   background-color: #d3d7de;
 }
 
