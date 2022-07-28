@@ -8,7 +8,7 @@
         <div class="icon-complete"></div>
       </div>
       <div class="sidebarright__icon--right">
-        <div class="icon-calendar"></div>
+        <div class="icon-complete"></div>
       </div>
       <div class="sidebarright__icon--right">
         <div class="icon-email"></div>

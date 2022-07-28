@@ -10,15 +10,12 @@
     margin: 0 4px;
 }
 
+
 .icon-menu {
     background: url('../assets/img/icon_collection.svg') no-repeat -3px -341px;
     width: 24px;
     height: 24px;
     cursor: pointer;
-}
-
-.all {
-    position: relative;
 }
 
 .icon-bin {
@@ -28,76 +25,95 @@
 }
 
 .icon-16 {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-align-content: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 16px;
     height: 16px;
     background: url('../assets/img/icon_collection.svg') no-repeat -4px -341px;
+    margin-right: 16px;
+    margin-left: 14px;
 }
 
 .icon-logo {
-background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
-  background-repeat: no-repeat;
- height: 32px;
- width: 130px;
- position: absolute;
- margin-left: 30px;
- top: 8px;
-
- cursor: pointer;
+    background: url('../assets/img/Logo_CRM_App.svg');
+    height: 32px;
+    width: 32px;
+    margin-right: 12px;
+    margin-left: 4px;
+    cursor: pointer;
 }
 
 .icon-avatar {
-    background: url('../assets/img/icon_collection.svg') no-repeat -144px -385px;
+    background: url("../assets/img/avatar.png");
+    border-radius: 50%;
+    box-sizing: border-box;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #d3d7de;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.icon-book {
+
+    content: "";
+    display: inline-block;
     width: 24px;
     height: 24px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat -96px -433px;
 }
 
 .icon-help {
     background: url('../assets/img/icon_collection.svg') no-repeat -218px -363px;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }
 
 .icon-facebook {
-    background: url('../assets/img/icon_collection.svg') no-repeat -288px -321px;
-    width: 16px;
-    height: 18px;
+    background: url('../assets/img/icon_facebook_24_blue.svg');
+    width: 24px;
+    height: 24px;
 }
 
-.icon-box {
-    background: url('../assets/img/icon_collection.svg') no-repeat -243px -411px;
-    width: 19px;
-    height: 20px;
+.icon-stock {
+
+
+    width: 24px;
+    height: 24px;
+    background: transparent url('https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg') no-repeat -240px -409px;
 }
+
 
 .icon-calendar {
-    background: url('../assets/img/icon_collection.svg') no-repeat -123px -339px;
-    width: 18px;
-    height: 20px;
+
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -120px -337px;
 }
 
 .icon-notification {
-    background: url('../assets/img/icon_collection.svg') no-repeat -75px -339px;
-    width: 18px;
-    height: 20px;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection_v2.svg) no-repeat -72px -337px;
 }
+
+
 
 .icon-setting {
     background: url('../assets/img/icon_collection.svg') no-repeat -98px -339px;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
 }
 
 .icon-search {
     background: url('../assets/img/icon_collection.svg') no-repeat -32px 0;
-    width: 17px;
-    height: 17px;
+    width: 16px;
+    height: 16px;
 }
 
 .icon-table {
@@ -136,7 +152,7 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
     height: 16px;
 }
 
-.icon-price{
+.icon-price {
     background: url('../assets/img/icon_collection.svg') no-repeat -66px -48px;
     width: 12px;
     height: 16px;
@@ -195,6 +211,12 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
     width: 16px;
     height: 16px;
     cursor: pointer;
+
+}
+
+.icon-refresh:hover {
+    border-radius: 50%;
+    background-color: #c5c9d3;
 }
 
 .icon-plus {
@@ -203,7 +225,7 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
     height: 13px;
 }
 
-.icon-down{
+.icon-down {
     background: url('../assets/img/icon_collection.svg') no-repeat -84px -166px;
     width: 9px;
     height: 5px;
@@ -221,6 +243,12 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
     height: 16px;
 }
 
+.icon-threedot {
+    background: url('../assets/img/icon_collection.svg') no-repeat -49px -6px;
+    width: 14px;
+    height: 4px;
+}
+
 .icon-downblack {
     background: url('../assets/img/icon_collection.svg') no-repeat -338px -37px;
     width: 13px;
@@ -229,8 +257,8 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
 
 .icon-up {
     background: url('../assets/img/icon_collection.svg') no-repeat -322px -37px;
-    width: 13px;
-    height: 7px;
+    width: 16px;
+    height: 16px;
 }
 
 .icon-call {
@@ -245,11 +273,6 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
     height: 16px;
 }
 
-.icon-calendar {
-    background: url('../assets/img/icon_collection.svg') no-repeat -209px -321px;
-    width: 14px;
-    height: 16px;
-}
 
 .icon-email {
     background: url('../assets/img/icon_collection.svg') no-repeat 0 -324px;
@@ -257,7 +280,7 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
     height: 11px;
 }
 
-.icon-note{
+.icon-note {
     background: url('../assets/img/icon_collection.svg') no-repeat -273px -115px;
     width: 16px;
     height: 14px;
@@ -302,7 +325,7 @@ background: url('../assets/img/Logo_Ban_hang.svg') no-repeat;
     height: 9px;
 }
 
-.icon-tblcall {
+.icon-rowscall {
     background: url('../assets/img/icon_collection.svg') no-repeat -320px -48px;
     width: 16px;
     height: 16px;

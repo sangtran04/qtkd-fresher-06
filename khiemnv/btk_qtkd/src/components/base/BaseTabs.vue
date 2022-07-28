@@ -29,7 +29,7 @@ export default {
       return this.checked;
     },
   },
-
+//@click="currentTab = index" :class="{active: currentTab === index}">
 };
 </script>
 
@@ -37,29 +37,39 @@ export default {
 
 .crm-tab {
   display: flex;
-  height: 40px;
-  margin-right: 32px;
-  margin-left: 8px;
+  font-weight: 500;
   align-items: center;
+  color: #1f2229;
   cursor: pointer;
+  height: 40px;
+
   position: relative;
+  justify-content:center ;
+  align-content: center;
+
 }
-.crm-tab.checked > span {
+.crm-tab:hover {
+  background-color: #F0F2F4;
+  border-radius: 4px;
+  
+}
+.crm-tab.checked  span {
   position: absolute;
   background-color:  #4262f0;
-  height: 2px;
-  width: 100%;
-  top: calc(100% - 2px);
+  display: block;
+  height: 1px;
+  width: 85.61px;
+  border-bottom: 2px solid #4262f0;
+ top:  40px;
 }
 .crm-tab.checked > .crm-tab__icon,
 .crm-tab.checked > .tab-content {
   color:  #4262f0;
 }
-.crm-tab__icon {
-  margin-right: 8px;
-}
+
 .tab-content {
   white-space: nowrap;
-}
+  margin-left: 8px;
+} 
 
 </style>

@@ -26,16 +26,29 @@ export default {
 <style>
 .crm-checkbox {
   display: flex;
-  padding: 7px 0px;
+  padding: 8px 16px;
+  height: 32px;
+
+
 }
 .checkbox {
   width: 16px;
   height: 16px;
-  margin: 0px;
+padding: 7px 0 7px 24px;
+border: 1px solid #7c869c !important;
+    border-radius: 4px;
+}
+.checkbox:hover {
+    border-color: #2b4eee;   ;
 }
 .checkbox-name {
-  font-family: Regular;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
   font-size: 13px;
-  padding-left: 8px;
+  padding: 0 0 0 24px;
+  position: absolute;
+}
+.crm-checkbox:hover{
+    cursor: pointer;
+
 }
 </style>

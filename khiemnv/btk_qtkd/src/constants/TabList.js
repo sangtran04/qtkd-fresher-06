@@ -2,16 +2,17 @@
 const TAB_LIST = [
     {
       id: 1,
-      tabItem: 'Tiềm năng',
-      checked: true,
-      class: "icon-potential",
+      tabItem: 'Bàn làm việc',
+      checked: false ,
+      class: "icon-table",
+      div: "icon-format"
     },
     
     {
       id: 2,
-      tabItem: 'Bàn làm việc',
-      checked: false,
-      class: "icon-table",
+      tabItem: 'Tiềm năng',
+      checked: true,
+      class: "icon-potential",
       div: "icon-format"
     },
     {
@@ -62,14 +63,44 @@ const TAB_LIST = [
       checked: false,
       class: "icon-receipt",
       div: "icon-format"
-    },
+    }
+    ,
     {
       id: 10,
+      tabItem: 'Ao cơ hội',
+      checked: false,
+      class: "icon-pond",
+      div: "icon-format"
+    },
+    {
+      id: 11,
+      tabItem: 'Hoạt động',
+      checked: false,
+      class: "icon-action",
+      div: "icon-format"
+    },
+    {
+      id: 12,
+      tabItem: 'Mục tiêu',
+      checked: false,
+      class: "icon-target",
+      div: "icon-format"
+    },
+     { id: 13,
+    
       tabItem: 'Khác',
       checked: false,
       class: "icon-other",
       div: "icon-format"
     }
+  
+    // {
+    //   id: 10,
+    //   tabItem: 'Khác',
+    //   checked: false,
+    //   class: "icon-other",
+    //   div: "icon-format"
+    // }
     
   ]
   

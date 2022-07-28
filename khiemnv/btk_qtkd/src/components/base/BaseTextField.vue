@@ -2,7 +2,9 @@
   <div class="crm-textfield" :class="{ leftLabel: leftLabel, topLabel: topLabel }">
     <label :class="{ hasLabel: hasLabel }" :for="labelContent">{{ labelContent }}</label>
     <div class="icon-position">
-      <div v-if="hasIconSearch" class="icon-search"></div>
+      <div class="icon-wrapper">
+<div v-if="hasIconSearch" class="icon-search"></div></div>
+
       <div class="icon-success"></div>
       <input
         class="labelContent"
@@ -26,6 +28,10 @@ export default {
       default: "Tìm kiếm tiềm năng, liên hệ, khách hàng",
       require: true,
     },
+    backgroundColor: {
+      type: String,
+      default: "#f0f2f4"
+    },
     // Định nghĩa nhãn cho thẻ Input
     labelContent: {
       type: String,
@@ -36,7 +42,7 @@ export default {
     },
     width: {
       type: String,
-      default: "240px",
+      default: "320px",
     },
     // Có tồn tại nhãn nằm nằm bên trái trên thẻ Input?
     leftLabel: {
@@ -72,11 +78,16 @@ export default {
 
 <style scoped>
 * {
-  font-size: 16px;
+  font-size: 13px;
 }
-
+input {
+    text-overflow: ellipsis;
+}
 .crm-textfield {
-  display: flex;
+  display: flex;   
+  flex: 1; 
+
+
   justify-content: center;
 }
 .crm-textfield.topLabel {
@@ -87,26 +98,40 @@ export default {
 }
 
 .crm-textfield input {
-  height: 32px;
-  max-width: v-bind(width);
+  background-position: center;
+  padding: 8px 16px 8px 30px;
   border-radius: 4px;
-  border: 1px solid #d3d7de;
-  padding: 0 16px;
-  margin-top: 8px;
+  height: 30px;;
+  border: 1px solid #f0f2f4;
   outline: none;
-  background-color: #f0f2f4;
+  width: v-bind(width);
+  background-color: v-bind(backgroundColor);
 }
+
+
 .crm-textfield input::placeholder {
   font-size: 13px;
-  color: #bbbbbb;
+  color: #bbbbbb; 
 }
 .crm-textfield input:hover {
-  border-color: #7c869c;
+  background-color: #e2e4e9;
+outline: none;
+
+
+    
 }
+
 .crm-textfield input:focus {
   border: 1px solid #4262f0;
   background-color: #fff;
+  outline: none;
 }
+
+
+
+
+
+
 .crm-textfield input[readonly]:focus {
   border: 1px solid #d3d7de;
 }
@@ -126,14 +151,17 @@ export default {
 }
 .crm-textfield .icon-position {
   position: relative;
+  margin-left: 8px;
 }
 .crm-textfield .icon-search {
   position: absolute;
-  top: 50%;
-  transform: translate(50% -50%);
+  top: 25%;
+  transform: translate(-10%);
+      margin-left: 8px;
+        padding: 8px 0;
 
-  left: 8px;
 }
+
 .padding-left-32 {
   padding-left: 32px !important;
 }

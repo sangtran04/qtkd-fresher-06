@@ -9,7 +9,10 @@
 </template>
 
 <script>
+
+
 export default {
+  
   props: {
     // Quy định nội dung chữ của button
     buttonContent: {
@@ -31,14 +34,21 @@ export default {
       type: Boolean,
       default: false,
     },
+    // Độ rộng button
     width: {
       type: String,
       default: "86px",
     },
+    // Quy định cách hiển thị của button
     display: {
       type: String,
       default: "none",
     },
+    border: {
+      type: String,
+   
+    },
+    // Xét trường hợp button không có text và icon +, thì sẽ còn lại trường hợp button chỉ có icon tùy chọn và sửa
     notIcon: {
       type: Boolean,
       default: false,
@@ -55,7 +65,13 @@ export default {
       return this.notIcon;
     },
   },
-};
+//     setup() {
+//         function addPotential() {
+//             console.log("Going Back...");
+//             router.back();
+//         }
+// }
+}
 </script>
 
 <style scoped>
@@ -80,12 +96,13 @@ export default {
   display: flex;
   cursor: pointer;
   outline: none;
-  border: none;
+  border: v-bind(border);
   background-color: transparent;
   padding: 0 16px;
   height: 100%;
   align-items: center;
   width: v-bind(width);
+
 }
 .crm-button > .button-icon {
   padding-left: 0;
