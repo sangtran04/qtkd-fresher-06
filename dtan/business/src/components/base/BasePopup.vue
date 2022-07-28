@@ -7,23 +7,26 @@
                 </div>
                 <div class="popup__subtitle">{{contentText}}</div>
                 <div class="popup__footer">
-                    <button a class="button" style="color:black">Button</button>
-                    <button class="button button__primary--red ">Button</button>
+                    <BaseButton style="margin: 0 8px;" hasTertiary backgroundColor="#e2e4e9" buttonText="Hủy"></BaseButton>
+                    <BaseButton hasPrimaryRed buttonText="Đồng ý"></BaseButton>
                 </div>
             </div>
         </div>
 </template>
 <script>
+import BaseButton from './BaseButton.vue';
 export default {
     props: {
-        contentText:{
+        contentText: {
             type: String,
-            default: () => 'nội dung thông báo'
-        },titleText:{
+            default: () => "nội dung thông báo"
+        },
+        titleText: {
             type: String,
-            default: () => 'Thông báo'
+            default: () => "Thông báo"
         }
-    }
+    },
+    components: { BaseButton }
 }
 </script>
 <style>
@@ -49,7 +52,8 @@ export default {
     right: 0;
     bottom: 0;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.466);
+    background: rgba(0, 0, 0, 0.16);
+    z-index: 999999;
 }
 
 .popup__header {
@@ -78,7 +82,4 @@ export default {
     box-sizing: border-box;
 }
 
-.popup__footer button[a] {
-    margin: 0 16px;
-}
 </style>

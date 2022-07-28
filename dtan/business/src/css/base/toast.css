@@ -1,4 +1,7 @@
 .toastmessage {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    top: 65px;
     display: flex;
     align-items: center;
     max-width: 160px;
@@ -6,6 +9,23 @@
     border-radius: 4px;
     color: #fff;
     min-width: v-bind(width);
+    animation: slideInLeft ease 0.7s, fadeOut linear 1s 3s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateY(calc(-20px));
+    }
+    to {
+        opacity: 1;
+        transform: translateY(50px);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
 }
 
 .toastmessage--success {
