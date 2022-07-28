@@ -1,9 +1,9 @@
 <template>
   <div class="content">
-    <div class="sidebar-right-close">
+    <div class="sidebar-right-close" onclick="closeSidebar()">
       <div class="icon--next1"></div>
     </div>
-     <div class="sidebar-left-close">
+    <div class="sidebar-left-close">
       <div class="icon--pre1"></div>
     </div>
     <div class="table__content">
@@ -13,22 +13,19 @@
             <tr>
               <th style="width: 36px">
                 <div
-                title="Tùy chỉnh cột"
-                class="btn-settings-column icon-sticky-setting-column"
-              >
-                <span class="icon-add-column"></span>
-              </div>
+                  title="Tùy chỉnh cột"
+                  class="btn-settings-column icon-sticky-setting-column"
+                >
+                  <span class="icon-add-column"></span>
+                </div>
               </th>
               <th style="width: 28px" class="text-align-right">
-                <BaseCheckbox/>
+                <BaseCheckbox />
               </th>
-              <th class="text-align-left" style="width: 150px;">
-                Thẻ
-
-                </th>
-              <th class="text-align-left" style="width: 100px;">Xưng hô</th>
-              <th class="text-align-left" style="width: 180px;">Họ và tên</th>
-              <th class="text-align-left" style="width: 120px;">Chức danh</th>
+              <th class="text-align-left" style="width: 150px">Thẻ</th>
+              <th class="text-align-left" style="width: 100px">Xưng hô</th>
+              <th class="text-align-left" style="width: 180px">Họ và tên</th>
+              <th class="text-align-left" style="width: 120px">Chức danh</th>
               <th class="text-align-left" style="width: 150px">ĐT di động</th>
               <th class="text-align-left" style="width: 150px">ĐT cơ quan</th>
               <th class="text-align-left" style="width: 180px">
@@ -53,11 +50,9 @@
 
           <tbody>
             <tr>
-              <td style="width: 36px">
-                
-              </td>
+              <td style="width: 36px"></td>
               <td style="width: 28px" class="text-align-right">
-                <BaseCheckbox/>
+                <BaseCheckbox />
               </td>
               <td style="width: 150px" class="text-align-left">Thẻ</td>
               <td class="text-align-left" style="width: 180px">Anh</td>
@@ -85,9 +80,7 @@
               </td>
               <td class="text-align-left" style="width: 300px">MISA</td>
               <td class="text-align-left" style="width: 200px">Duy Tân</td>
-              <td class="text-align-left" style="width: 120px">
-                Hà Nội
-              </td>
+              <td class="text-align-left" style="width: 120px">Hà Nội</td>
               <td class="text-align-left" style="width: 150px">Cầu Giấy</td>
               <td class="text-align-left" style="width: 150px">Cầu Giấy</td>
               <td class="text-align-left" style="width: 200px">Cầu Giấy</td>
@@ -122,10 +115,19 @@
 </template>
 
 <script>
-import BaseCheckbox from './../base/BaseCheckbox.vue'
+function closeSidebar() {
+  console.log('adsdas')
+}
+
+import BaseCheckbox from "./../base/BaseCheckbox.vue";
 export default {
   components: {
     BaseCheckbox,
+  },
+  methods: {
+    closeSidebar() {
+      console.log('dấdgjiu')
+    }
   }
 };
 </script>
@@ -153,5 +155,4 @@ export default {
   background-color: #d3d7de;
   border-radius: 50%;
 }
-
 </style>
