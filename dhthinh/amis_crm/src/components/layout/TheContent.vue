@@ -17,413 +17,499 @@
             <th style="width: 30px" class="text-align-left">Thẻ</th>
             <th class="text-align-left" style="width: 80px">Xưng hô</th>
             <th class="text-align-left" style="width: 140px">Họ và tên</th>
-            <th class="text-align-left" style="width: 120px">Chức danh</th>
-            <th class="text-align-left" style="width: 100px">ĐT di động</th>
-            <th class="text-align-left" style="width: 100px">ĐT cơ quan</th>
-            <th class="text-align-left" style="width: 120px">Email cơ quan</th>
-            <th class="text-align-left" style="width: 120px">Email cá nhân</th>
-            <th class="text-align-left" style="width: 100px">Tổ chức</th>
-            <th class="text-align-left" style="width: 100px">Địa chỉ</th>
+            <th class="text-align-left" style="width: 140px">Chức danh</th>
+            <th class="text-align-left" style="width: 120px">ĐT di động</th>
+            <th class="text-align-left" style="width: 120px">ĐT cơ quan</th>
+            <th class="text-align-left" style="width: 200px">Email cơ quan</th>
+            <th class="text-align-left" style="width: 200px">Email cá nhân</th>
+            <th class="text-align-left" style="width: 120px">Tổ chức</th>
+            <th class="text-align-left" style="width: 150px">Địa chỉ</th>
             <th class="text-align-left" style="width: 100px">Tỉnh/Thành phố</th>
             <th class="text-align-left" style="width: 100px">Quận/Huyện</th>
             <th class="text-align-left" style="width: 100px">Phường/Xã</th>
             <th class="text-align-left" style="width: 100px">Nguồn gốc</th>
-            <th class="text-align-left" style="width: 100px">Loại hình</th>
+            <th class="text-align-left" style="width: 120px">Loại hình</th>
             <th class="text-align-left" style="width: 100px">Lĩnh vực</th>
             <th class="text-align-left" style="width: 100px">Mô tả</th>
             <th class="text-align-left" style="width: 100px">Bố cục</th>
-            <th class="text-align-left" style="width: 100px">Chủ sở hữu</th>
+            <th class="text-align-left" style="width: 150px">Chủ sở hữu</th>
             <th class="text-align-left" style="width: 100px">Dùng chung</th>
-            <th class="text-align-left" style="width: 100px">Facebook</th>
+            <th class="text-align-left" style="width: 150px">Facebook</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
+            <th class="text-align-center">
               <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
           <tr>
             <td></td>
-            <th class="text-align-center" style="width: 28px">
-              <input class="checkbox text-align-center" type="checkbox" name="" id="" />
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
             </th>
-            <td style="width: 100px" class="text-align-left"></td>
-            <td class="text-align-left" style="width: 80px">Anh</td>
-            <td class="text-align-left text--blue" style="width: 140px">
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
               Đặng Hữu Thịnh
             </td>
-            <td class="text-align-left" style="width: 120px">Nhân Viên</td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 100px">
+            <td class="text-align-left text--blue">
               <div class="text--icon">
                 <div class="icon-telephone"></div>
                 <div>0878398141</div>
               </div>
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left text--blue" style="width: 120px">
+            <td class="text-align-left text--blue">
               thinh191204033@gmail.com
             </td>
-            <td class="text-align-left" style="width: 100px">Hoàng Long</td>
-            <td class="text-align-left" style="width: 100px">Vân Thị</td>
-            <td class="text-align-left" style="width: 100px">Ninh Bình</td>
-            <td class="text-align-left" style="width: 100px">Gia Viễn</td>
-            <td class="text-align-left" style="width: 100px">Xã Gia Tân</td>
-            <td class="text-align-left" style="width: 100px">Good boy</td>
-            <td class="text-align-left" style="width: 100px">Dịch vụ</td>
-            <td class="text-align-left" style="width: 100px">QTKD</td>
-            <td class="text-align-left" style="width: 100px">Code phần mềm</td>
-            <td class="text-align-left" style="width: 100px">3 phần</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
-            <td class="text-align-left" style="width: 100px">Không</td>
-            <td class="text-align-left" style="width: 100px">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+          </tr>
+          <tr>
+            <td></td>
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
+            </th>
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
+              Đặng Hữu Thịnh
+            </td>
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
+              <div class="text--icon">
+                <div class="icon-telephone"></div>
+                <div>0878398141</div>
+              </div>
+            </td>
+            <td class="text-align-left text--blue">
+              <div class="text--icon">
+                <div class="icon-telephone"></div>
+                <div>0878398141</div>
+              </div>
+            </td>
+            <td class="text-align-left text--blue">
+              thinh191204033@gmail.com
+            </td>
+            <td class="text-align-left text--blue">
+              thinh191204033@gmail.com
+            </td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+          </tr>
+          <tr>
+            <td></td>
+            <th class="text-align-center">
+              <input class="checkbox" type="checkbox" name="" id="" td/>
+            </th>
+            <td class="text-align-left"></td>
+            <td class="text-align-left">Anh</td>
+            <td class="text-align-left text--blue">
+              Đặng Hữu Thịnh
+            </td>
+            <td class="text-align-left">Nhân Viên</td>
+            <td class="text-align-left text--blue" >
+              <div class="text--icon">
+                <div class="icon-telephone"></div>
+                <div>0878398141</div>
+              </div>
+            </td>
+            <td class="text-align-left text--blue">
+              <div class="text--icon">
+                <div class="icon-telephone"></div>
+                <div>0878398141</div>
+              </div>
+            </td>
+            <td class="text-align-left text--blue">
+              thinh191204033@gmail.com
+            </td>
+            <td class="text-align-left text--blue">
+              thinh191204033@gmail.com
+            </td>
+            <td class="text-align-left">Hoàng Long</td>
+            <td class="text-align-left">Vân Thị</td>
+            <td class="text-align-left">Ninh Bình</td>
+            <td class="text-align-left">Gia Viễn</td>
+            <td class="text-align-left">Xã Gia Tân</td>
+            <td class="text-align-left">Good boy</td>
+            <td class="text-align-left">Dịch vụ</td>
+            <td class="text-align-left">QTKD</td>
+            <td class="text-align-left">Code phần mềm</td>
+            <td class="text-align-left">3 phần</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
+            <td class="text-align-left">Không</td>
+            <td class="text-align-left">Đặng Hữu Thịnh</td>
           </tr>
         </tbody>
       </table>
@@ -501,6 +587,7 @@ export default {
 }
 
 .content {
+  flex: 1;
   position: relative;
 }
 

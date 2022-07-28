@@ -78,11 +78,10 @@ export default {
 .header {
   display: flex;
   background-color: #fff;
-  grid-column-start: 1;
-  grid-column-end: 5;
   flex-direction: column;
-  min-height: 84px;
-  max-height: 84px;
+  height: 84px;
+  width: 100%;
+  flex-shrink: 0;
   overflow: hidden;
   box-shadow: 0 2px 4px #1f222929;
   z-index: 3;

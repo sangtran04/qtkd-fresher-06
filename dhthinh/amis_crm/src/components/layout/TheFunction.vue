@@ -44,11 +44,10 @@ export default {
 .function {
   display: flex;
   background-color: #e2e4e9;
-  grid-column-start: 1;
-  grid-column-end: 5;
   align-items: center;
   border-bottom: 1px solid #d3d7de;
   z-index: 1;
+  height: 56px;
 }
 
 .function__left {

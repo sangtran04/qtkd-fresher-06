@@ -47,10 +47,11 @@ export default {
 
 <style>
 .crm-boxtoastmesage {
-  display: none;
   position: fixed;
+  display: none;
   bottom: 32px;
   right: 32px;
+  z-index: 20;
 }
 
 .showtoast {
