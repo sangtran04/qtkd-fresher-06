@@ -37,6 +37,7 @@ export default {
   display: flex;
   align-items: center;
   min-height: 32px;
+  font-size: 13px;
 }
 .item:hover {
   background: #f0f2f4 !important;

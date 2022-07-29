@@ -2,8 +2,10 @@
   <div class="function set-height">
     <div class="function__left">
       <h1 class="function__title" style="margin-right: 16px">Thêm Tiềm năng</h1>
-      <div style="font-family: Roboto; font-size: 16px; padding-top: 4px;">Mẫu tiêu chuẩn</div>
-      <div class="function__edit" style="padding-top: 4px;">Sửa bố cục</div>
+      <div style="font-family: Roboto; font-size: 16px; padding-top: 4px">
+        Mẫu tiêu chuẩn
+      </div>
+      <div class="function__edit" style="padding-top: 4px">Sửa bố cục</div>
     </div>
     <div class="layout__center"></div>
     <div class="function__right">
@@ -53,7 +55,7 @@
           <div class="content__row">
             <div class="content__title">Xưng hô</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" :arrays="ListVocative" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
@@ -70,7 +72,7 @@
           </div>
           <div class="content__row">
             <div class="content__title">Phòng ban</div>
-            <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+            <BaseDropDown dropdownContent="-Không chọn-" :arrays="ListDepartment" color="#99a1b2" />
           </div>
           <div class="content__row">
             <div class="content__title">ĐT di động</div>
@@ -105,7 +107,7 @@
           <div class="content__row">
             <div class="content__title">Nguồn gốc</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
@@ -121,7 +123,7 @@
           <div class="content__row">
             <div class="content__title">Phân loại Khách hàng</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
@@ -155,14 +157,15 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title" style="padding-bottom: 45px;">Chia sẻ cá nhân</div>
+            <div class="content__title" style="padding-bottom: 45px">
+              Chia sẻ cá nhân
+            </div>
             <div class="content__input">
-              <BaseTextArea placeholder=""/>
+              <BaseTextArea placeholder="" />
             </div>
           </div>
         </div>
         <div class="content__col">
-          
           <div class="content__row">
             <div class="content__title">Họ và tên</div>
             <div class="content__input">
@@ -187,7 +190,7 @@
           <div class="content__row">
             <div class="content__title">Chức danh</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
@@ -271,9 +274,9 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title" style="padding-bottom: 45px;">Hồ sơ</div>
+            <div class="content__title" style="padding-bottom: 45px">Hồ sơ</div>
             <div class="content__input">
-              <BaseTextArea placeholder=""/>
+              <BaseTextArea placeholder="" />
             </div>
           </div>
           <div class="content__row">
@@ -287,7 +290,9 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title">Test chuyển đổi<span style="color:red">*</span></div>
+            <div class="content__title">
+              Test chuyển đổi<span style="color: red">*</span>
+            </div>
             <div class="content__input">
               <BaseTextField
                 backgroundColor="#fff"
@@ -304,9 +309,7 @@
       <div class="main__content">
         <div class="content__col" style="margin-right: 80px">
           <div class="content__row">
-            <div class="content__title">
-              Tài khoản ngân hàng
-            </div>
+            <div class="content__title">Tài khoản ngân hàng</div>
             <div class="content__input">
               <BaseTextField
                 backgroundColor="#fff"
@@ -317,19 +320,13 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title">
-              Ngày thành lập
-            </div>
+            <div class="content__title">Ngày thành lập</div>
             <div class="content__input">
-              <BaseDatePicker
-                backgroundColor="#fff"
-              />
+              <BaseDatePicker backgroundColor="#fff" />
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title">
-              Lĩnh vực
-            </div>
+            <div class="content__title">Lĩnh vực</div>
             <div class="content__input">
               <BaseTextField
                 backgroundColor="#fff"
@@ -341,15 +338,13 @@
           <div class="content__row">
             <div class="content__title">Doanh thu/ Ngân sách</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
         </div>
         <div class="content__col">
           <div class="content__row">
-            <div class="content__title">
-              Mở tại ngân hàng
-            </div>
+            <div class="content__title">Mở tại ngân hàng</div>
             <div class="content__input">
               <BaseTextField
                 backgroundColor="#fff"
@@ -361,18 +356,17 @@
           <div class="content__row">
             <div class="content__title">Loại hình</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
             <div class="content__title">Ngành nghề</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
         </div>
       </div>
-
     </div>
     <div class="main__potential">
       <div class="main__title">Thông tin địa chỉ</div>
@@ -381,19 +375,17 @@
           <div class="content__row">
             <div class="content__title">Quốc gia</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
             <div class="content__title">Quận/huyện</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title">
-              Số nhà, Đường phố
-            </div>
+            <div class="content__title">Số nhà, Đường phố</div>
             <div class="content__input">
               <BaseTextField
                 backgroundColor="#fff"
@@ -403,27 +395,25 @@
             </div>
           </div>
           <div class="content__row">
-            <div class="content__title" style="padding-bottom: 45px;">
+            <div class="content__title" style="padding-bottom: 45px">
               Địa chỉ
             </div>
             <div class="content__input">
-              <BaseTextArea textContent="" placeholder=""/>
+              <BaseTextArea textContent="" placeholder="" />
             </div>
           </div>
         </div>
         <div class="content__col">
           <div class="content__row">
-            <div class="content__title">
-              Tỉnh/Thành phố
-            </div>
+            <div class="content__title">Tỉnh/Thành phố</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
             <div class="content__title">Phường/Xã</div>
             <div class="content__input">
-              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2"/>
+              <BaseDropDown dropdownContent="-Không chọn-" color="#99a1b2" />
             </div>
           </div>
           <div class="content__row">
@@ -438,16 +428,15 @@
           </div>
         </div>
       </div>
-
     </div>
     <div class="main__potential">
       <div class="main__title">Thông tin mô tả</div>
       <div class="main__content">
         <div class="content__col">
           <div class="content__row">
-            <div class="content__title" style="padding-bottom: 45px;">Mô tả</div>
+            <div class="content__title" style="padding-bottom: 45px">Mô tả</div>
             <div class="content__input">
-               <BaseTextArea textContent="" placeholder=""/>
+              <BaseTextArea textContent="" placeholder="" />
             </div>
           </div>
         </div>
@@ -460,13 +449,13 @@
           <div class="content__row">
             <div class="content__title">Dùng chung</div>
             <div class="content__input">
-               <BaseCheckbox filterContent=""/>
+              <BaseCheckbox filterContent="" />
             </div>
           </div>
           <div class="content__row">
             <div class="content__title">Mã tiềm năng</div>
             <div class="content__input">
-               <BaseTextField
+              <BaseTextField
                 backgroundColor="#fff"
                 :hasBorder="true"
                 width="100%"
@@ -474,9 +463,7 @@
             </div>
           </div>
         </div>
-        <div class="content__col">
-          
-        </div>
+        <div class="content__col"></div>
       </div>
     </div>
   </div>
@@ -489,6 +476,9 @@ import BaseTextField from "../base/BaseTextField.vue";
 import BaseTextArea from "../base/BaseTextArea.vue";
 import BaseDatePicker from "../base/BaseDatePicker.vue";
 import BaseCheckbox from "../base/BaseCheckbox.vue";
+import { ref } from "vue";
+import LIST_VOCATIVE from "../../constants/ListVocative";
+import LIST_DEPARTMENT from "../../constants/ListDepartment"
 export default {
   name: "TheFunction",
   components: {
@@ -497,13 +487,21 @@ export default {
     BaseTextField,
     BaseTextArea,
     BaseDatePicker,
-    BaseCheckbox
-},
+    BaseCheckbox,
+  },
+  setup() {
+    const ListVocative = ref(LIST_VOCATIVE);
+    const ListDepartment = ref(LIST_DEPARTMENT)
+
+    return {
+      ListVocative,
+      ListDepartment,
+    };
+  },
 };
 </script>
 
 <style>
-
 .set-height {
   height: 62px;
 }
