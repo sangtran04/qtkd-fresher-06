@@ -8,34 +8,48 @@
       <div class="sidebar__center">
         <div class="input--search">
           <BaseTextField
-          class="input-center"
-          placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
-          :isIconSearch="true"
-          width="320px"
-        />
+            class="input-center"
+            placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
+            :isIconSearch="true"
+            width="320px"
+          />
         </div>
       </div>
       <div class="sidebar__right">
         <div class="boder-icon">
-          <div class="icon icon-avatar"></div>
+            <div class="icon icon-avatar show-tooltip">
+              <BaseTooltip contentTooltip="Đặng Hữu Thịnh"/>
+            </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-help"></div>
+          <div class="icon icon-help show-tooltip">
+              <BaseTooltip contentTooltip="Hỏi đáp"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-noti"></div>
+          <div class="icon icon-noti show-tooltip">
+            <BaseTooltip contentTooltip="Thông báo"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-setting"></div>
+          <div class="icon icon-setting show-tooltip">
+            <BaseTooltip contentTooltip="Cài đặt chung"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-calender"></div>
+          <div class="icon icon-calender show-tooltip">
+            <BaseTooltip contentTooltip="Lịch làm việc"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-box"></div>
+          <div class="icon icon-box show-tooltip">
+            <BaseTooltip contentTooltip="Tra cứu tồn kho"/>
+          </div>
         </div>
         <div class="boder-icon">
-          <div class="icon icon-facebook"></div>
+          <div class="icon icon-facebook24 show-tooltip">
+            <BaseTooltip contentTooltip="Cộng đồng hỗ trợ CRM"/>
+          </div>
         </div>
       </div>
     </div>
@@ -58,12 +72,14 @@ import BaseTags from "../base/BaseTags.vue";
 import { ref } from "vue";
 import ListTag from "../../constants/ListTab";
 import BaseTextField from "../base/BaseTextField.vue";
+import BaseTooltip from "../base/BaseTooltip.vue";
 export default {
   name: "TheMenu",
   components: {
     BaseTextField,
     BaseTags,
-  },
+    BaseTooltip,
+},
 
   setup() {
     const tabs = ref(ListTag);
@@ -78,13 +94,13 @@ export default {
 .header {
   display: flex;
   background-color: #fff;
-  grid-column-start: 1;
-  grid-column-end: 5;
   flex-direction: column;
-  min-height: 84px;
-  max-height: 84px;
+  height: 84px;
+  width: 100%;
+  flex-shrink: 0;
   overflow: hidden;
   box-shadow: 0 2px 4px #1f222929;
+  z-index: 3;
 }
 .logo-amis {
   background-image: url("../../assets/Resource/img/Logo_Ban_hang.svg");
@@ -148,6 +164,9 @@ export default {
 }
 
 .boder-icon {
+  position: relative;
+  cursor: pointer;
+  position: relative;
   width: 40px;
   height: 40px;
   border-radius: 50%;

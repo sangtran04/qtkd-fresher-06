@@ -1,8 +1,10 @@
 <template>
-  <TheFunction /> 
-  <TheSidebarLeft/> 
-  <TheContent/> 
-  <TheSidebarRight/>
+  <TheFunction />
+  <div class="wrapper">
+    <TheSidebarLeft />
+    <TheContent />
+    <TheSidebarRight />
+  </div>
 </template>
 
 <script>
@@ -11,14 +13,21 @@ import TheSidebarLeft from "../layout/TheSidebarLeft.vue";
 import TheContent from "../layout/TheContent.vue";
 import TheSidebarRight from "../layout/TheSidebarRight.vue";
 export default {
-    name: 'PotentialPage',
-    components: {
-        TheFunction, TheSidebarLeft, TheContent, TheSidebarRight
-    }
-}
+  name: "PotentialPage",
+  components: {
+    TheFunction,
+    TheSidebarLeft,
+    TheContent,
+    TheSidebarRight,
+  },
+};
 </script>
 
 <style>
+.wrapper {
+  display: flex;
+  height: calc(100vh - 140px);
+}
 .function {
   display: flex;
   background-color: #e2e4e9;
@@ -52,7 +61,7 @@ export default {
 }
 
 .function__right {
-    display: flex;
+  display: flex;
 }
 
 .link-router {

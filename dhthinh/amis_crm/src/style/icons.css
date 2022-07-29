@@ -138,7 +138,7 @@
 }
 
 .icon-other {
-    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -49px -275px;
+    background: url('../assets/Resource/img/icon_collection.svg') repeat -48px -272px;
     width: 16px;
     height: 16px;
 }
@@ -313,7 +313,13 @@
 }
 
 .icon-facebook24 {
-    background-color: url('../assets/Resource/img/icon_facebook_24_blue.svg') no-repeat 0 0;
-    width: 24px;
-    height: 24px;
+    background: url('../assets/Resource/img/icon_facebook_24_blue.svg') no-repeat 0 0;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-sortsetting {
+    background: url('../assets/Resource/img/icon_collection.svg') no-repeat -272px -176px;
+	width: 16px;
+	height: 16px;
 }

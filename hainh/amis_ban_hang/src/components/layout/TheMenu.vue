@@ -13,7 +13,7 @@
       </div>
 
       <div class="m-top__icons">
-        <div class="icon-facebook margin-right-20 show-tooltip show-tooltip">
+        <div class="icon-facebook margin-right-20 show-tooltip">
           <TooltipComp contentTooltip="Cộng đồng hỗ trợ AMIS CRM" />
         </div>
         <div class="icon-notification margin-right-20 show-tooltip">

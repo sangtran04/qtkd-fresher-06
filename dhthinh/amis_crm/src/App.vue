@@ -1,9 +1,7 @@
 <template>
   <div class="container">
     <TheMenu />
-    <router-view>
-
-    </router-view>
+    <router-view> </router-view>
     <BaseToastMessage
       toastContent="Đăng nhập thành công"
       backgroundColor="#31B491"
@@ -11,14 +9,14 @@
     >
       <div class="icon-accept"></div>
     </BaseToastMessage>
-    <BasePopup :hasShowPopup="false" popupContent="Lỗi rồi"/>
+    <BasePopup :hasShowPopup="false" popupContent="Có lỗi xảy ra. Vui lòng liên hệ MISA!" />
   </div>
 </template>
 
 <script>
 import TheMenu from "./components/layout/TheMenu.vue";
 import BaseToastMessage from "./components/base/BaseToastMessage.vue";
-import BasePopup from "./components/base/BasePopup.vue"
+import BasePopup from "./components/base/BasePopup.vue";
 
 export default {
   name: "App",
@@ -33,11 +31,11 @@ export default {
 <style>
 @import url("./style/font.css");
 @import url("./style/icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("./style/tooltip.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 .container {
-  display: grid;
-  grid-template-columns: 249px calc(100% - 569px) 320px;
-  grid-template-rows: 84px 56px calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
 }
 * {
   box-sizing: border-box;
