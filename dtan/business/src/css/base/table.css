@@ -42,12 +42,6 @@
     padding-right: 10px;
 }
 
-.table tbody {
-    overflow: scroll;
-    width: calc(100% - 320px - 249px);
-    height: calc(100vh - 84px - 56px);
-}
-
 .table tbody tr:hover {
     background-color: #E7EBFD;
 }
@@ -64,14 +58,13 @@ table tr.row--selected {
     background-color: #dedede;
 }
 
-.abc {
+.table-all {
     /* padding: 0 10px; */
     box-sizing: border-box;
     width: 100%;
     position: absolute;
     top: 0;
     bottom: 56px;
-    overflow: hidden;
     overflow: auto;
 }
 

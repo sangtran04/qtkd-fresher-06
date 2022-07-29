@@ -1,16 +1,53 @@
 <template>
-    <div>
-        <datetime format="MM/DD/YYYY" width="300px" v-model="val"></datetime>
-    </div>
+  <div class="crm__datepicker">
+    <label v-if="hasLabelFunc" for="">{{ contentLabel }}</label>
+    <input type="date" name="date" class="input__date" />
+  </div>
 </template>
 
 <script>
-import datetime from 'vuejs-datetimepicker';
-    export default {
-        components: { datetime }
-    }
+export default {
+  name: "BaseDatePicker",
+  components: {},
+  props: {
+    //set màu nền
+    backgroundColor: {
+      type: String,
+      default: "#fff",
+    },
+    color: {
+      type: String,
+    },
+    hasLabel: {
+      type: Boolean,
+      default: false,
+    },
+    contentLabel: {
+      type: String,
+    },
+    width: {
+      type: String,
+      default: "465px",
+    },
+  },
+  computed: {
+    hasLabelFunc() {
+      return this.hasLabel;
+    },
+  },
+};
 </script>
 
-<style scoped>
-
+<style>
+.input__date {
+  box-sizing: border-box;
+  width: v-bind(width);
+  height: 32px;
+  border-radius: 4px;
+  background-color: v-bind(backgroundColor);
+  color: v-bind(color);
+  border: solid 1px #ccc;
+  padding: 2px 8px;
+  margin-left: 113px;
+}
 </style>
