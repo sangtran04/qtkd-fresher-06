@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebarright" id="sidebarrightid">
+  <div class="sidebarright" id="sidebar-right">
     <div class="sidebarright-quick">
       <div class="button-quick">
         <div class="icon-call"></div>
@@ -24,11 +24,11 @@
         <div>Nguyễn Văn Hà (A006) - 12/08/2022</div>
       </div>
     </div>
-    <div class="collapse__right" id="sidebarrightid" @click="hideSidebarRight">
+    <div class="collapse__right" id="sidebar-right" @click="hideSidebarRight">
       <div class="icon-collapse-right"></div>
     </div>
   </div>
-  <div class="collapse__right--hide" id="collapse-right-hide-id" @click="showSidebarRight">
+  <div class="collapse__right--hide" id="collapse-right-hide" @click="showSidebarRight">
     <div class="icon-collapse-left"></div>
   </div>
 </template>
@@ -45,13 +45,13 @@ export default {
     
     //Hàm ẩn sidebar
     hideSidebarRight() {
-      document.getElementById("sidebarrightid").style.display = "none";
-      document.getElementById("collapse-right-hide-id").style.display = "flex";
+      document.getElementById("sidebar-right").style.display = "none";
+      document.getElementById("collapse-right-hide").style.display = "flex";
     },
     //Hàm show sidebar
     showSidebarRight() {
-      document.getElementById("sidebarrightid").style.display = "block";
-      document.getElementById("collapse-right-hide-id").style.display = "none";
+      document.getElementById("sidebar-right").style.display = "block";
+      document.getElementById("collapse-right-hide").style.display = "none";
     },
   },
 };

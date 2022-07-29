@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebarleft" id="sidebarleftid">
+  <div class="sidebarleft" id="sidebar-left">
     <div class="sidebarleft__heading filter-down">
       <div class="heading">BỘ LỌC ĐÃ LƯU</div>
       <div class="layout__center"></div>
@@ -27,7 +27,7 @@
       <div class="icon-collapse-left"></div>
     </div>
   </div>
-  <div class="collapse__left--hide" id="collapse-left-hide-id" @click="showSidebarLeft">
+  <div class="collapse__left--hide" id="collapse-left-hide" @click="showSidebarLeft">
     <div class="icon-collapse-right"></div>
   </div>
 </template>
@@ -55,13 +55,13 @@ export default {
 
     //Hàm ẩn sidebar
     hideSidebarLeft() {
-      document.getElementById("sidebarleftid").style.display = "none";
-      document.getElementById("collapse-left-hide-id").style.display = "flex";
+      document.getElementById("sidebar-left").style.display = "none";
+      document.getElementById("collapse-left-hide").style.display = "flex";
     },
     //Hàm show sidebar
     showSidebarLeft() {
       document.getElementById("sidebarleftid").style.display = "block";
-      document.getElementById("collapse-left-hide-id").style.display = "none";
+      document.getElementById("collapse-left-hide").style.display = "none";
     },
   },
 };

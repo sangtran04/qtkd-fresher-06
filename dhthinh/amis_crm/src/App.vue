@@ -9,7 +9,7 @@
     >
       <div class="icon-accept"></div>
     </BaseToastMessage>
-    <BasePopup :hasShowPopup="false" popupContent="Lỗi rồi" />
+    <BasePopup :hasShowPopup="false" popupContent="Có lỗi xảy ra. Vui lòng liên hệ MISA!" />
   </div>
 </template>
 
