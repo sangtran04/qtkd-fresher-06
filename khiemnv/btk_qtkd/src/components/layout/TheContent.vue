@@ -1,9 +1,20 @@
 <template>
   <div class="content">
-    <!-- <BaseToggle switchText="Switch" />
-        <BaseToggle switchText="Switch Disabled" :switchDisabled="true"/> -->
+    <button @click="toggleLeftSidebar" class="show">
+     <slot></slot>
+         <div class="collapse"  v-if="showLeftSidebar">Hide Books</div>
+        <div class="collapse" v-else>Show Books</div>
+     </button>
+<!-- 
+     <button @click="toggleLeftSidebar" class="show">
+         <div class="collapse" v-if="showLeftSidebar">Hide Books</div>
+        <div  v-else>Show Books</div>
+     </button> -->
+    <!-- <button class="show" @click="toggleLeftSidebar">
+    {{showLeftSidebar ? 'Hidess' : 'Showss'}}</button> -->
+
     <div class="table-wrapper">
-      <table class="table">
+      <table class="table" >
         <thead>
           <tr>
             <th style="width: 20px;">
@@ -457,11 +468,22 @@
 
 <script>
 
+
 export default {
   name: "TheContent",
   components: {
 
-  },
+},
+ props: {
+  toggleLeftSidebar: {
+      type: Function,
+      required: true
+    },
+     toggleRightSidebar: {
+      type: Function,
+      required: true
+    },
+ },
 };
 </script>
 
@@ -636,5 +658,12 @@ table thead {
     align-items: center;
     width: 340px;
     justify-content: space-between;
+}
+.show {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  color: red;
+  z-index: 1003;
 }
 </style>

@@ -1,17 +1,18 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div class="container"  >
      <the-menu />
       <the-function></the-function>
-      <the-side-bar-left></the-side-bar-left>
-      <the-content></the-content>
+ <the-side-bar-left v-if="showLeftSidebar"></the-side-bar-left>
+      <the-content :toggleLeftSidebar="toggleLeftSidebar"></the-content>
       <the-side-bar-right></the-side-bar-right> 
-        <router-view/>
+
     </div>
   </div>
 </template>
 
 <script>
+
 import TheFunction from "./components/layout/TheFunction.vue";
 import TheMenu from "./components/layout/TheMenu.vue";
 import TheSideBarLeft from "./components/layout/TheSideBarLeft.vue";
@@ -29,7 +30,22 @@ export default {
     TheContent,
 
 
+
 },
+ data() {
+        return {
+
+       showLeftSidebar: true
+        }
+    },
+      methods: {
+    //Hàm ẩn hiện sidebar
+    toggleLeftSidebar() {
+     this.showLeftSidebar = !this.showLeftSidebar;
+
+    },
+
+  },
 };
 </script>
 

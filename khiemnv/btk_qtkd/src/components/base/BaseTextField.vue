@@ -67,6 +67,10 @@ export default {
       type: Boolean,
       default: false,
     },
+    backgroundColorHover: {
+      type: String,
+      default: "#e2e4e9"
+    },
     //Có thêm icon tìm kiến vào ô input hay không?
     hasIconSearch: {
       type: Boolean,
@@ -122,7 +126,7 @@ input {
   color: #bbbbbb;
 }
 .crm-textfield input:hover {
-  background-color: #e2e4e9;
+  background-color: v-bind(backgroundColorHover);
   outline: none;
 }
 .crm-textfield input[type="search"]::-webkit-search-cancel-button {
@@ -145,6 +149,7 @@ input {
 .crm-textfield input[type="search"]::-webkit-search-cancel-button:hover {
   background-color: #d3d7de;
 }
+
 
 .crm-textfield input:focus {
   border: 1px solid #4262f0;

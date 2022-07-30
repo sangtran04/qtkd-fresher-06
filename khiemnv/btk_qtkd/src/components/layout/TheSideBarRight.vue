@@ -43,6 +43,8 @@ export default {
 <style scoped>
 .sidebarright {
   border-left: solid 1px #ccc;
+
+
 }
 .sidebarright__icon {
   border-bottom: solid 1px #ccc;

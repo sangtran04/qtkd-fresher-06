@@ -12,7 +12,7 @@
       </div>
 
       <div class="menu__center">
-        <BaseTextField hasIcon typeInput="search"></BaseTextField>
+        <BaseTextField hasIcon typeInput="search" :backgroundColorHover="e2e4e9"></BaseTextField>
       </div>
       <div class="menu__right">
         <div class="menu__right--icon">
