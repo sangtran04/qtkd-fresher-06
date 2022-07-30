@@ -72,7 +72,7 @@ export default {
   border: 1px solid v-bind(borderColor);
   /* background-color: #f0f2f4 !important; */
   background-color: v-bind(backgroundColor);
-  color: #99a1b2;
+  color: #1f2229;
   text-overflow: ellipsis;
 }
 
