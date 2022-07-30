@@ -3,7 +3,9 @@
     <div class="header__top">
       <div class="header__left">
         <div class="icon icon--toggle"></div>
-        <div style="margin-top: 2px;"><img src="./../../assets/img/Logo_CRM_App.svg" alt="" /></div>
+        <div style="margin-top: 2px">
+          <img src="./../../assets/img/Logo_CRM_App.svg" alt="" />
+        </div>
       </div>
       <div class="header__center">
         <!-- <BaseTextField/> -->
@@ -14,10 +16,11 @@
               type="text"
               placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
               class="text-field"
+              id="myInput"
             />
           </div>
           <div class="icon icon--search"></div>
-          <div class="icon-close-16px"></div>
+          <div @click="clearTextInputOnclick()" class="icon-close-16px"></div>
         </div>
       </div>
 
@@ -44,7 +47,7 @@
               <div class="icon icon--lead mr-8"></div>
               <span>Tiềm năng</span>
             </div>
-              <div class="row-active"></div>
+            <div class="row-active"></div>
           </a>
         </li>
         <li class="menu__item">
@@ -128,6 +131,12 @@ export default {
     return {
       propsInputText,
     };
+  },
+  methods: {
+    clearTextInputOnclick() {
+      let textCheck = document.getElementById("myInput").value;
+      document.getElementById("myInput").value = " ";
+    },
   },
 };
 </script>

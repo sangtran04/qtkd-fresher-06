@@ -1,8 +1,8 @@
 <template>
   <div class="btn-group">
     <li
-      @click="showMenu =!showMenu"
-      :class="{'dropdown-toggle' :showMenu}"
+      @click="showMenu = !showMenu"
+      :class="{ 'dropdown-toggle': showMenu }"
       class="dropdown-toggle"
       v-if="selectedOption.name !== undefined"
     >
@@ -16,7 +16,9 @@
       v-if="selectedOption.name === undefined"
     >
       {{ placeholderText }}
-      <span class="caret"></span>
+        <div class="icon--down"></div>
+      <span class="caret">
+      </span>
     </li>
 
     <ul class="dropdown-menu" v-if="showMenu">
@@ -34,18 +36,18 @@ export default {
   data() {
     return {
       selectedOption: {
-        name: '-None-',
-       showMenu: {
-         type: Boolean,
-         default: false,
-       },
-       placeholderText: "Please select an item",
+        name: "-Không chọn-",
+        showMenu: {
+          type: Boolean,
+          default: false,
+        },
+        placeholderText: "Please select an item",
       },
     };
   },
   props: {
     options: {
-      type:[Array, Object]
+      type: [Array, Object],
     },
     selected: {},
     placeholder: [String],
@@ -95,13 +97,13 @@ export default {
 
 <style>
 .btn-group {
-  min-width: 200px;
+  width: 100%;
   height: 32px;
   position: relative;
   margin: 10px 1px;
   display: inline-block;
   vertical-align: middle;
-  border: 1px solid #D3D7DE;
+  border: 1px solid #d3d7de;
   border-radius: 4px;
 }
 .btn-group a:hover {
@@ -115,7 +117,7 @@ export default {
   text-transform: none;
   font-weight: 300;
   margin-bottom: 7px;
-  
+
   background-image: linear-gradient(#009688, #009688),
     linear-gradient(#d2d2d2, #d2d2d2);
   background-size: 0 2px, 100% 1px;

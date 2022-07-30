@@ -1,17 +1,14 @@
 <template>
-  <div
-    class="base-input-text-field"
-    :class="{ leftLabel: leftLabel, topLabel: topLabel }"
-  >
+  <div class="crm-textfield" :class="{ leftLabel: leftLabel, topLabel: topLabel }">
     <label :class="{ haveLabel: isHaveLabel }" :for="labelContent">{{
       labelContent
     }}</label>
-    <div class="absoluted">
-      <div v-if="isIconSearchFunction" class="icon-search"></div>
+    <div class="absoluted" :class="{inputborder: hasBorder}">
+      <div v-if="isIconSearchFunction" class="icon--search"></div>
       <div class="icon-success"></div>
       <input
         :id="labelContent"
-        type="text"
+        :type="typeInput"
         :placeholder="placeholder"
         :readonly="readOnly"
         :class="{ 'padding-left-32': isIconSearchFunction }"
@@ -37,7 +34,6 @@ export default {
     // Chỉ định nội dung thẻ label
     labelContent: {
       type: String,
-      default: "label"
     },
     // Label nằm ngang hàng với thẻ input
     leftLabel: {
@@ -51,66 +47,102 @@ export default {
     isIconSearch: {
       type: Boolean,
     },
+    // thiết lập chiều rộng cho input
     width: {
       type: String,
-      default: "240px",
+      default: "auto",
+    },
+    //Thiết lập màu nền cho input
+    backgroundColor: {
+      type: String,
+      default: "rgb(240, 242, 244)",
+    },
+    //Có border không
+    hasBorder: {
+      type: Boolean,
+      default: false,
+    },
+    colorBoder: {
+      type: String,
+      default: "#ccc"
+    },
+    typeInput: {
+      type: String,
+      default: "text"
     },
   },
   computed: {
+    // Kiểm tra props truyền vào có label không ?
     isHaveLabel() {
       return this.labelContent ? true : false;
     },
+    // Kiểm trả props truyền vào có icon search không ?
     isIconSearchFunction() {
       return this.isIconSearch ? true : false;
     },
+    // Kiểm tra xem có border không
+    hasBorder() {
+      return this.hasBorder ? true : false;
+    },
+    
   },
 };
 </script>
 
 <style scoped>
-.base-input-text-field {
+.crm-textfield {
   display: flex;
+  width: 100%;
 }
-.base-input-text-field.topLabel {
+.crm-textfield .topLabel {
   flex-direction: column;
 }
-.base-input-text-field.leftLabel {
+.crm-textfield .leftLabel {
   align-items: center;
 }
-.base-input-text-field input {
+.crm-textfield input {
+  box-sizing: border-box;
   height: 32px;
   padding: 0 16px;
   border-radius: 4px;
-  border: 1px solid #d3d7de;
+  border: 0;
   outline: none;
-  min-width: v-bind(width);
+  background-color: v-bind(backgroundColor);
+  width: v-bind(width);
+}
+.inputborder {
+  border: solid 1px v-bind(colorBoder);
+  border-radius: 4px;
+}
+.crm-textfield input::placeholder {
+  font-size: 13px;
 }
 
-.base-input-text-field input:hover {
+.crm-textfield input:hover {
   border-color: #7c869c;
 }
 
-.base-input-text-field input:focus {
+.crm-textfield input:focus {
   border: 1px solid #4262f0;
 }
 
-.base-input-text-field input[readonly] {
+.crm-textfield input[readonly] {
   background-color: #e2e4e9;
 }
 
-.base-input-text-field input[readonly]::placeholder {
+.crm-textfield input[readonly]::placeholder {
   color: #586074;
 }
 
-.base-input-text-field input[readonly]:focus {
+.crm-textfield input[readonly]:focus {
   border: 1px solid #d3d7de;
 }
 
-.base-input-text-field input[readonly]:hover {
+.crm-textfield input[readonly]:hover {
   border: 1px solid #d3d7de;
 }
 
-.base-input-text-field label {
+.crm-textfield label {
   display: none;
 }
 
@@ -126,6 +158,7 @@ export default {
 
 .absoluted {
   position: relative;
+  width: 100%;
 }
 
 .icon-search {
