@@ -10,7 +10,7 @@
       :placeholder="placeholder"
     ></textarea>
     <span class="error-msg" :class="{ error: isErrorTextArea }"
-      >{{mesageError}}</span
+      >{{messageError}}</span
     >
   </div>
 </template>
@@ -60,7 +60,7 @@ export default {
     },
 
     // Chỉ định nội dung báo lỗi
-    mesageError: {
+    messageError: {
       type: String,
       default: "Message Error",
     },

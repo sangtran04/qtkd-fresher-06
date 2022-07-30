@@ -3,7 +3,7 @@
     <label :class="{ haveLabel: isHaveLabel }" :for="labelContent">{{
       labelContent
     }}</label>
-    <div class="absoluted" :class="{inputborder: isBorder}">
+    <div class="absoluted" :class="{inputborder: hasBorder}">
       <div v-if="isIconSearchFunction" class="icon--search"></div>
       <div class="icon-success"></div>
       <input
@@ -81,7 +81,7 @@ export default {
       return this.isIconSearch ? true : false;
     },
     // Kiểm tra xem có border không
-    isBorder() {
+    hasBorder() {
       return this.hasBorder ? true : false;
     },
     

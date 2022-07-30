@@ -1,5 +1,5 @@
 <template>
-  <div v-show="isHide" class="sidebar__right" id="sidebar__right">
+  <div v-show="isHidden" class="sidebar__right" id="sidebar__right">
     <div class="sidebar-right__head">
       <div class="sidebar-right__icon">
         <div class="icon icon--phone"></div>
@@ -33,7 +33,7 @@
 <script>
 export default {
   props: {
-    isHide: {
+    isHidden: {
       type: Boolean,
       default: true
     }
