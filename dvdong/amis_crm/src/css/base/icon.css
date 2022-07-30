@@ -36,13 +36,6 @@
         background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat -80px -16px;
     }
 
-    .icon-close-16px:hover {
-        background-color: #d3d7de;
-        border-radius: 50%;
-        width: 16px;
-        height: 16px;
-    }
-
     .icon--toggle {
         width: 24px;
         height: 24px;

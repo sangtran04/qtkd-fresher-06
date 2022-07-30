@@ -3,20 +3,14 @@
     <div v-if="hasIconSearch" class="icon icon--search"></div>
     <input
       class="input-text"
-      type="text"
-      id="myInput"
+      type="search"
+      id="search"
       :placeholder="placeholder"
       :class="{ 'input-search': hasIconSearch }"
       :backgroundColor="backgroundColor"
       :borderColor="borderColor"
       :readonly="readOnly"
-      @blur="showIconClose()"
     />
-    <div
-      v-show="hasIconClose"
-      @click="clearTextInputOnclick()"
-      :class="{ 'icon-close-16px': hasIconClose }"
-    ></div>
   </div>
 </template>
 
@@ -47,30 +41,16 @@ export default {
     },
     borderColor: {
       type: String,
-      default: "#d3d7de"
+      default: "#d3d7de",
     },
     readOnly: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
 
   methods: {
-    /**
-     *  xóa text trong ô input
-     * author: dvdong 30/07/2022
-     */
-    clearTextInputOnclick() {
-      
-    },
-
-    /**
-     * hàm ẩn hiện nút close ?
-     * author: dvdong 30/07/2022
-     */
-    showIconClose() {
-      
-    },
+    
   },
 };
 </script>
@@ -82,6 +62,7 @@ export default {
 }
 
 .input-text {
+  pointer-events: all;
   height: 32px;
   width: 100%;
   border-radius: 4px;
@@ -101,7 +82,7 @@ export default {
 
 .input-text:focus {
   box-sizing: border-box;
-  background-color: #fff ;
+  background-color: #fff;
   border-color: #4262f0 !important;
   border: 1px solid;
   color: #1f2229;
@@ -115,33 +96,51 @@ export default {
   margin-right: 30px;
 }
 
-.input .icon-close-16px {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  cursor: pointer;
-}
-
-input:read-only{
+input:read-only {
   pointer-events: none;
-  background-color: #E2E4E9;
-  border: 1px solid #D3D7DE;
+  background-color: #e2e4e9;
+  border: 1px solid #d3d7de;
 }
 
 .input .icon--search:read-only {
   pointer-events: none;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #99a1b2;
   opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
   color: #99a1b2;
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder {
+  /* Microsoft Edge */
   color: #99a1b2;
+}
+
+#search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  cursor: pointer;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat -80px -16px;
+}
+
+#search::-webkit-search-cancel-button:hover {
+  background-color: #d3d7de;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
 }
 </style>
