@@ -13,7 +13,7 @@
             },
             width:{
                 type: String,
-                default: "0px"
+                default: "auto"
             }
         }
     }

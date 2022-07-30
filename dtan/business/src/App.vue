@@ -1,15 +1,14 @@
 <template>
   <Menu />
   <Content />
-  <ToastMessage style="display:none" content="Thành công" type ="success"/>
+
+  
 </template>
 
 
 <script>
 import Menu from "./components/layout/TheMenu.vue";
 import Content from "./components/layout/TheContent.vue";
-import ToastMessage from "./components/base/BaseToast.vue";
-
 
 
 
@@ -18,7 +17,6 @@ export default {
   components: {
     Menu,
     Content,
-    ToastMessage,
 },
 };
 </script>

@@ -85,6 +85,7 @@
     width: 320px;
     border-left: 1px solid #D3D7DE;
     position: relative;
+    background-color: white;
 }
 
 .content__right__row1 {

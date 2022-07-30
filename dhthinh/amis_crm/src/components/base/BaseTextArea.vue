@@ -87,9 +87,10 @@ export default {
 .crm-textarea {
   width: v-bind(width);
   height: v-bind(height);
-  border: solid 1px #99a1b2;
+  border: solid 1px #ccc;;
   padding: 8px 16px;
   border-radius: 4px;
+  resize: none;
 }
 
 .crm-textarea:focus {

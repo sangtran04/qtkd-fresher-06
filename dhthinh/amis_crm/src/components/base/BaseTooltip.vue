@@ -1,91 +1,64 @@
 <template>
-  <div class="crm-tooltip" data-tooltip="thinh day nha"></div>
+  <div class="crm-tooltip">
+    <p class="subtitle-two content">{{ contentTooltip }}</p>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "BaseTooltip",
+  name: 'BaseTooltip',
   props: {
-    tooltipContent: {
+    contentTooltip: {
       type: String,
-      default: "tool tip",
+      default: 'Test Tooltip',
     },
-    // isLeft: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
-    // isRight: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
-    // isTop: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
-    // isBottom: {
-    //     type: Boolean,
-    //     default: "false",
-    // },
   },
-
-  computed: {
-
-  }
-};
+}
 </script>
 
 <style>
-.crm-tooltip {
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-div[data-tooltip] {
-  
+.show-tooltip {
   position: relative;
 }
-div[data-tooltip]::before {
-  content: attr(data-tooltip);
+
+.crm-tooltip {
   position: absolute;
-  background-color: #333;
+  top: calc(100% + 10px);
+  left: 50%;
   font-size: 13px;
-  color: #fff;
-  text-align: center;
-  padding: 3px 5px;
+  font-family: Roboto;
+  transform: translateX(-50%);
   border-radius: 4px;
-  bottom: 0;
-  line-height: 1rem;
-  left: -40%;
-  right: -40%;
-  transform: scale(0);
-  opacity: 0;
-  transition: 0.25s ease-in-out;
+  background: #424857;
+  box-shadow: 0 0 10px #d5d5d5;
+  z-index: 10;
+  display: none;
+  width: max-content;
+  padding: 12px;
+  min-height: 32px;
+  max-width: 250px;
 }
-div[data-tooltip]::after {
+
+.crm-tooltip::after {
   position: absolute;
-  content: "";
+  content: '';
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;
-  border-top: 5px solid #333;
-  left: calc(50% - 2.5px);
-  bottom: 100%;
-  transform: scale(0);
-  opacity: 0;
-  transition: 0.25s ease-in-out;
+  border-bottom: 5px solid #424857;
 }
 
-/* Mặc định thì cho ẩn đi khi hover chuột vào mới hiện lên */
-div[data-tooltip]:hover::before {
-  transform: scale(1);
-  bottom: 100%;
-  opacity: 1;
+.crm-tooltip > .content {
+  color: #fff;
+  text-align: center;
+  margin: 0;
 }
-div[data-tooltip]:hover::after {
-  transform: scale(1);
-  bottom: calc(100% - 5px);
-  opacity: 1;
+
+.show-tooltip:hover .crm-tooltip {
+  display: block;
 }
 </style>

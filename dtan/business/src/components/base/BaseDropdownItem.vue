@@ -1,31 +1,27 @@
 <template>
-  <div class="item" @click="doFunction">
+  <div class="item" @click="doFunc">
     <slot></slot>
   </div>
 </template>
-
 <script>
 export default {
-  name: "BaseDropDownItem",
   props: {
-    //Truyền vào một mảng các item
     item: {
       type: Object,
       required: true,
     },
-    //Truyền vào một function
     closeDropdown: {
       type: Function,
       default: () => {},
     },
   },
   methods: {
-    doFunction() {
-      console.log(this.item.link);
-      this.closeDropdown();
+    doFunc() {
+      console.log(this.item.link)
+      this.closeDropdown()
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -37,7 +33,7 @@ export default {
   display: flex;
   align-items: center;
   min-height: 32px;
-  font-size: 13px;
+  box-sizing: border-box;
 }
 .item:hover {
   background: #f0f2f4 !important;
