@@ -34,6 +34,10 @@
     padding: 0 16px 12px;
 }
 
+.sidebar-right__note:hover {
+    background-color: #f0f2f4;
+}
+
 .sidebar-right__title {
     box-sizing: border-box;
     height: 52px;
@@ -63,7 +67,7 @@
 }
 
 .note-icon {
-    background-color: #2EC2FC;
+    background-color: #669eff;
     border-radius: 50%;
     width: 32px;
     height: 32px;
@@ -76,4 +80,9 @@
 .note-detail {
     padding-left: 8px;
     font-size: 13px;
+}
+
+.note__content {
+    padding-top: 6px;
+    color: #586074;
 }

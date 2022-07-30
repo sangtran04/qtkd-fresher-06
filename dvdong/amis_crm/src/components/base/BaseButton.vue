@@ -71,7 +71,11 @@ export default {
 }
 
 .button:active {
-  background-color: #133BEC;
+  background-color: #0d47a1;
+}
+
+.button:focus {
+  background-color: #2b4eee;
 }
 
 .button-icon {

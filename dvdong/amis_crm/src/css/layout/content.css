@@ -19,6 +19,7 @@
     justify-content: center;
     right: 0;
     top: 40%;
+    cursor: pointer;
 }
 
 .sidebar-right-close:hover {
@@ -26,6 +27,7 @@
 }
 
 .sidebar-left-close { 
+    
     box-shadow: 2px 0 4px #00000029;
     border-radius: 0 6px 6px 0;
     background-color: #fff;
@@ -39,6 +41,7 @@
     justify-content: center;
     left: 0;
     top: 40%;
+    cursor: pointer;
 }
 
 .sidebar-left-close:hover {

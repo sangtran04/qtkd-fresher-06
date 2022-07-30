@@ -1,10 +1,10 @@
 <template>
   <div class="content">
-    <div class="sidebar-right-close" onclick="closeSidebar()">
-      <div class="icon--next1"></div>
+    <div class="sidebar-right-close" @click="closeSidebar()">
+      <div class="icon-close-right"></div>
     </div>
     <div class="sidebar-left-close">
-      <div class="icon--pre1"></div>
+      <div class="icon-close-left"></div>
     </div>
     <div class="table__content">
       <div class="abc">
@@ -22,7 +22,12 @@
               <th style="width: 28px" class="text-align-right">
                 <BaseCheckbox />
               </th>
-              <th class="text-align-left" style="width: 150px">Thẻ</th>
+              <th class="text-align-left" style="width: 150px">
+                Thẻ
+                <div class="table-filter">
+                  <div class="icon-search-grid"></div>
+                </div>
+              </th>
               <th class="text-align-left" style="width: 100px">Xưng hô</th>
               <th class="text-align-left" style="width: 180px">Họ và tên</th>
               <th class="text-align-left" style="width: 120px">Chức danh</th>
@@ -50,7 +55,11 @@
 
           <tbody>
             <tr>
-              <td style="width: 36px"></td>
+              <td style="width: 36px">
+                <div class="row-edit">
+                  <div class="icon-row-edit"></div>
+                </div>
+              </td>
               <td style="width: 28px" class="text-align-right">
                 <BaseCheckbox />
               </td>
@@ -69,7 +78,13 @@
               <td class="text-align-left text--blue" style="width: 150px">
                 <div class="text--icon">
                   <div class="icon--tel"></div>
-                  <span class="ml-8">023423445</span>
+                  <span class="ml-8"
+                    >023423445 Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Eaque dolor eum obcaecati iure maiores
+                    quisquam iusto molestiae, accusamus laudantium qui ut.
+                    Laboriosam ut placeat reprehenderit voluptates sunt?
+                    Aspernatur, cum eveniet!</span
+                  >
                 </div>
               </td>
               <td class="text-align-left text--blue" style="width: 180px">
@@ -92,22 +107,32 @@
         </table>
       </div>
       <div class="navigate">
-        <div class="navigate__left">
+        <div class="navigate__left center-item">
+          <div class="sort-setting center-item">
+            <div class="icon-sort-setting"></div>
+          </div>
           Tổng số: <span style="font-weight: 700">893</span>
         </div>
         <div class="navigate__right">
           <select class="navigate__select" name="" id="">
             <option value="">50 bản ghi trên trang</option>
-            <option value="">50 bản ghi trên trang</option>
+            <option value="">10 bản ghi trên trang</option>
           </select>
-          <div class="icon--pre2"></div>
-          <div class="icon--pre1"></div>
-
+          <div class="move-page center-item">
+            <div class="icon-first-page"></div>
+          </div>
+          <div class="move-page center-item">
+            <div class="icon-pre-page"></div>
+          </div>
           <span class="navigate__text" style="font-weight: 700">1</span>
           đến
           <span class="navigate__text" style="font-weight: 700">50</span>
-          <div class="icon--next1"></div>
-          <div class="icon--next2"></div>
+          <div class="move-page center-item">
+            <div class="icon-next-page"></div>
+          </div>
+          <div class="move-page center-item">
+            <div class="icon-last-pgae"></div>
+          </div>
         </div>
       </div>
     </div>
@@ -115,20 +140,18 @@
 </template>
 
 <script>
-function closeSidebar() {
-  console.log('adsdas')
-}
-
 import BaseCheckbox from "./../base/BaseCheckbox.vue";
+
 export default {
   components: {
     BaseCheckbox,
   },
   methods: {
     closeSidebar() {
-      console.log('dấdgjiu')
-    }
-  }
+      document.getElementById("sidebar__right").style.display="none";
+    },
+    
+  },
 };
 </script>
 
