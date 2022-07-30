@@ -8,20 +8,13 @@
         </div>
       </div>
       <div class="header__center">
-        <!-- <BaseTextField/> -->
-        <!-- <BaseCombobox/> -->
-        <div class="header__search">
-          <div class="header__search-input">
-            <input
-              type="text"
-              placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
-              class="text-field"
-              id="myInput"
-            />
-          </div>
-          <div class="icon icon--search"></div>
-          <div @click="clearTextInputOnclick()" class="icon-close-16px"></div>
-        </div>
+        <BaseTextField
+          :readOnly="false"
+          :hasIconSearch="true"
+          placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
+          backgroundColor="#f0f2f4"
+          borderColor="transparent"
+        />
       </div>
 
       <div class="header__right">
@@ -117,7 +110,7 @@ import BaseCombobox from "./../base/BaseCombobox.vue";
 
 export default {
   components: {
-    // BaseTextField,
+    BaseTextField,
     // BaseCombobox,
   },
   data() {
@@ -131,12 +124,6 @@ export default {
     return {
       propsInputText,
     };
-  },
-  methods: {
-    clearTextInputOnclick() {
-      let textCheck = document.getElementById("myInput").value;
-      document.getElementById("myInput").value = " ";
-    },
   },
 };
 </script>

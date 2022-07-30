@@ -8,6 +8,7 @@
       :cols="columns"
       :rows="rows"
       :placeholder="placeholder"
+      :backgroundColor="backgroundColor"
     ></textarea>
     <span class="error-msg" :class="{ error: isErrorTextArea }"
       >{{messageError}}</span

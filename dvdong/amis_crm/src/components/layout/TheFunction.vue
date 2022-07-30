@@ -9,18 +9,11 @@
       </div>
     </div>
     <div class="function__right">
-      <div class="function__center mr-8">
-        <div class="function__search">
-          <div class="function__search-input">
-            <input
-              type="text"
-              placeholder="Tìm kiếm theo Địa chỉ, Tổ chức, Email cá nhân, Họ và tên, ĐT di động, ĐT cơ quan, Email cơ quan, Mã số thuế"
-              class="function-text-field"
-            />
-          </div>
-          <div class="icon icon--search"></div>
-          <div class="icon-close-16px"></div>
-        </div>
+      <div class="function__search mr-8">
+        <BaseTextField
+          placeholder="Tìm kiếm theo Địa chỉ, Tổ chức, Email cá nhân, Họ và tên, ĐT di động, ĐT cơ quan, Email cơ quan, Mã số thuế"
+          :hasIconSearch="true"
+        />
       </div>
       <router-link to="/AddPage">
         <BaseButton buttonText="Thêm" :hasDropdown="true" :hasIcon="true" />
@@ -40,10 +33,12 @@
 
 <script>
 import BaseButton from "./../base/BaseButton.vue";
+import BaseTextField from "./../base/BaseTextField.vue";
 
 export default {
   components: {
     BaseButton,
+    BaseTextField,
   },
 };
 </script>

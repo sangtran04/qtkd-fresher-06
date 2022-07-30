@@ -27,6 +27,15 @@
     margin-left: 16px;
 }
 
+.header__center {
+    width: 320px;
+    margin-left: 120px;
+}
+
+.header__center:hover input {
+    background-color: #e2e4e9!important;
+}
+
 .header__right {
     height: 32px;
     min-width: 300px;
