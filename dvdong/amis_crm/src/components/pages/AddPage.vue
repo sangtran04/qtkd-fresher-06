@@ -112,6 +112,7 @@
                 backgroundColor="#fff"
                 :hasBorder="true"
                 width="100%"
+                :isIconSearch="true"
               />
             </div>
           </div>
