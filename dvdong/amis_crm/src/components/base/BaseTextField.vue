@@ -61,8 +61,7 @@ export default {
      * author: dvdong 30/07/2022
      */
     clearTextInputOnclick() {
-      this.value = "";
-      //document.getElementById("myInput").value = "";
+      
     },
 
     /**
@@ -70,11 +69,7 @@ export default {
      * author: dvdong 30/07/2022
      */
     showIconClose() {
-      var check = document.getElementById("myInput").value;
-      console.log(check);
-      if (check != "") {
-        this.hasIconClose = true;
-      }
+      
     },
   },
 };

@@ -29,8 +29,12 @@ input {
   height: 16px;
   margin-right: 9.5px;
   border-radius: 1.5px;
-  border: 1px solid #586074;
+  border: 1px solid red;
   cursor: pointer;
+}
+
+input:hover {
+  border-color: red;
 }
 
 label {
