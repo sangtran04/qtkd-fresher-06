@@ -12,6 +12,9 @@
 @import url(./base/table.css);
 @import url(./base/navigate.css);
 
+/* color */
+@import url(./base/color.css);
+
 /* page */
 @import url(./page/sale.css);
 
