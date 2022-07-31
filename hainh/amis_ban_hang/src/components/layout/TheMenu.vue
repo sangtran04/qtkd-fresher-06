@@ -13,13 +13,27 @@
       </div>
 
       <div class="m-top__icons">
-        <div class="icon-facebook margin-right-20"></div>
-        <div class="icon-notification margin-right-20"></div>
-        <div class="icon-setting margin-right-20"></div>
-        <div class="icon-3d margin-right-20"></div>
-        <div class="icon-calender margin-right-20"></div>
-        <div class="icon-help margin-right-20"></div>
-        <div class="icon-avatar margin-right-20"></div>
+        <div class="icon-facebook margin-right-20 show-tooltip">
+          <TooltipComp contentTooltip="Cộng đồng hỗ trợ AMIS CRM" />
+        </div>
+        <div class="icon-notification margin-right-20 show-tooltip">
+          <TooltipComp contentTooltip="Thông báo" />
+        </div>
+        <div class="icon-setting margin-right-20 show-tooltip">
+          <TooltipComp contentTooltip="Thiết lập" />
+        </div>
+        <div class="icon-3d margin-right-20 show-tooltip">
+          <TooltipComp contentTooltip="Tra cứu tồn kho" />
+        </div>
+        <div class="icon-calender margin-right-20 show-tooltip">
+          <TooltipComp contentTooltip="Lịch làm việc" />
+        </div>
+        <div class="icon-help margin-right-20 show-tooltip">
+          <TooltipComp contentTooltip="Hướng dẫn" />
+        </div>
+        <div class="icon-avatar margin-right-20 show-tooltip">
+          <TooltipComp contentTooltip="Nguyễn Hoàng Hải" />
+        </div>
       </div>
     </div>
     <div class="m-bottom">
@@ -45,10 +59,12 @@
 import BaseTextField from '../base/BaseTextField.vue'
 import BaseTab from '../base/BaseTab.vue'
 import TAB_LIST from '../../constants/tab-list'
+import TooltipComp from '../base/TooltipComp.vue'
 export default {
   components: {
     BaseTextField,
     BaseTab,
+    TooltipComp,
   },
 
   data() {
@@ -58,6 +74,7 @@ export default {
     }
   },
   methods: {
+    // Đặt sự kiện click cho các tab
     handleClickTab(tabId) {
       for (let i = 0; i < this.tabs.length; i++) {
         this.tabs[i].checked = tabId === this.tabs[i].id
@@ -86,9 +103,10 @@ export default {
 
 .m-top {
   display: flex;
-  align-items: flex-end;
-  height: 4.4rem;
+  height: 3.2rem;
   justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 3px;
 }
 
 .m-top__logo {
@@ -100,7 +118,9 @@ export default {
   display: flex;
   align-items: center;
 }
-
+.m-top__icons div {
+  cursor: pointer;
+}
 .m-top__icon-menu {
   background: url('../../assets/Resource/img/icon_collection.svg') no-repeat -4px -341px;
   width: 16px;
@@ -110,7 +130,7 @@ export default {
 .m-top__icon-logo {
   background: url('../../assets/Resource/img/Logo_CRM_App.svg') no-repeat;
   width: 150px;
-  height: 30px;
+  height: 32px;
   margin-left: 2rem;
   margin-right: 1rem;
 }

@@ -1,32 +1,35 @@
 <template>
-  <div class="baseButton" :class="{'disabled': isDisabled }">
-    <button class="button" :class="
-    [{'button__icon':hasIconFunc},
-    {'button__primary--blue':selected},
-    {'btn--cboleft': hasBorderRightFunc},
-    {'btn--cboright': hasBorderLeftFunc}
-    ]">
+  <div class="baseButton" :class="{ disabled: isDisabled }">
+    <button
+      class="button"
+      :class="[
+        { button__icon: hasIconFunc },
+        { 'btn--left': hasBorderRightFunc },
+        { 'btn--right': hasBorderLeftFunc },
+        { 'button__primary--blue': hasHoverAndActivePrimaryBlue },
+        { 'button__secondary--outlineblue': hasSecondaryOutLineFunc },
+        { button__tertiary: hasTertiaryFunc },
+        { 'button__primary--red': hasPrimaryRedFunc },
+      ]"
+    >
       <div class="buttonContent">{{ buttonText }}</div>
     </button>
   </div>
 </template>
 <script>
 export default {
-  data() {
-    return {
-      selected: true,
-    };
-  },
   props: {
+    //Nội dung của button
     buttonText: {
       type: String,
-      default: ''
+      default: "",
     },
+    //Màu nền của nút
     backgroundColor: {
       type: String,
-      default: '#4262F0',
+      default: "#4262F0",
     },
-    // button có icon không
+    // button có icon không?
     hasIcon: {
       type: Boolean,
       default: false,
@@ -36,28 +39,69 @@ export default {
       type: Boolean,
       default: false,
     },
-    hasBorderRight:{
+    // button có border right không?
+    hasBorderRight: {
       type: Boolean,
       default: false,
     },
-    hasBorderLeft:{
+    // button có border left không?
+    hasBorderLeft: {
+      type: Boolean,
+      default: false,
+    },
+    // button có outline không?
+    hasSecondaryOutLine: {
+      type: Boolean,
+      default: false,
+    },
+    // button kiểu terirary?
+    hasTertiary: {
+      type: Boolean,
+      default: false,
+    },
+    hasPrimaryRed: {
+      type: Boolean,
+      default: false,
+    },
+
+    // button có hover active
+    hasHoverAndActivePrimaryBlue: {
       type: Boolean,
       default: false,
     },
   },
-  
+
   computed: {
+    // Button có icon không?
     hasIconFunc() {
       return this.hasIcon;
     },
+    // Button là disable hay không?
     isDisabled() {
       return this.disabled;
     },
-    hasBorderLeftFunc(){
-        return this.hasBorderLeft;
+    // Button có borderleft không?
+    hasBorderLeftFunc() {
+      return this.hasBorderLeft;
     },
-    hasBorderRightFunc(){
-        return this.hasBorderRight;
+    // Button có border right không?
+    hasBorderRightFunc() {
+      return this.hasBorderRight;
+    },
+    // Button có outline không?
+    hasSecondaryOutLineFunc() {
+      return this.hasSecondaryOutLine;
+    },
+    // Button có phải tertirary không?
+    hasTertiaryFunc() {
+      return this.hasTertiary;
+    },
+    // Button có hover và active không?
+    hasHoverAndActivePrimaryBlueFunc() {
+      return this.hasHoverAndActivePrimaryBlue;
+    },
+    hasPrimaryRedFunc() {
+      return this.hasPrimaryRed;
     },
   },
 };
@@ -79,7 +123,19 @@ export default {
   border: none;
   background-color: v-bind(backgroundColor);
 }
-
+.button__tertiary {
+  color: #1f2229 !important;
+  border: 1px solid #d3d7de !important;
+  font-weight: 550 !important;
+}
+.button__tertiary:hover {
+  border: 1px solid #d3d7de;
+  background-color: #f0f2f4;
+}
+.button__tertiary:active {
+  border: 1px solid #d3d7de;
+  background-color: #d3d7de;
+}
 .button__primary--blue {
   background-color: #4262f0;
 }

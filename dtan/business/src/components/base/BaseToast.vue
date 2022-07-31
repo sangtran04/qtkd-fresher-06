@@ -1,5 +1,6 @@
 <template>
-  <div class="toastmessage" :class="{
+  <div id="toast">
+    <div class="toastmessage" :class="{
         'toastmessage--info': isInformation,
         'toastmessage--error': isError,
         'toastmessage--warning': isWarning,
@@ -17,6 +18,7 @@
     <div class="toast__right">
         <div class="icon--close"></div>
     </div>
+  </div>
   </div>
 </template>
 <script>
@@ -41,6 +43,10 @@ export default {
     },
   },
   computed: {
+    /**
+     * Kiểm tra trạng thái của toast message
+     * AUTHOR: ANDT (19/07/2022)
+     */
     isInformation() {
       return this.type === "information";
     },
@@ -60,5 +66,11 @@ export default {
 @import url(../../css/base/toast.css);
 .toast__mid{
     font-size: 13px;
+}
+#toast {
+    display: block;
+    position: fixed;
+    left: 50%;
+    z-index: 10;
 }
 </style>

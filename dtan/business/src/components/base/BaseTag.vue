@@ -9,24 +9,29 @@
 <script>
 export default {
   props: {
+    // Nội dung của tag
     contentText: {
       type: String,
       default: () => "tagname",
     },
+    // đặt chiều ngang cho tag
     width: {
       type: String,
       default: "90px",
     },
+    // màu tag
     backgroundColor: {
       type: String,
       default: "#C5C9D3",
     },
+    // tag có icon close không
     hasIconClose: {
       type: Boolean,
       default: false,
     },
   },
   computed: {
+    // Hàm kiểm tra icon close có hay không?
     hasIconCloseFunc(){
         return this.hasIconClose;
     }

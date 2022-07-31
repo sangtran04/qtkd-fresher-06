@@ -6,7 +6,7 @@
       </div>
       <div class="crm-toastmessage__content">{{ toastContent }}</div>
       <div class="crm-toastmessage__close">
-        <i class="fas fa-times" style="color: #fff"></i>
+        <div class="icon-close"></div>
       </div>
     </div>
   </div>
@@ -47,10 +47,11 @@ export default {
 
 <style>
 .crm-boxtoastmesage {
-  display: none;
   position: fixed;
+  display: none;
   bottom: 32px;
   right: 32px;
+  z-index: 20;
 }
 
 .showtoast {

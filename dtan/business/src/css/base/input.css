@@ -1,4 +1,4 @@
-.input {
+/* .input {
     width: 240px;
     height: 32px;
     border-radius: 4px;
@@ -6,8 +6,6 @@
     padding: 0 16px;
     box-sizing: border-box;
     margin-top: 8px;
-    outline: none;
-    margin-left: 16px;
 }
 
 .input:hover {
@@ -42,8 +40,9 @@
 }
 
 .input::placeholder {
-    font-size: 11px;
-    color: #bbbbbb;
+    font-size: 13px;
+    color: #a2a2a2;
+    font-weight: 500;
 }
 
 .input__icon--search {
