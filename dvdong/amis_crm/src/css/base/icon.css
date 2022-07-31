@@ -459,3 +459,11 @@
         display: inline-block;
         background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat 0px -32px;
     }
+
+    .icon-checked {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background: transparent url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg) no-repeat -336px -144px;
+    }
