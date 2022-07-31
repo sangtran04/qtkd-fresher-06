@@ -73,7 +73,7 @@ const ListTab = [
     // },
     {
       id: 13,
-      iconTab: 'icon-campaign',
+      iconTab: 'icon-other',
       contentTab: 'Khác',
       checked: false,
     },

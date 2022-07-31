@@ -3,89 +3,101 @@
     <div class="header__top">
       <div class="header__left">
         <div class="icon icon--toggle"></div>
-        <div class="icon icon--logo"></div>
-        <div class="title">Bán hàng</div>
-      </div>
-      <div class="header__center">
-        <BaseTextField/>
-        <div class="header__search">
-          <input
-            type="text"
-            placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
-            class="text-field"
-          />
-          <div class="icon icon--search"></div>
+        <div style="margin-top: 2px">
+          <img src="./../../assets/img/Logo_CRM_App.svg" alt="" />
         </div>
       </div>
+      <div class="header__center">
+        <BaseTextField
+          :readOnly="false"
+          :hasIconSearch="true"
+          placeholder="Tìm kiếm tiềm năng, liên hệ, khách hàng"
+          backgroundColor="#f0f2f4"
+          borderColor="transparent"
+        />
+      </div>
+
       <div class="header__right">
-        <div class="icon icon--facebook"></div>
-        <div class="icon icon--3d"></div>
-        <div class="icon icon--calender"></div>
-        <div class="icon icon--noti"></div>
-        <div class="icon icon--setting"></div>
-        <div class="icon icon--help"></div>
-        <div class="icon icon--avatar"></div>
+        <div class="header__right-icon"><div class="icon--blog"></div></div>
+        <div class="header__right-icon"><div class="icon--facebook"></div></div>
+        <div class="header__right-icon"><div class="icon--3d"></div></div>
+        <div class="header__right-icon"><div class="icon--calendar"></div></div>
+        <div class="header__right-icon"><div class="icon--notify"></div></div>
+        <div class="header__right-icon"><div class="icon--setting"></div></div>
+        <div class="header__right-icon"><div class="icon--help"></div></div>
+        <div class="header__right-icon"><div class="icon--avatar"></div></div>
       </div>
     </div>
     <div class="header__menu">
+      <ul class="menu__tab">
+        <li class="menu__item">
+          <div class="icon icon--dashboard mr-8"></div>
+          <p>Bàn làm việc</p>
+        </li>
+        <li class="menu__item menu__item-active">
+          <a href="">
+            <div class="menu__item-content">
+              <div class="icon icon--lead mr-8"></div>
+              <span>Tiềm năng</span>
+            </div>
+            <div class="row-active"></div>
+          </a>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--offer mr-8"></div>
+          <p>Chào hàng</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--contact mr-8"></div>
+          <p>Liên hệ</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--account mr-8"></div>
+          <p>Khách hàng</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--opportunity mr-8"></div>
+          <p>Cơ hội</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--quote mr-8"></div>
+          <p>Báo giá</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--order mr-8"></div>
+          <p>Đơn hàng</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--invoce-request mr-8"></div>
+          <p>Hóa đơn</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--oportunity-poo mr-8"></div>
+          <p>Ao cơ hội</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--activity mr-8"></div>
+          <p>Hoạt động</p>
+        </li>
+        <!-- <li class="menu__item">
+          <div class="icon icon--forcecast mr-8"></div>
+          <p>Mục tiêu</p>
+        </li> -->
+        <!-- <li class="menu__item">
+          <div class="icon icon--campaign mr-8"></div>
+          <p>Chiến dịch</p>
+        </li> -->
+        <!-- <li class="menu__item">
+          <div class="icon icon--report mr-8"></div>
+          <p>Báo cáo</p>
+        </li>
+        <li class="menu__item">
+          <div class="icon icon--product mr-8"></div>
+          <p>Hàng hóa</p>
+        </li> -->
+      </ul>
       <div class="menu__item">
-        <div class="icon icon--banlamviec mr-8"></div>
-        <p>Bàn làm việc</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--tiemnang mr-8"></div>
-        <p>Tiềm năng</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--chaohang mr-8"></div>
-        <p>Chào hàng</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--lienhe mr-8"></div>
-        <p>Liên hệ</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--khachhang mr-8"></div>
-        <p>Khách hàng</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--cohoi mr-8"></div>
-        <p>Cơ hội</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--baogiac mr-8"></div>
-        <p>Báo giá</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--donhang mr-8"></div>
-        <p>Đơn hàng</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--hoadon mr-8"></div>
-        <p>Hóa đơn</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--aocohoi mr-8"></div>
-        <p>Ao cơ hội</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--hoatdong mr-8"></div>
-        <p>Hoạt động</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--muctieu mr-8"></div>
-        <p>Mục tiêu</p>
-      </div>
-      <div class="menu__item">
-        <div class="icon icon--chiendich mr-8"></div>
-        <p>Chiến dịch</p>
-      </div>
-      <!-- <div class="menu__item">
-                    <div class="icon icon--baocao  mr-8"></div>
-                    <p>Báo cáo</p>
-                </div> -->
-      <div class="menu__item">
-        <div class="icon icon--khac mr-8"></div>
+        <div class="icon icon--other mr-8"></div>
         <p>Khác</p>
       </div>
     </div>
@@ -94,9 +106,12 @@
 
 <script>
 import BaseTextField from "./../base/BaseTextField.vue";
+import BaseCombobox from "./../base/BaseCombobox.vue";
+
 export default {
   components: {
     BaseTextField,
+    // BaseCombobox,
   },
   data() {
     const propsInputText = {
@@ -114,5 +129,4 @@ export default {
 </script>
 
 <style>
-@import url("./../../css/main.css");
 </style>

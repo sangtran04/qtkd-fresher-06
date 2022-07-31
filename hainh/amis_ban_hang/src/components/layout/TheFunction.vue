@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="function__right">
-      <BaseButton buttonContent="Thêm" hasIcon />
+      <BaseButton  buttonContent="Thêm"  />
     </div>
   </div>
 </template>

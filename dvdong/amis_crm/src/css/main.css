@@ -8,9 +8,7 @@
 @import url(./layout/main.css);
 
 /* base  */
-@import url(./base/button.css);
 @import url(./base/icon.css);
-@import url(./base/text-field.css);
 @import url(./base/table.css);
 @import url(./base/navigate.css);
 
@@ -45,6 +43,15 @@
     padding-right: 8px;
 }
 
+.pt-4 {
+    padding-top: 4px;
+}
+
+.mt-4{
+    margin-top: 4px;
+}
+
+
 .mr-8 {
     margin-right: 8px;
 }
@@ -59,6 +66,12 @@
 
 .ml-16 {
     margin-left: 16px;
+}
+
+.center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 

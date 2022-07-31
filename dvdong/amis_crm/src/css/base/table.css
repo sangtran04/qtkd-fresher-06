@@ -1,8 +1,9 @@
 .table {
-    width: 2600px;
+    min-width: 3400px;
     border-spacing: unset;
     border: unset;
     border-collapse: collapse;
+    box-sizing: border-box;
 }
 
 .table thead tr {
@@ -10,22 +11,67 @@
 }
 
 .table thead tr th {
-    font-weight: 700;
-    
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #1f2229;
+    background-color: #f0f2f4;
+    border-right: 1px solid  #f0f2f4;
+    border-left: 1px solid #f0f2f4;
+    position: relative;
+}
+
+.table thead tr th:hover {
+    border-right: 1px solid #d3d7de!important;
+}
+
+.table thead tr th:hover .table-filter {
+    display: flex;
+}
+
+.table-filter {
+    position: absolute!important;
+    top: 9px;
+    right: 6px;
+    display: none;
+    width: 22px;
+    height: 22px;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table-filter:hover {
+    border-radius: 50%;
+    background-color: #d3d7de!important;
+
 }
 
 .table tbody tr td {
-    font-weight: 500;
+    font-weight: 400;
+    color: #1f2229;
+    text-overflow: ellipsis;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f2f4;
+}
+
+.table tbody tr:hover .row-edit {
+    display: flex;
 }
 
 .table .text--blue {
-    color: rgb(19, 59, 236);
+    color: #0f2fbd;
+}
+
+.table .text--blue:hover {
+    text-decoration: underline;
 }
 
 .text--icon {
     display: flex;
     align-items: center;
-    line-height: 40px;
 }
 
 .text--icon-right {
@@ -52,10 +98,6 @@ th {
     padding-right: 10px;
 }
 
-.table tbody tr:hover {
-    background-color: #E7EBFD;
-}
-
 .th__120 {
     width: 160px;
     background-color: red;
@@ -72,6 +114,7 @@ th {
 
 .text-align-left {
     text-align: left;
+    
 }
 
 .text-align-right {
@@ -94,4 +137,14 @@ table tr.row--selected {
 
 .m-table thead {
     position: sticky;
+}
+ 
+.row-edit {
+    display: none;
+    width: 24px;
+    height: 24px;
+    padding-left: 4px;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
 }

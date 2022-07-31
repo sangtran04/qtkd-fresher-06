@@ -1,179 +1,146 @@
 <template>
-  <div
-    class="base-input-text-field"
-    :class="{ leftLabel: leftLabel, topLabel: topLabel }"
-  >
-    <label :class="{ haveLabel: isHaveLabel }" :for="labelContent">{{
-      labelContent
-    }}</label>
-    <div class="absoluted">
-      <div v-if="isIconSearchFunction" class="icon-search"></div>
-      <div class="icon-success"></div>
-      <input
-        :id="labelContent"
-        type="text"
-        :placeholder="placeholder"
-        :readonly="readOnly"
-        :class="{ 'padding-left-32': isIconSearchFunction }"
-      />
-      <span class="error-msg">Error message</span>
-    </div>
+  <div class="input">
+    <div v-if="hasIconSearch" class="icon icon--search"></div>
+    <input
+      class="input-text"
+      type="search"
+      id="search"
+      :placeholder="placeholder"
+      :class="{ 'input-search': hasIconSearch }"
+      :backgroundColor="backgroundColor"
+      :borderColor="borderColor"
+      :readonly="readOnly"
+    />
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      hasIconClose: {
+        type: Boolean,
+        default: false,
+      },
+    };
+  },
+
   props: {
-    // Chỉ định placeholder cho thẻ input
+    hasIconSearch: {
+      type: Boolean,
+      default: false,
+    },
     placeholder: {
       type: String,
-      required: true,
+      default: "",
+      require: true,
     },
-    // Chỉ định attribute chỉ đọc cho thẻ input
+    backgroundColor: {
+      type: String,
+      default: "#fff",
+    },
+    borderColor: {
+      type: String,
+      default: "#d3d7de",
+    },
     readOnly: {
       type: Boolean,
       default: false,
     },
-    // Chỉ định nội dung thẻ label
-    labelContent: {
-      type: String,
-    },
-    // Label nằm ngang hàng với thẻ input
-    leftLabel: {
-      type: Boolean,
-    },
-    // Label nằm bên trên thẻ input
-    topLabel: {
-      type: Boolean,
-    },
-    // thêm icon tìm kiếm vào thẻ input
-    isIconSearch: {
-      type: Boolean,
-    },
-    width: {
-      type: String,
-      default: "240px",
-    },
   },
-  computed: {
-    /**
-     * Kiểm tra props truyền vào có label không ?
-     * Author: hainh 17/07/2022
-     */
-    isHaveLabel() {
-      return this.labelContent ? true : false;
-    },
-    /**
-     * Kiểm trả props truyền vào có icon search không ?
-     * Author: hainh 17/07/2022
-     */
-    isIconSearchFunction() {
-      return this.isIconSearch ? true : false;
-    },
+
+  methods: {
+    
   },
 };
 </script>
 
 <style scoped>
-.base-input-text-field {
-  display: flex;
-}
-.base-input-text-field.topLabel {
-  flex-direction: column;
-}
-.base-input-text-field.leftLabel {
-  align-items: center;
-}
-.base-input-text-field input {
-  height: 32px;
-  padding: 0 16px;
-  border-radius: 4px;
-  border: 1px solid #d3d7de;
-  outline: none;
-  min-width: v-bind(width);
-}
-
-.base-input-text-field input:hover {
-  border-color: #7c869c;
-}
-
-.base-input-text-field input:focus {
-  border: 1px solid #4262f0;
-}
-
-.base-input-text-field input[readonly] {
-  background-color: #e2e4e9;
-}
-
-.base-input-text-field input[readonly]::placeholder {
-  color: #586074;
-}
-
-.base-input-text-field input[readonly]:focus {
-  border: 1px solid #d3d7de;
-}
-
-.base-input-text-field input[readonly]:hover {
-  border: 1px solid #d3d7de;
-}
-
-.base-input-text-field label {
-  display: none;
-}
-
-.leftLabel label.haveLabel {
-  margin-right: 16px;
-  display: initial;
-}
-
-.topLabel label.haveLabel {
-  margin-bottom: 8px;
-  display: initial;
-}
-
-.absoluted {
+.input {
   position: relative;
+  width: 100%;
 }
 
-.icon-search {
+.input-text {
+  pointer-events: all;
+  height: 32px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px 16px 8px 16px;
+  box-sizing: border-box;
+  border: 1px solid v-bind(borderColor);
+  /* background-color: #f0f2f4 !important; */
+  background-color: v-bind(backgroundColor);
+  color: #1f2229;
+  text-overflow: ellipsis;
+}
+
+.input-search {
+  padding: 8px 16px 8px 30px !important;
+}
+
+.input-text:focus {
+  box-sizing: border-box;
+  background-color: #fff;
+  border-color: #4262f0 !important;
+  border: 1px solid;
+  color: #1f2229;
+}
+
+.input .icon--search {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 8px;
-}
-.padding-left-32 {
-  padding-left: 32px !important;
+  top: 0;
+  margin: 8px;
+  cursor: pointer;
+  margin-right: 30px;
 }
 
-.error-msg {
-  display: none;
+input:read-only {
+  pointer-events: none;
+  background-color: #e2e4e9;
+  border: 1px solid #d3d7de;
+}
+
+.input .icon--search:read-only {
+  pointer-events: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #99a1b2;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #99a1b2;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #99a1b2;
+}
+
+#search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
   position: absolute;
-  color: #ec4141;
-  left: 0;
-  top: calc(100% + 8px);
-}
-
-.error > input {
-  border-color: #ec4141;
-}
-
-.error .error-msg {
-  display: initial;
-}
-
-.success input {
-  border-color: #31b491 !important;
-}
-
-.icon-success {
-  display: none;
-}
-
-.success .icon-success {
-  display: block;
-  position: absolute;
+  top: 8px;
   right: 8px;
-  top: 50%;
-  transform: translateY(-50%);
+  cursor: pointer;
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: transparent
+    url(https://crmplatform.misacdn.net/app/assets/Images/icon/icon_collection.svg)
+    no-repeat -80px -16px;
+}
+
+#search::-webkit-search-cancel-button:hover {
+  background-color: #d3d7de;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
 }
 </style>

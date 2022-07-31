@@ -1,12 +1,12 @@
-.function{
+.function {
     padding: 0 16px;
-    height: 64px;
-    background-color: #E2E4E9;
+    height: 56px;
+    background-color: #e2e4e9;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #bbbbbb;
-
+    border-bottom: 1px solid #d3d7de;
+    box-sizing: border-box;
 }
 
 .function__left {
@@ -15,12 +15,32 @@
 }
 
 .menu__name {
-    font-family: Roboto Bold ;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.428571429;
+    color: #1f2229;
+    cursor: pointer;
+    margin-right: 4px;
 }
 
 .function__fix {
     text-decoration: none;
     color: #4262F0;
+    margin-left: 16px;
+}
+
+.function__refresh {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.function__refresh:hover {
+    background-color: #c5c9d3;
 }
 
 .function__right {
@@ -29,15 +49,42 @@
     justify-content: space-between;
 }
 
-.function__btn{
+.function__search {
+    width: 240px;
+    margin-right: 8px;
+}
+
+.function__btn-dropdown, .function__btn{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid #FFFFFF;
+    border: 1px solid #d3d7de!important;
     border-radius: 4px;
     color: #1F2229;
     margin-left: 8px;
-    min-width: 32px;
+    width: 55px;
     height: 32px;
-    background-color: white;
+    background-color: #ffff;
+    padding: 8px;
+    box-sizing: border-box;
+    cursor: pointer;
 }
+
+.function__btn-dropdown:hover, .function__btn:hover {
+    background-color: #f0f2f4;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.function__btn {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
+
+
+
+
+

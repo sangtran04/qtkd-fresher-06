@@ -1,10 +1,7 @@
 <template>
   <div class="container">
     <TheMenu />
-    <TheFunction />
-    <TheSidebarLeft />
-    <TheContent />
-    <TheSidebarRight />
+    <router-view> </router-view>
     <BaseToastMessage
       toastContent="Đăng nhập thành công"
       backgroundColor="#31B491"
@@ -12,26 +9,21 @@
     >
       <div class="icon-accept"></div>
     </BaseToastMessage>
+    <BasePopup :hasShowPopup="false" popupContent="Có lỗi xảy ra. Vui lòng liên hệ MISA!" />
   </div>
 </template>
 
 <script>
 import TheMenu from "./components/layout/TheMenu.vue";
-import TheFunction from "./components/layout/TheFunction.vue";
-import TheSidebarLeft from "./components/layout/TheSidebarLeft.vue";
-import TheContent from "./components/layout/TheContent.vue";
-import TheSidebarRight from "./components/layout/TheSidebarRight.vue";
 import BaseToastMessage from "./components/base/BaseToastMessage.vue";
+import BasePopup from "./components/base/BasePopup.vue";
 
 export default {
   name: "App",
   components: {
     TheMenu,
-    TheFunction,
-    TheSidebarLeft,
-    TheContent,
-    TheSidebarRight,
     BaseToastMessage,
+    BasePopup,
   },
 };
 </script>
@@ -39,11 +31,11 @@ export default {
 <style>
 @import url("./style/font.css");
 @import url("./style/icons.css");
-@import url("./style/button.css");
+@import url("./style/tooltip.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 .container {
-  display: grid;
-  grid-template-columns: 249px calc(100% - 569px) 320px;
-  grid-template-rows: 84px 56px calc(100vh - 140px);
+  display: flex;
+  flex-direction: column;
 }
 * {
   box-sizing: border-box;

@@ -1,5 +1,5 @@
 <template>
-  <div class="baseButton" :class="{ disabled: isDisabled }">
+  <div class="baseButton" :class="{ 'disabled': isDisabled }">
     <button type="button" :class="{ 'button-icon': hasIconFunc }">
       <div v-if="hasIconFunc" class="icon-plus"></div>
       <div class="buttonContent">{{ buttonContent }}</div>

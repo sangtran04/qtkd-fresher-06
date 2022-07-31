@@ -30,4 +30,32 @@
     padding-right: 8px;
     border-radius: 4px;
     border: 1px solid #d3d7de;
+    cursor: pointer;
+}
+
+.sort-setting {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 16px;
+}
+
+.sort-setting:hover {
+    background-color: #f0f2f4;
+}
+
+.move-page {
+    width: 24px;
+    height: 24px;
+    /* pointer-events: none; */
+}   
+
+.move-page:hover {
+    border-radius: 50%;
+    background-color: #d3d7de;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    cursor: pointer;
 }
