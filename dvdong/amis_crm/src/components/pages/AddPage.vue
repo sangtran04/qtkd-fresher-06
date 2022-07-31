@@ -456,8 +456,8 @@ export default {
     // BaseButton,
     BaseDropDown,
     BaseTextField,
-    // BaseTextArea,.
-    BaseCheckbox
+    BaseTextArea,
+    // BaseCheckbox
 },
 }
 </script>

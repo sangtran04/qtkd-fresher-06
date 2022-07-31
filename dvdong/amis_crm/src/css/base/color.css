@@ -79,4 +79,7 @@
     --ck-font-size-big: 1.4em;
     --ck-font-size-large: 1.8em;
     --ck-ui-component-min-height: 2.3em;
+    /* theo style */
+    --primary-color: #4262F0;
+    --border-input-color: #d3d7de;
 }
