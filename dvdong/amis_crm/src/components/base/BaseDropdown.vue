@@ -56,7 +56,7 @@ export default {
   created() {
     /**
     thực hiện lấy dữ liệu từ API ?
-    author: dongdv 31/07/2022
+    author: dvdong 31/07/2022
      */
     if (this.isLoadData) {
       fetch(this.url)
@@ -73,14 +73,14 @@ export default {
   methods: {
     /**
     thực hiện ẩn hiện các item 
-    author: dongdv 31/07/2022
+    author: dvdong 31/07/2022
      */
     showDataOnclick() {
       this.showData = !this.showData;
     },
     /**
     thực hiện chọn một item
-    author: dongdv 31/07/2022
+    author: dvdong 31/07/2022
      */
     itemOnselect(item) {
       this.text = item.name;

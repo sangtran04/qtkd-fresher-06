@@ -1,10 +1,12 @@
 <template>
   <div class="content">
-    <div class="sidebar-right-close" @click="closeSidebar()">
-      <div class="icon-close-right"></div>
+    <div class="sidebar-right-close" @click="closeSidebarRight()">
+      <div v-if="hasClosedRight" class="icon-close-left"></div>
+      <div v-else class="icon-close-right"></div>
     </div>
-    <div class="sidebar-left-close">
-      <div class="icon-close-left"></div>
+    <div class="sidebar-left-close" @click="closeSidebarLeft()">
+      <div v-if="hasClosedLeft" class="icon-close-right"></div>
+      <div v-else class="icon-close-left"></div>
     </div>
     <div class="table__content">
       <div class="abc">
@@ -143,14 +145,43 @@
 import BaseCheckbox from "./../base/BaseCheckbox.vue";
 
 export default {
+  data() {
+    return {
+      hasClosedRight: false,
+      hasClosedLeft: false,
+    };
+  },
+
   components: {
     BaseCheckbox,
   },
+
   methods: {
-    closeSidebar() {
-      document.getElementById("sidebar__right").style.display="none";
+    /**
+     * hàm đóng mở sidebar right
+     * author: dvdong 31/07/2022
+     */
+    closeSidebarRight() {
+      this.hasClosedRight = !this.hasClosedRight;
+      if (this.hasClosedRight == true) {
+        document.getElementById("sidebar__right").style.display = "none";
+      } else {
+        document.getElementById("sidebar__right").style.display = "block";
+      }
     },
-    
+
+    /**
+     * hàm đóng mở siderbar left 
+     * author: dvdong 31/07/2022
+     */
+    closeSidebarLeft() {
+      this.hasClosedLeft = !this.hasClosedLeft;
+      if (this.hasClosedLeft == true) {
+        document.getElementById("sidebar__left").style.display = "none";
+      } else {
+        document.getElementById("sidebar__left").style.display = "block";
+      }
+    },
   },
 };
 </script>

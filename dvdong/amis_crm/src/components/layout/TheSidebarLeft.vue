@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar__left">
+  <div class="sidebar__left" id="sidebar__left">
     <div class="filter-save">
       BỘ LỌC ĐÃ LƯU
       <div class="icon icon--up"></div>
