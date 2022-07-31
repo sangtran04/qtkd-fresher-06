@@ -470,7 +470,7 @@
 
 
 export default {
-  name: "TheContent", 
+  name: "TheContent",
   components: {
 
 },
